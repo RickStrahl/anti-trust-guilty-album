@@ -1,0 +1,191 @@
+html, body {
+    height: 100%;
+    color: #aaa;
+    font-family: "Courier New", "Courier", Monospaced, serif;
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 0;
+    background-size: 100% 100%;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #999;
+}
+
+.page-container {
+    background: linear-gradient(#222 10%, #000 100%);
+    min-height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    background: black;
+
+}
+
+#divSongTitles {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    margin-top: -4.5em;
+    padding: 2em 2em;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 3.5vmin;
+}
+
+.image-container {
+    max-width: 49%;
+    max-height: 22em;
+    overflow-y: hidden;
+    margin: 0.2em;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.player-container {
+    float: right;
+    font-size: 1.4em;
+    padding-right: 3px;
+    display: none;
+
+}
+
+.buy-button {
+    display: block;
+    border: 1px solid #eee;
+    padding: 0.2em 0.7em;
+    border-radius: 8px;
+    color: steelblue !important;
+    background: #222;
+    text-decoration: none;
+    max-width: 11em;
+}
+
+.buy-button:hover {
+    opacity: 0.80;
+    transition: 1s background-color;
+    background-color: #333;
+    text-decoration: none;
+}
+
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*.image-container {*/
+/*    width: 48%;*/
+/*}*/
+/*    #photo, #photo2 {*/
+/*        display: block;*/
+/*    }*/
+/*@media(max-width: 600px) {*/
+    .image-container {
+        width: 100%;
+        padding: 0;
+        margin:0;
+        overflow: hidden;
+    }
+    .image-container img {
+    }
+/*}*/
+
+.header {
+    font-size: 1.16em;
+    font-style: italic;
+    font-weight: bold;
+    color: #FC1B0A;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+
+
+a, a:visited, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: khaki;
+    text-decoration: underline;
+}
+
+#divSongTitles ol li {
+    margin: 2px 1em;
+    padding: 8px 5px;
+    border-bottom: 1px white !important;
+}
+
+#divSongTitles ol li:hover {
+    background-color: #222;
+    transform: 1s background-color;
+}
+
+.copyright {
+    font-size: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.liner {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.toolbarcontainer {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    height: auto;
+    opacity: 0.7;
+    background: #222;
+    vertical-align: top;
+    padding: 5px;
+    font-size: 8pt;
+    font-weight: normal
+}
+
+.toolbarcontainer:hover {
+    opacity: 0.9;
+}
+
+.hoverbutton {
+    text-decoration: none;
+    padding: 2px 4px;
+    font-size: 8pt;
+    border: solid 1px transparent;
+}
+
+.hoverbutton:hover {
+    background: #eee;
+    color: black;
+    border: solid 1px silver;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.hoverbutton a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+[v-cloak] {
+    display: none;
+}

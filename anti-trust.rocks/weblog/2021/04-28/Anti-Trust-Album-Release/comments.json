@@ -1,0 +1,20 @@
+[
+    {
+      "id": "02312312" ,
+      "title": "First Comment",
+      "body": "This is stoopid",
+      "date": "2021-05-07T14:00:00",
+      "approved": true,
+      "author": "Rick Strahl",
+      "email": "rstrahl@west-wind.com"
+    },
+    {
+      "id":  "0312311",
+      "title": "Second Comment",
+      "body": "This is not so stoopid",
+      "date": "2021-05-07T14:00:00",
+      "approved": true,
+      "author": "Rick Strahl",
+      "email": "rstrahl@west-wind.com"
+    }
+]

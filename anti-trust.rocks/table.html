@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            td { border: 1px solid; padding: 5px }
+            td:first-child { min-width: 150px; }
+
+            td.percent-cell {
+                position:relative;height: 40px;width: 100%;
+            }
+            td.percent-cell div:first-child {
+                position: absolute; z-index: 1; left: 0; top: 0; right: 0; height: 100%; background: lightsteelblue
+            }
+            td.percent-cell div:nth-child(2) {
+                position: absolute; z-index: 2; left: 0; top: 0; right: 0; background: transparent;width: 100%; padding: 5px;
+            }
+        </style>
+    </head>
+<body>
+<h1>Hello World</h1>
+
+
+<table style="width: 100%">
+    <tbody>
+    <tr>
+        <td>
+            Label
+        </td>
+        <td  class="percent-cell">            
+            <!-- background -->
+            <div style="width: 80%">   <!-- percentage should work here for the bar width -->
+            </div>
+            
+            <div>This can be some long text that wraps</div>                            
+        </td>       
+    </tr>
+    <tr>
+        <td>
+            Label
+        </td>
+        <td class="percent-cell" >            
+            <!-- background -->
+            <div style="width: 55%;">   <!-- percentage should work here for the bar width -->
+            </div>            
+            <div>This can be some long text that wraps</div>                            
+        </td>       
+    </tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@page "/weblog/{year}/{monthDay}/{title}"
+
+@using Westwind.Utilities
+@using System.IO;
+
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+
+@functions 
+{
+    public class PostInfo
+    {
+        public string Title { get; set; }
+
+        public DateTime PostDate { get; set; }
+
+        public string FullPath { get; set; }
+        public string Url
+        {
+            get
+            {
+                var url = StringUtils.ExtractString(FullPath, "weblog\\", "\\index.md").Replace("\\", "/");
+                if (string.IsNullOrEmpty(url))
+                    url = StringUtils.ExtractString(FullPath, "weblog/", "/index.md");
+                if (string.IsNullOrEmpty(url))
+                    return FullPath;
+
+                return url;
+            }
+        }
+
+        public string Content { get; set; }
+
+        public List<Comment> Comments { get; set;  } = new List<Comment>();
+        public bool AllowComments { get; set; } = true;
+        public bool CommentsClosed { get; set;  } 
+    }
+
+    public class Comment
+    {
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
+        public DateTime Date { get; set; }
+        public bool Approved { get; set; }
+        public string Author { get; set; }
+        public string Email { get; set; }
+    }
+
+
+
+    public PostInfo GetPostInfo(string mdFile)
+    {
+        var PostInfo = new PostInfo() { FullPath = mdFile, Content = "not available " + mdFile + Host.WebRootPath };
+
+        var fi = new FileInfo(mdFile);
+        if (!fi.Exists) return PostInfo;
+
+
+        var content = System.IO.File.ReadAllText(mdFile);
+        if (!content.StartsWith("---"))
+            PostInfo.Title = "NO YAML DATA";
+        else
+        {
+            PostInfo.Title = StringUtils.ExtractString(content, "title:", "\n")?.Trim();
+            var postDate = StringUtils.ExtractString(content, "postDate:", "\n")?.Trim();
+            if (!string.IsNullOrEmpty(postDate))
+            {
+                var date = JsonSerializationUtils.Deserialize<DateTime>("\"" + postDate + "\"");
+                PostInfo.PostDate = date;
+            }
+        }
+
+        // Strip first header
+        var header = StringUtils.ExtractString(content, "# ", "\n", returnDelimiters: true);
+        if (!string.IsNullOrEmpty(header))
+            content = content.Replace(header, "");
+        PostInfo.Content = content;
+
+
+        var commentFile = mdFile.Replace("post.md", "comments.json");
+        if (!System.IO.File.Exists(commentFile)) return PostInfo;
+
+        PostInfo.Comments  = JsonSerializationUtils.DeserializeFromFile(commentFile, typeof(List<Comment>)) as List<Comment>;
+
+        return PostInfo;
+    }
+
+    public PostInfo Post { get; set;  }
+}
+@{
+    
+    string pageUrl = "https://anti-trust.rocks" + HttpContext.Request.Path;
+    string pagePath = Host.WebRootPath.TrimEnd(new [] {'/', '\\' }) +  FileUtils.NormalizePath(Request.Path.Value) + "post.md";
+    Post = GetPostInfo(pagePath);
+
+    if (string.IsNullOrWhiteSpace(Post.Title))
+    {
+        var title = RouteData.Values["title"] as string;
+        var rawTitle = title;
+        title = title?.Replace("-", " ");
+
+        Post.Title = title;
+    }
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+
+    <title>@Post.Title - Anti-Trust Weblog</title>
+    <meta http-equiv="keywords" content="Anti-Trust,@Post.Title,Guilty,Punk,Hardcore,Metal,Rock,Maui,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen" />
+    <meta http-equiv="description" content="@Post.Title" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+
+    <meta property="og:title" content="@Post.Title - Anti-Trust" />
+    <meta property="og:description" content="@Post.Title (song) by Anti-Trust. Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <meta property="og:url" content="@pageUrl" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--
+        1200 x 628 or 1200x1200
+        https://cards-dev.twitter.com/validator
+        https://developers.facebook.com/tools/debug/
+    -->
+    <meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png" />
+
+    <link rel="stylesheet" href="~/markdown-themes/Blackout/Theme.css" />
+    <link rel="stylesheet" href="~/markdown-themes/scripts/fontawesome/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
+    <style>
+        img {
+            max-width: 100%;
+        }
+        .nomargin {
+            margin: 0;
+        }
+        .byline {
+            font-size: 0.8rem;
+            color: lightsteelblue;
+            margin: 0 0 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbarcontainer">
+        <a href="/" class="hoverbutton"><i class="fas fa-arrow-circle-left" style="color: steelblue"></i> Back to All Songs</a> |
+        <a href="https://store.west-wind.com/product/order/antitrust_guilty" class="hoverbutton"><i class="fas fa-money-bill-wave" style="color: green"></i> Buy Album</a>
+    </div>
+    
+        
+    
+<div class="container" id="Body">
+    <header style="margin: 3vh 0 2vh 0; opacity: 0.5">
+        <h1 style="font-family: 'Courier New'; font-weight: bold; font-style: italic; font-size: 12.5vw; border-bottom: none; color: firebrick; padding: 0; margin:0; line-height: 0.8">
+            Anti-Trust
+        </h1>
+        <p class="nomargin" style="font-size: 5vw; font-family: 'Courier New';">Read all about it</p>
+    </header>
+    
+    
+    <h1>@Post.Title</h1>
+    
+    <small><i class="far fa-clock-o"></i> @TimeUtils.FriendlyDateString(Post.PostDate,false)</small>
+    
+    <markdown markdown="Post.Content" class="mt-6">
+    </markdown>
+    
+    @if (Post.AllowComments && !Post.CommentsClosed && Post.Comments.Count > 0 )
+    {
+        <h1><i class="fal fa-comments"></i> Dissenters</h1>
+
+
+        @foreach (var comment in Post.Comments)
+        {
+            <i class="byline"><i class="far fa-user-alien"></i> @comment.Author  &nbsp; &bull; &nbsp; <i class="far fa-clock-o"></i>  @TimeUtils.FriendlyDateString(comment.Date, false)</i>
+            
+
+            <div style="color: white">@Westwind.AspNetCore.Markdown.Markdown.ParseHtmlString(comment.Body)</div>
+                                                                                   
+            <hr />
+        }
+    }
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="/album.js"></script>
+    <script>
+        window.Globals = {
+        }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNCLNZM7P4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SNCLNZM7P4');
+    </script>
+
+</body>
+</html>
+
