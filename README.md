@@ -37,9 +37,9 @@ You also have to provide an **explicitly visible back link** to the following We
 https://anti-trust.rocks
 
 ## Want to Support us?
-Help us out and spread the word! If you like what you hear, please share the [Anti-Trust.rocks](https://anti-trust.rocks) Web site or individual songs on Twitter or Facebook or other social media sites. You can also find our music on [BandCamp.com](https://anti-trust.bandcamp.com/) and sharing there helps out too
+Help us out and spread the word! If you like what you hear, please share the [Anti-Trust.rocks](https://anti-trust.rocks) Web site or individual songs on Twitter or Facebook or other social media sites. And please star :star: this GitHub repository.
 
-If you like what you're hearing, you can also buy a license or make a donation with an amount of your choice. 
+If you like what you're hearing, you can also buy a hand numbered, limited run CD, stickers, or simply make a donation with an amount of your choice.
 
 **Pay it forward with value for value.**
 
