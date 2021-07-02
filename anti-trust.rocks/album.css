@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
     color: steelblue !important;
     background: #222;
     text-decoration: none;
-    max-width: 10.5em; 
+    width: 50vmin; 
 }
 
 .buy-button:hover {
@@ -169,9 +169,9 @@ a:hover {
 }
 
 .hoverbutton:hover {
-    background: #eee;l
-    color: black;
-    border: solid 1px silver;
+    background: #444;
+    color: #eee;
+    border: solid 1px #626262;
     border-radius: 3px;
     text-decoration: none;
 }
