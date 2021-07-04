@@ -24,6 +24,17 @@
         public string file { get; set; }
         public string lyrics { get; set; }
     }
+
+    public string SplitSongAndBand(string title) {
+        if (!title.Contains('('))
+            return title;
+
+        var tokens = title.Split('(');            
+        var ptitle = tokens[0].TrimEnd(new [] {' ', '(' });
+        var band = tokens[1].TrimEnd(new [] {' ', ')' });
+
+        return HtmlUtils.DisplayMemoEncoded(ptitle + "\n(" + band + ")");
+    }
 }
 @{
     var title = RouteData.Values["title"] as string;
@@ -94,15 +105,17 @@
     
     <div class="page-container"></div>
 
+
+
     <div class="container" id="Body">
         <div style="margin: 0 auto; background: transparent;">   
             <a class="audio-player" onclick="player.startStop()" title="Play song: @song.title">
                 <i class="play-icon far fa-play-circle"></i>
             </a>
-            <div class="song-title">@song.title</div>                        
+            <div class="song-title">@Html.Raw(SplitSongAndBand(song.title))</div>                        
             <div class="song-info">                
                 @song.playTime - <small>@song.credits</small>
-                
+                                
                 <hr style="margin: 1em 0 0.5em" />
                
                 <span> 
