@@ -33,6 +33,11 @@ html, body{
     max-width: 1440px;
 }
 
+/* Credits Table */
+.table { font-size: 0.8em; font-weight: normal }
+.table td { padding: 0.1em 1em; }
+.table td:nth-child(2) { font-weight: bold; color: #aaa;  }
+
 .song-title  {
   font-weight: bold;  
   font-size: 9vmin;

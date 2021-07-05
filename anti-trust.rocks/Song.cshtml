@@ -20,6 +20,7 @@
     {
         public string title { get; set; }
         public string credits { get; set; }
+        public string players {get; set; }
         public string playTime { get; set; }
         public string file { get; set; }
         public string lyrics { get; set; }
@@ -113,9 +114,23 @@
                 <i class="play-icon far fa-play-circle"></i>
             </a>
             <div class="song-title">@Html.Raw(SplitSongAndBand(song.title))</div>                        
-            <div class="song-info">                
-                @song.playTime - <small>@song.credits</small>
-                                
+            <div class="song-info">  
+
+              <table class="table">
+                    <tr>
+                        <td>Playtime</td>
+                        <td>@song.playTime minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Song Writing</td>
+                        <td>@song.credits</td>
+                    </tr>
+                    <tr>
+                        <td>Players</td>
+                        <td>@song.players</td>
+                    </tr>
+
+                </table>                             
                 <hr style="margin: 1em 0 0.5em" />
                
                 <span> 

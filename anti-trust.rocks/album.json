@@ -6,6 +6,7 @@
             "title": "No Privacy",
             "playTime": "2:24",
             "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals, Backups: Strahl, Drums: Kontos",
             "file": "01 No Privacy.mp3",
             "lyrics": "01 No Privacy.txt"
         },
@@ -13,6 +14,7 @@
             "title": "I am You",
             "playTime": "2:39",
             "credits": "Music Strahl, Lyrics Andersen",
+            "players": "Guitar, Bass: Strahl, Vocals: Strahl & Kontos, Drums: Kontos",
             "file": "02 I am You.mp3",
             "lyrics": "02 I am You.txt"
         },
@@ -20,6 +22,7 @@
             "title": "Antisocial",
             "playTime": "2:26",
             "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals, Strahl, Drums: Kontos, Backups: Strahl & Kontos",
             "file": "03 Antisocial.mp3",
             "lyrics": "03 Antisocial.txt"
         },
@@ -28,6 +31,7 @@
             "playTime": "3:09",
             "credits": "Music and Lyrics Strahl",
             "file": "04 Day by Day.mp3",
+            "players": "Guitar, Bass, Vocals, Strahl",
             "lyrics": "04 Day by Day.txt"
         },
         {
@@ -35,12 +39,14 @@
             "playTime": "1:44",
             "credits": "Music and Lyrics Strahl & Kontos",
             "file": "05 Sick Inside.mp3",
+            "players": "Guitar, Bass: Strahl, Vocals: Kontos, Backups: Strahl & Kontos",
             "lyrics": "05 Sick Inside.txt"
         },
         {
             "title": "No More Lies",
             "playTime": "2:15",
             "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 No More Lies.mp3",
             "lyrics": "06 No More Lies.txt"
         },
@@ -49,6 +55,7 @@
             "playTime": "1:24",
             "credits": "Music Strahl",
             "file": "07 Lost.mp3",
+            "players": "Guitar: Strahl",
             "lyrics": ""
         },
         {
@@ -56,6 +63,7 @@
             "playTime": "2:50",
             "credits": "Music and Lyrics Strahl",
             "file": "08 Fear Factory.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
             "lyrics": "08 Fear Factory.txt"
         },
         {
@@ -63,6 +71,7 @@
             "playTime": "0:50",
             "credits": "Music and Lyrics Strahl",
             "file": "09 Misery.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl",
             "lyrics": "09 Misery.txt"
         },
         {
@@ -70,6 +79,7 @@
             "playTime": "2:08",
             "credits": "Music and Lyrics Strahl",
             "file": "10 Guilty as Charged.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl, Drums: Kontos",
             "lyrics": "10 Guilty as Charged.txt"
         },
         {
@@ -77,12 +87,14 @@
             "playTime": "2:53",
             "credits": "Music Strahl, Vox & Lyrics Andersen",
             "file": "11 Realities of Violence.mp3",
+            "players": "Guitar, Bass, Vocals: Andersen, Drums: Kontos, Backups: Strahl",
             "lyrics": "11 Realities of Violence.txt"
         },
         {
             "title": "Change",
             "playTime": "2:57",
             "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
             "file": "12 Change.mp3",
             "lyrics": "12 Change.txt"
         },
@@ -90,12 +102,14 @@
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",
             "credits": "Music Garrat, Lyrics Harper",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
             "file": "13 Organized Crime.mp3",
             "lyrics": "13 Organized Crime.txt"
         },
         {
             "title": "Protest the Possibility (Discharge)",
             "playTime": "3:31",
+            "players": "Guitar, Bass, Vocals: Strahl",
             "credits": "Music and Lyrics Discharge",
             "file": "14 Protest the Possibility.mp3",
             "lyrics": "14 Protest the Possibility.txt"
