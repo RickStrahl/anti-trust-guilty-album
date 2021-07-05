@@ -13,14 +13,15 @@ public class PostInfo {
     public int Comments { get; set; }
 
     public string FullPath {get; set; }
-    public string Url { get {
-            var url = StringUtils.ExtractString(FullPath, "weblog\\", "\\index.md").Replace("\\","/");
+    public string Url { 
+        get {
+            var url = StringUtils.ExtractString(FullPath, "weblog\\", "\\post.md").Replace("\\","/");
             if (string.IsNullOrEmpty(url))
-                url = StringUtils.ExtractString(FullPath, "weblog/", "/index.md");
+                url = StringUtils.ExtractString(FullPath, "weblog/", "/post.md");
             if (string.IsNullOrEmpty(url))
                return FullPath;
 
-            return url;
+            return  "/weblog/" + url.TrimStart('/');
         }
     }
 }
@@ -48,7 +49,7 @@ public PostInfo GetPostInfo(string mdFile) {
 
 }
 @{
-    string title = "Anti-Trust Weblog";
+    string title = "Anti-Trust News";
     
     string pageUrl = "https://anti-trust.rocks/weblog";
 
@@ -101,8 +102,13 @@ public PostInfo GetPostInfo(string mdFile) {
     @foreach (var file in files)
     {
         var pi = GetPostInfo(file.FullName);
-        <a href="/weblog/@pi.Url">@pi.Title</a> @pi.Url
-        <div><small>@TimeUtils.FriendlyDateString(pi.PostDate, false)</small> @pi.Url</div>
+
+        <h2 style="margin-bottom: 0.2em"> <a href="@pi.Url" style="color: lightsteelblue">@pi.Title</a></h2>        
+        <div style="margin-top: 0">
+            <small>@TimeUtils.FriendlyDateString(pi.PostDate, false)</small>
+            <hr />
+            <div>@pi.Url</div>
+        </div>
     }
 
     </div>
