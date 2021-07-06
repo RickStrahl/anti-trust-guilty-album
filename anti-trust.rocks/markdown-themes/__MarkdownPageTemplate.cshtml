@@ -39,10 +39,19 @@
         pre > code {
             white-space: pre;
         }
-        .container {
-            margin: 8vmin auto 0;
+        #MainContent {
+            margin: inherit auto;
+            margin-top: -8.5vmin; 
+            font-size: 2.4vmin;
             max-width: 1200px;
+            
         }
+        @@media(max-width: 768px) {
+            #MainContent {
+                margin: inherit 10px !important;
+            }
+        }
+       
         h1 {
             font-size: 2.15em;            
             font-weight: bold;
@@ -59,19 +68,27 @@
         .toolbarcontainer a {
             color: #eee;
         }
+        .post-time {
+            font-size: 0.8em;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
     </style>
 </head>
 <body>
-    <div class="toolbarcontainer">
-        <a href="../" class="hoverbutton"><i class="fas fa-arrow-circle-left" style="color: steelblue"></i> Songs</a> |
+	 <div class="toolbarcontainer">
+	 	<a href="/" class="hoverbutton"><i class="fas fa-play text-green" style="color: green"></i> Listen</a> |
         <a href="https://github.com/RickStrahl/anti-trust-guilty-album" class="hoverbutton"><i class="fas fa-cloud-download-alt text-green" style="color: steelblue"></i> Free Download</a> |
+		<a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="hoverbutton"><i class="fas fa-compact-disc"  style="color: goldenrod"></i>
+			 Buy CD</a> |
         <a href="/t-shirt" class="hoverbutton"><i class="fas fa-tshirt" style="color: darkgoldenrod"></i> T-Shirts</a> |
-        <a href="https://store.west-wind.com/product/order/antitrust_guilty" class="hoverbutton"><i class="fas fa-money-bill-wave" style="color: green"></i> Support us</a>
+        <a href="https://github.com/RickStrahl/anti-trust-guilty-album#want-to-support-us" class="hoverbutton"><i class="fas fa-money-bill-wave" style="color: green"></i> Support us</a>
     </div>
 
-    <div class="page-container"></div>
+    <img src="/images/Page-Header.png" style="opacity: 0.40"/>
     
-    <div id="MainContent" class="container">                   
+    <div id="MainContent"  >                         
         @Model.RenderedMarkdown 
     </div>
 
