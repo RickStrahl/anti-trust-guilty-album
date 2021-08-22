@@ -205,3 +205,8 @@ text-error {
 [v-cloak] {
     display: none;
 }
+@media(max-width: 520px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
