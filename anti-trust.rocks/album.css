@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     max-width: 100%;
     overflow: auto;
-    margin-top: -4.5em;
+    margin-top: -5.5em;
     padding: 2em 2em;
     background-color: transparent;
     box-sizing: border-box;
@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb {
 /*}*/
 
 .header {
-    font-size: 1.15em;
+    font-size: 1.02em;
     font-style: italic;
     font-weight: bold;
     color: #FC1B0A;
@@ -130,7 +130,7 @@ a:hover {
 }
 
 .copyright {
-    font-size: 0.5em;
+    font-size: 0.45em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: #777 !important;
@@ -153,7 +153,7 @@ a:hover {
     vertical-align: top;
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.52rem;
+    font-size: 0.53em;
     font-weight: normal
 }
 
@@ -205,7 +205,7 @@ text-error {
 [v-cloak] {
     display: none;
 }
-@media(max-width: 520px) {
+@media(max-width: 600px) {
     .hidden-sm {
         display: none !important;
     }
