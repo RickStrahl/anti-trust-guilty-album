@@ -17,12 +17,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background: #999;
-    
 }
 
 .page-container {
     background: linear-gradient(#222 10%, #000 100%);     
-    min-height: 100%;
+    min-height: 100%;    
     margin: 0 auto;
     max-width: 1440px;
 }
@@ -153,7 +152,7 @@ a:hover {
     vertical-align: top;
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.53em;
+    font-size: 0.5em;
     font-weight: normal
 }
 
@@ -163,8 +162,8 @@ a:hover {
 
 .hoverbutton {
     text-decoration: none;
+    background: #282828;
     padding: 2px 4px;
-    x-font-size: 1rem;
     border: solid 1px transparent;
 }
 
@@ -208,5 +207,8 @@ text-error {
 @media(max-width: 600px) {
     .hidden-sm {
         display: none !important;
+    }
+    .hoverbutton { 
+        padding: 2px 2px;
     }
 }
