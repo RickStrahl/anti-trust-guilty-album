@@ -9,9 +9,11 @@ This GitHub repository holds all the content for the 14 song **Guilty** album re
 ## Listen Online
 You can check out and listen to all the music for this album on our Web Site:
 
-* [Listen on the Anti-Trust *Guilty* Web Site](https://anti-trust.rocks)
+* [Listen on the Anti-Trust Web Site](https://anti-trust.rocks)
 
-On that site you can find all the songs to browse through and play online, lyrics as well as old photos and band information.  You can also find or buy 'Guilty' on your favorite streaming services:
+On that site you can find all the songs to browse through and play online, lyrics as well as old photos and band information.
+
+You can also find or buy 'Guilty' on your favorite streaming services:
 
 * [Listen on your favorite Streaming Service](https://anti-trust.rocks/stream)
 
