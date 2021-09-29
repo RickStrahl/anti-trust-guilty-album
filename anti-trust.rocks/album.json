@@ -11,6 +11,14 @@
             "lyrics": "01 No Privacy.txt"
         },
         {
+            "title": "Fear Factory",
+            "playTime": "2:50",
+            "credits": "Music and Lyrics Strahl",
+            "file": "08 Fear Factory.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
+            "lyrics": "08 Fear Factory.txt"
+        },
+        {
             "title": "I am You",
             "playTime": "2:39",
             "credits": "Music Strahl, Lyrics Andersen",
@@ -43,14 +51,6 @@
             "lyrics": "05 Sick Inside.txt"
         },
         {
-            "title": "No More Lies",
-            "playTime": "2:15",
-            "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "06 No More Lies.mp3",
-            "lyrics": "06 No More Lies.txt"
-        },
-        {
             "title": "Lost",
             "playTime": "1:24",
             "credits": "Music Strahl",
@@ -59,12 +59,12 @@
             "lyrics": ""
         },
         {
-            "title": "Fear Factory",
-            "playTime": "2:50",
+            "title": "No More Lies",
+            "playTime": "2:15",
             "credits": "Music and Lyrics Strahl",
-            "file": "08 Fear Factory.mp3",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
-            "lyrics": "08 Fear Factory.txt"
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "06 No More Lies.mp3",
+            "lyrics": "06 No More Lies.txt"
         },
         {
             "title": "Misery",
@@ -97,6 +97,14 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "12 Change.mp3",
             "lyrics": "12 Change.txt"
+        },
+        {
+            "title": "Ghost Rider",
+            "playTime": "2:59",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "15 Ghost Rider.mp3",
+            "lyrics": "15 Ghost Rider.txt"
         },
         {
             "title": "Organized Crime (UK Subs)",

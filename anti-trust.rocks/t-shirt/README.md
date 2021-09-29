@@ -1,15 +1,22 @@
-# Print your own Anti-Trust T-Shirt
+# Get the T-Shirt
 
 ![](T-Shirt.png)
 
-Want an Anti-Trust Guilty T-Shirt? In the open source spirit **you can make your own T-shirts**! This folder contains a `png` transparent image file that you can use to print your own T-Shirts, hats, patches etc.
+Want an Anti-Trust Guilty T-Shirt? In the open source spirit **you can make your own T-shirts** or buy a T-Shirt directly from us! 
 
-The image contained here is a **negative image** of the Guilty cover logo (ie. white/red foreground with transparent background), which means it **will only work for printing onto a  black or dark background**.
+### Buy a Ready-Made T-Shirt
+You can buy a ready-made T-Shirt from our merchandise shop at:
+
+* [Anti-Trust Merchandise](https://anti-trust.myspreadshop.com/)
+
+You can find various types of T-Shirts, sweat shirts, hoodies and other paraphenelia.
+
+### Print your own T-Shirts using Amazon Vendors printing Shirts
+You can download a  transparent image `png` file, that you can use to print your own T-Shirts, hats, patches etc. The image contained here is a **negative image** of the Guilty cover logo (ie. white/red foreground with transparent background), which means it **will only work for printing onto a black or dark background surfaces**.
 
 [Open and Save T-Shirt Image](T-Shirt-Art-Negative.png){target="_blank"}
 
-### Links to Amazon Vendors printing Shirts
-You can easily get T-Shirts printed online these days at Amazon or other online retailers. You can provide the artwork provided here and order and pay for your shirts directly through Amazon.
+There are a number of shops online that you can use to get T-Shirts Printed and shipped to you. 
 
 Here are a couple of Amazon vendors I've used personally to print these shirts and that provide good prints and decent quality shirts:
 
@@ -38,3 +45,4 @@ or [Custume Agent Store T-Shirt](https://amzn.to/3oHCOaB)
 * Add to Cart
 
 Each of these Amazon T-Shirt sites works similar but the text and verbiage might be slightly different.
+
