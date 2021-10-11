@@ -52,7 +52,7 @@ if (navigator.mediaSession) {
 paintIcon();
 
 function playAll() {
-    $.get("album.json",function(album) {        
+    $.get("album.json?1.11",function(album) {        
         var player = window.player;
         album.songs.forEach(function(song) {
             player.songs.push(song.file);
