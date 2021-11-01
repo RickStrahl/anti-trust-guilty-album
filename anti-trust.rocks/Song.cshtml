@@ -24,6 +24,15 @@
         public string playTime { get; set; }
         public string file { get; set; }
         public string lyrics { get; set; }
+
+        public string spotifyUrl {get; set; }
+
+        public string amazonUrl {get; set;} 
+        public string appleUrl {get; set;}
+
+        public string googleUrl {get; set; }
+
+        public string youTubeUrl {get; set; }
     }
 
     public string SplitSongAndBand(string title) {
@@ -111,6 +120,7 @@
         
         <a href="/t-shirt/readme.md" class="hoverbutton hidden-sm" title="Make your own T-shirts or buy one from us"><i class="fas fa-tshirt hidden-sm" style="color: darkgoldenrod"></i> T-Shirt</a>
         <a href="/about" class="hoverbutton" title="Find out more about Anti-Trust and the making of the Guilty album"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
+
     </div>
     
     <div class="page-container"></div>
@@ -156,13 +166,33 @@
 
                     <a title="Share on Facebook"  href="@facebookUrl" target="_blank"><i class="fab fa-facebook" style="color: #3b5998"></i></a>  
 
-                    <a title="Stream on your favorite music streaming service" href="https://anti-trust.rocks/stream" target="_blank"><i class="fas fa-cloud-music" style="color: steelblue"></i></a>
-
+            
                     <a title="Download Song" href="https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Album/@song.file"><i class="fas fa-cloud-download" style="color: #eee"></i></a>     
                     <a title="Download Album" href="https://github.com/RickStrahl/anti-trust-guilty-album" target="_blank"><i class="fad fa-album" style="color: darkgoldenrod"></i></a>     
                                         
-                    <a title="Buy Album" href="https://store.west-wind.com/product/order/antitrust_guilty" target="_blank"><i class="fas fa-money-bill-wave" style="color: green; font-size: 0.8em"></i></a>              
+                    <a title="Buy Album" href="https://store.west-wind.com/product/order/antitrust_guilty" target="_blank" style="padding-right: 1em"><i class="fas fa-money-bill-wave" style="color: green; font-size: 0.8em"></i></a> 
 
+
+                    <a title="Stream album on your favorite music streaming service" href="https://anti-trust.rocks/stream" target="_blank"><i class="fas fa-cloud-music" style="color: steelblue"></i></a>
+
+                    @if(!string.IsNullOrEmpty(song.spotifyUrl)) 
+                    {
+                    <a href="@song.spotifyUrl" title="listen to song on Spotify" target="_blank"><i class="fab fa-spotify" style="color: green" ></i></a>
+                    }
+
+                    
+                    @if(!string.IsNullOrEmpty(song.appleUrl)) {
+                    <a href="@song.appleUrl" title="listen or buy song on Apple Music" target="_blank"><i class="fab fa-apple" style="color: #eee"></i></a>
+                    }
+
+
+                    @if(!string.IsNullOrEmpty(song.amazonUrl)) {
+                    <a href="@song.amazonUrl" title="listen or buy song on Amazon Music" target="_blank"><i class="fab fa-amazon" style="color: goldenrod" ></i></a>
+                    }
+
+                     @if(!string.IsNullOrEmpty(song.googleUrl)) {
+                    <a href="@song.googleUrl" title="listen to song on You Tube or Google Music" target="_blank"><i class="fab fa-youtube" style="color: red" ></i></a>
+                    }
                 </span>
             </div>           
 
