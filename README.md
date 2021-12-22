@@ -4,7 +4,7 @@
 
 Anti-Trust is a Punk Rock music side project created by Rick Strahl, in collaboration with fellow former Attitude Adjustment band members Chris Kontos and Andy Andersen. 
 
-This GitHub repository holds all the content for the 14 song **Guilty** album release, including all the music files and support assests for this Punk Rock Album release. You can download both individual songs and the full album from here **for free**.
+This GitHub repository holds all the content for the official 12 song **Guilty** album release **plus 3 bonus songs** and some extras, including all the music files and support assets. You can download both individual songs and the full album from here **for free**.
 
 ## Listen Online
 You can check out and listen to all the music for this album on our Web Site:
