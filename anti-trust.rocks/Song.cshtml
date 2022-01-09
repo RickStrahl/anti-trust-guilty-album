@@ -1,6 +1,7 @@
 @page "/{album}/{title?}"
 
 @using Westwind.Utilities
+@using Microsoft.AspNetCore.Http
 
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
 @functions {
@@ -48,20 +49,18 @@
 }
 @{
     var title = RouteData.Values["title"] as string;
+    var albumName = RouteData.Values["album"] as string ?? "guilty";
+    
     var rawTitle = title;
     title = title?.Replace("-", " ");
     string json = null;
     string fileName = null;
     string pageUrl = "https://anti-trust.rocks" + HttpContext.Request.Path;
 
+    fileName = System.IO.Path.Combine(Host.WebRootPath, albumName + ".json");
+    json = await  System.IO.File.ReadAllTextAsync(fileName);
 
-    if (Album == null || Album.songs.Count < 1)
-    {
-        fileName = System.IO.Path.Combine(Host.WebRootPath, "album.json");
-        json = await  System.IO.File.ReadAllTextAsync(fileName);
-
-        Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
-    }
+    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
 
     song = Album.songs.FirstOrDefault(s => s.title.Equals(title, StringComparison.OrdinalIgnoreCase));
     if (song == null)
@@ -98,7 +97,7 @@
         1200 x 628 or 1200x1200 
         https://cards-dev.twitter.com/validator
         https://developers.facebook.com/tools/debug/
-    -->
+    --> 
     <meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png" />
 
     <link rel="stylesheet" href="/album.css?v1.1.4" />
@@ -207,8 +206,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="/album.js"></script>
     <script>
+        var song = "@song.file";        
+        if (!song.startsWith("http"))
+            song ="@GitHubBaseUrl/" + song;
+        
         window.Globals = {
-            songToPlay: "@GitHubBaseUrl/@song.file"
+            songToPlay: song
         }
     </script>
 <script src="/song.js"></script>
