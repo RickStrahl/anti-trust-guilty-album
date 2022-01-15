@@ -11,13 +11,12 @@ html, body{
     width: 100%;
     top: 20px; left:0; right: 0; bottom: 0;
     z-index: 1;
-    background: url(Guilty-Cover.png);
+    background-image: url(Guilty-Cover.jpg);
     background-size: 100%;
     padding: 0;
     background-repeat:  no-repeat; 
     background-color: black;
     opacity: 0.2;
-
     box-sizing: content-box;
     max-width: 100%;    
 
@@ -44,6 +43,11 @@ html, body{
   font-style: italic;
   color: #ff0000;
   text-shadow: 0.01em 0.01em #656565;
+}
+@media(min-width: 1441px) {
+    .song-title  {
+        font-size: 7.9vmin;
+    }
 }
 .song-info {
     font-size: 2.75vmin; font-style: italic; 

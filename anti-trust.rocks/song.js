@@ -70,26 +70,6 @@ player.initialize(".player", ".play-icon", window.Globals.songToPlay);
 
 var song = getUrlEncodedKey("t");
 song = song.replace(/-/g," ");
-$.getJSON("album.json",function(album) {
-    model = album.songs.find( (s)=> s.title.toLowerCase() == song.toLowerCase() );
-    if (!model)
-        window.location.href="/";
-
-    if(model.lyrics) {
-        $.get(model.lyrics, (l) => {
-            model.lyrics = l;
-            model.player = player;
-
-            //Vue.createApp(vue).mount('#Body');
-            vue = new Vue(vueConfig);
-        });
-    }
-    else {
-        model.lyrics = '';
-        model.player = player;
-        vue = new Vue(vueConfig);
-    }
-});
 
 function getUrlEncodedKey(key, query) {
     if (!query)
