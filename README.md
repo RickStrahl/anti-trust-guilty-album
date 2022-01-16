@@ -41,6 +41,8 @@ You also must provide an **explicitly visible back link to the  Anti-Trust Web S
 
 https://anti-trust.rocks
 
+Under no circumstances are you allowed to re-package this content under different names or branding.
+
 For other licensing arrangements please contact:
 
 anti-trust@west-wind.com
