@@ -4,7 +4,7 @@
 
 Anti-Trust is a Punk Rock music side project created by Rick Strahl, in collaboration with fellow former Attitude Adjustment band members [Chris Kontos](https://en.wikipedia.org/wiki/Chris_Kontos_(musician)) and Andy Andersen. 
 
-This GitHub repository holds all the content for the official 12 song **Guilty** album release **plus 3 bonus songs** and some extras, including all the music files and support assets. You can download both individual songs and the full album from here **for free**.
+This GitHub repository holds all the content for the official 12 song **Guilty** album release **plus 3 bonus songs**, **several new songs that are in progress** and some extras, including all the music files and support assets. You can download both individual songs and the full album from here **for free**.
 
 ## Listen Online
 You can check out and listen to all the music for this album on our Web Site:
@@ -18,10 +18,11 @@ You can also find or buy 'Guilty' on your favorite streaming services:
 * [Listen on your favorite Streaming Service](https://anti-trust.rocks/stream)
 
 ## Download all Music
-In addition to the Web Site I've also decided to make all the digital music and content available here for free. This Github Repository Site provides access to all of the music and support content that you can download from here:
+In addition to the Web Site for **free streaming**, all the digital music and content is available here **for download for free**. This GitHub Repository Site provides access to all of the music and support content that you can download from here:
 
 * [Full Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip)
-* [Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Album)
+* [Guilty Album - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Guilty/mp3)
+* [Angry Album (in progress) - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Angry/mp3)
 
 ## Print your own T-Shirts
 Want an Anti-Trust T-Shirt? We're making artwork available, so you can print your own T-Shirts or other typical merchandise using readily available online services at Amazon and other retailers. You can download the T-Shirt Artwork and use any printing service (we provide a few links) to customize your own T-Shirt.
@@ -30,15 +31,19 @@ Want an Anti-Trust T-Shirt? We're making artwork available, so you can print you
 
 
 ## License
-Any of the Anti-Trust Music provided on this site is **free for personal use**. You can freely download and share this music with your friends. The more the merrier!
+Any of the Anti-Trust Music provided on this site is **free for personal use**. You can listen, freely download and share this music with your friends. The more the merrier!
 
-We also allow for free use of this music for commercial use in online digital or other media content. However, for commercial use you are required to prominently **include the following copyright notice**:
+We also allow for free use of this music for use in online digital or other media content **with proper attribution to Anti-Trust**. For commercial use you are required to prominently **include the following copyright notice**:
 
 **&copy; Anti-Trust Music**
 
-You also have to provide an **explicitly visible back link** to the following Web Site, in any digital content that uses this music, and/or include this link on any pysically distributed content packaging:
+You also must provide an **explicitly visible back link to the  Anti-Trust Web Site**, wherever this content is used, in any digital content that uses this music, and/or include this link on any physically distributed content packaging:
 
 https://anti-trust.rocks
+
+For other licensing arrangements please contact:
+
+anti-trust@west-wind.com
 
 ## Want to Support us?
 Help us out and spread the word! If you like what you hear, please share the [Anti-Trust.rocks](https://anti-trust.rocks) Web site or individual songs on Twitter or Facebook or other social media sites. And please star :star: this GitHub repository.

@@ -1,6 +1,7 @@
 {    
     "displayTitle": "Anti-Trust - Angry!",
     "title": "Angry",
+    "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
     "songs": [        
         {
             "title": "Ghost Rider",
@@ -15,7 +16,7 @@
             "playTime": "3.51",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Album/Bonus/In%20Progress/DivideAndConquer.mp3",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/02%20Divide%20and%20Conquer.mp3",
             "lyrics": "02 Divide and Conquer.txt",
             "spotifyUrl": "",
             "amazonUrl": "",

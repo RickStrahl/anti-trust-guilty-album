@@ -1,9 +1,11 @@
 window.player = {
-    gitHubBaseUrl: "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Album",
+    // baseUrl for songs: should end in /
+    gitHubBaseUrl: "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
     status: 'stopped',
     playerInstance: null,
     onEndedCallback: null,
     // for multi-song mode provide an array of song Urls
+    // array of song objects: { link, title }
     songs: [],
     // set this index to 0 to loop through songs
     // -1 - single play mode
@@ -60,7 +62,8 @@ window.player = {
             player.onSongChanged(src);
 
         // fix up URL
-        src = player.gitHubBaseUrl + "/" + src;            
+        if (!src.startsWith('http'))
+            src = player.gitHubBaseUrl +  src;            
 
         player.instance.src =  src;
         player.instance.play();

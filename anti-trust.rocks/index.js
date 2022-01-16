@@ -52,16 +52,25 @@ if (navigator.mediaSession) {
 paintIcon();
 
 function playAll() {
-    $.get("album.json?1.11",function(album) {        
+    $.get("/albums/" + page.album + "/songs.json?1.15",function(album) {        
         var player = window.player;
         album.songs.forEach(function(song) {
+            if (!song.file.startsWith('http'))
+                song.file = page.songBaseUrl + song.file;
+            
             player.songs.push(song.file);
         });
 
         player.onSongChanged = function(song) {
             var title = "";
             if (song) {
+                song = decodeURI(song);
                 title = song.substr(3).replace(".mp3","");
+                var lastSlash = title.lastIndexOf("/");
+                if (lastSlash > -1 && lastSlash < title.length -1)
+                    title = title.substr(lastSlash + 1);
+                if(title.startsWith('1') || title.startsWith('2') || title.startsWith('0'))
+                    title = title.substr(3);
             }
             $("#SongPlaying").text(title);
             paintIcon();
