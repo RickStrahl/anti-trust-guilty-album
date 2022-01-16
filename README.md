@@ -13,7 +13,7 @@ You can check out and listen to all the music for this album on our Web Site:
 
 On that site you can find all the songs to browse through and play online, lyrics as well as old photos and band information.
 
-You can also find or buy 'Guilty' on your favorite streaming services:
+You can also find, stream or buy 'Guilty' on your favorite streaming services:
 
 * [Listen on your favorite Streaming Service](https://anti-trust.rocks/stream)
 
