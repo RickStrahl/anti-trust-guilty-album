@@ -4,12 +4,11 @@
 @using Microsoft.AspNetCore.Http
 
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+
 @functions {
     public static AlbumData Album { get; set; } = new AlbumData();
     public static SongData song { get; set; }
-
-    public string GitHubBaseUrl {get; set; } = "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Album";
-
+    
     public class AlbumData
     {
         public string displayTitle { get; set; }
@@ -17,7 +16,7 @@
         public string songBaseUrl { get; set; }
         public List<SongData> songs { get; set; } = new List<SongData>();
     }
-
+    
     public class SongData
     {
         public string displayTitle { get; set; }
@@ -35,23 +34,12 @@
         public string googleUrl {get; set; }
         public string youTubeUrl {get; set; }
     }
-
-    public string SplitSongAndBand(string title) {
-        if (!title.Contains('('))
-            return title;
-
-        var tokens = title.Split('(');            
-        var ptitle = tokens[0].TrimEnd(new [] {' ', '(' });
-        var band = tokens[1].TrimEnd(new [] {' ', ')' });
-
-        return HtmlUtils.DisplayMemoEncoded(ptitle + "\n(" + band + ")");
-    }
 }
 @{
     var title = RouteData.Values["title"] as string;
     var albumName = RouteData.Values["album"] as string ?? "guilty";
-    
 
+    //var t = new Albbbum();
     var rawTitle = title;
     title = title?.Replace("-", " ");
     string json = null;
@@ -117,7 +105,7 @@
     <link rel="stylesheet" href="/song.css?v1.1.5" />
     <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
     	<script>
-        if (location.host == "americanparanoia.com")
+        if (location.host === "americanparanoia.com")
         {
             window.location.href="https://anti-trust.rocks" + location.pathname;                        
         }        
@@ -149,7 +137,7 @@
             <a class="audio-player" onclick="player.startStop()" title="Play song: @song.title">
                 <i class="play-icon far fa-play-circle"></i>
             </a>
-            <div class="song-title">@Html.Raw(SplitSongAndBand(song.title))</div>                        
+            <div class="song-title">@Html.Raw(song.title)</div>                        
             <div class="song-info">  
 
               <table class="table">
@@ -241,4 +229,3 @@
 
 </body>
 </html>
-

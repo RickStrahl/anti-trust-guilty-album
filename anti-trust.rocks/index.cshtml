@@ -4,9 +4,7 @@
     public  AlbumData Album { get; set; } = new AlbumData();
     public SongData song { get; set; }
 
-    //public string GitHubBaseUrl {get; set; } = "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Album";
-
-    public class AlbumData
+	public class AlbumData
     {
         public string displayTitle { get; set; }
         public string title { get; set; }
@@ -30,17 +28,6 @@
         public string appleUrl {get; set;}
         public string googleUrl {get; set; }
         public string youTubeUrl {get; set; }
-    }
-
-    public string SplitSongAndBand(string title) {
-        if (!title.Contains('('))
-            return title;
-
-        var tokens = title.Split('(');            
-        var ptitle = tokens[0].TrimEnd(new [] {' ', '(' });
-        var band = tokens[1].TrimEnd(new [] {' ', ')' });
-
-        return HtmlUtils.DisplayMemoEncoded(ptitle + "\n(" + band + ")");
     }
 }
 
