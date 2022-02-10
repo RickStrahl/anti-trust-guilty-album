@@ -1,4 +1,4 @@
-# Anti-Trust Guilty Album - Punk Rock Music
+# Anti-Trust Guilty Album Release to Web
 
 ![](anti-trust.rocks/Guilty-Cover-Square-Card.png)
 
