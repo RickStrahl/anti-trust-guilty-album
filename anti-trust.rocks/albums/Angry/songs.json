@@ -22,6 +22,18 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": ""   
+        },
+        {
+            "title": "Speculate Speculate",
+            "playTime": "3.59",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "03 Speculate Speculate.mp3",
+            "lyrics": "03 Speculate Speculate.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": ""   
         }
     ]
 }
