@@ -154,7 +154,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/01%20Ghost%20Rider.mp3",
             "lyrics": "../Angry/01 Ghost Rider.txt",
-            "groupStart": "Fresh Blood",  
+            "groupStart": "New Offenses",  
             "link": "/Angry/Ghost-Rider"   
         },
         {
@@ -169,6 +169,18 @@
             "appleUrl": "",
             "googleUrl": "",
             "link": "/Angry/Divide-and-Conquer"   
+        },
+        {
+            "title": "Speculate Speculate",
+            "playTime": "4.57",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/03%20Speculate%20Speculate.mp3",
+            "lyrics": "../Angry/03 Speculate Speculate.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": "https://youtu.be/9agtNlxMjmE"   
         },
         {
             "title": "Organized Crime (UK Subs)",
