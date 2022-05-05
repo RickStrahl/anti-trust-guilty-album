@@ -1,6 +1,7 @@
 {    
     "displayTitle": "Anti-Trust - Guilty!",
     "title": "Guilty",
+    "description": "Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
     "songs": [
         {
@@ -8,7 +9,7 @@
             "playTime": "2:50",
             "credits": "Music and Lyrics Strahl",
             "file": "08 Fear Factory.mp3",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "lyrics": "08 Fear Factory.txt",
             "spotifyUrl": "https://open.spotify.com/track/0XG6piwnlNrMnMlfkOS0uo?si=bba76a6902bc42f4",
             "amazonUrl": "https://amzn.to/2Y46feo",
@@ -54,9 +55,9 @@
         {
             "title": "Sick Inside",
             "playTime": "1:44",
-            "credits": "Music and Lyrics Strahl & Kontos, Vox Kontos",
+            "credits": "Music and Lyrics Strahl & Kontos",
             "file": "05 Sick Inside.mp3",
-            "players": "Guitar, Bass: Strahl, Vocals: Kontos, Backups: Strahl & Kontos",
+            "players": "Vocals: Kontos, Guitar, Bass: Strahl, Backups: Strahl & Kontos",
             "lyrics": "05 Sick Inside.txt",
             "spotifyUrl": "https://open.spotify.com/track/7idxLUi8AabGY2zw7ISpkN?si=12c28889737146a1",
             "amazonUrl": "https://amzn.to/2ZFWGTu",
@@ -128,7 +129,7 @@
             "playTime": "2:53",
             "credits": "Music Strahl, Vox & Lyrics Andersen",
             "file": "11 Realities of Violence.mp3",
-            "players": "Guitar, Bass, Vocals: Andersen, Drums: Kontos, Backups: Strahl",
+            "players": "Vocals: Andersen, Guitar, Bass, Drums: Kontos, Backups: Strahl & Andersen",
             "lyrics": "11 Realities of Violence.txt",
             "spotifyUrl": "https://open.spotify.com/track/0dSKVBD5oCHAsmDLiyoC2E?si=d9846dd7f75544e3",
             "amazonUrl": "https://amzn.to/3EuxcY9",
@@ -186,7 +187,7 @@
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",
             "credits": "Music Garrat, Lyrics Harper",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "13 Organized Crime.mp3",
             "lyrics": "13 Organized Crime.txt",
             "spotifyUrl": "",

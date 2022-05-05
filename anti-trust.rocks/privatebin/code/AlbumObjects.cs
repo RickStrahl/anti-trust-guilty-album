@@ -4,6 +4,7 @@ namespace AlbumObjects
     {
         public string displayTitle { get; set; }
         public string title { get; set; }
+        public string description {get; set; }
         public string songBaseUrl { get; set; }
         public List<SongData> songs { get; set; } = new List<SongData>();
     }

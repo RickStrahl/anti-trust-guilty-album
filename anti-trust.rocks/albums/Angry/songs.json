@@ -1,8 +1,9 @@
 {    
     "displayTitle": "Anti-Trust - Angry!",
     "title": "Angry",
+    "description": "Garage Punk Rock from Maui and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
-    "songs": [        
+    "songs": [
         {
             "title": "Ghost Rider",
             "playTime": "3:01",

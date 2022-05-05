@@ -50,12 +50,17 @@ html, body{
     }
 }
 .song-info {
-    font-size: 2.75vmin; font-style: italic; 
+    font-size: 2.75vmin; 
+    font-style: italic; 
     color: #bbb;
 }
+.icon-bar {
+    font-size: 5vmin;
+}
 .lyrics {
-    font-size: 2.8vmin;
-    max-width: 90%;
+    font-size: 2.9vmin;
+    overflow: hidden;
+    padding-bottom: 1em;
 }
 .audio-player {    
     margin-top: 35%;
