@@ -35,6 +35,18 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "https://youtu.be/9agtNlxMjmE"   
+        },
+        {
+            "title": "Rat in a Cage",
+            "playTime": "2.58",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "04 Rat in a Cage.mp3",
+            "lyrics": "04 Rat in a Cage.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": ""   
         }
     ]
 }
