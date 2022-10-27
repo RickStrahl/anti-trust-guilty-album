@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: anti-trust.rocks
+Token: 062ee29bd364b29244bba4045889e04972f1c9a1d1ece02d1470b76a66b57c7a

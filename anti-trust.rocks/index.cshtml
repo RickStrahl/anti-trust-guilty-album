@@ -1,0 +1,253 @@
+﻿@page "/{album?}"
+
+@using AlbumObjects
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+@functions {
+    public  AlbumData Album { get; set; } = new AlbumData();
+    public SongData song { get; set; }
+}
+@{
+	var albumName = RouteData.Values["album"] as string ?? "Guilty"; 
+
+	var fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
+    var json = await  System.IO.File.ReadAllTextAsync(fileName);
+
+    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+	@* <link rel="manifest" href="manifest.json" /> *@
+
+	<title>Anti-Trust - Guilty! (Punk Rock Music)</title>
+	<meta http-equiv="keywords" content="Anti-Trust,Guilty,Punk,Hardcore,Metal,Rock,CrunchCore,Maui,Hawaii,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen,mp3" />
+	<meta http-equiv="description" content="Anti-Trust - Guilty: Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+
+	<link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+
+	<meta property="og:title" content="Anti-Trust - Guilty" />
+	<meta property="og:description" content="Anti-Trust - Guilty: Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />    
+	<meta property="og:url" content="https://anti-trust.rocks" />
+	<meta property="og:type" content="music.album" />
+    <meta property="og:music:album" content="@albumName" />
+    <meta property="og:music:musician" content="Anti-Trust (Punk Rock Music)" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+	<!-- 
+			1200 x 628 or 1200x1200 
+			https://cards-dev.twitter.com/validator
+			https://developers.facebook.com/tools/debug/
+	-->	
+	<meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png" />
+
+	<link rel="stylesheet" href="album.css?v1.1.3" />
+	<script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
+	<script>
+        if (location.host == "americanparanoia.com")
+        {
+            window.location.href="https://anti-trust.rocks";
+        }
+    </script>	
+</head>
+<body> 
+    <div class="toolbarcontainer">
+	 	<a href="#divSongTitles" class="hoverbutton" title="Listen to one or all songs on this site"><i class="fas fa-play text-green" style="color: green"></i> Listen</a>        
+		<a href="/stream" class="hoverbutton"><i class="fas fa-cloud-music"  style="color: steelblue" title="Stream or buy this album from Spotify, Amazon, Apple Music or YouTube Music"></i> Stream</a>
+		<a href="https://github.com/RickStrahl/anti-trust-guilty-album" title="Download the entire album or individual songs for free" class="hoverbutton"><i class="fas fa-cloud-download-alt text-green" style="color: lightgray"></i> Download</a> 
+		<a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="hoverbutton" title="Buy a CD you can hold in your hands"><i class="fas fa-compact-disc"  style="color: goldenrod"></i> Cd</a> 
+		 
+        <a href="/t-shirt/README.md" class="hoverbutton hidden-sm" title="Make your own t-shirts or buy one from us"><i class="fas fa-tshirt" style="color: darkgoldenrod"></i> T-Shirts</a> 
+		<a href="/about" class="hoverbutton" title="About Anti-Trust and the Guilty Release" title="Find out more about Anti-Trust and the making of 'Guilty'"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
+    </div>
+	
+<div class="page-container">
+
+<div class="container">	
+	<img id="cover-image" src="/albums/@albumName/coverImage.jpg"
+		 style="width: 100%; display: block;margin-top: 0.5em; " />
+ 	<div id="divSongTitles">
+		<div  class="header" style="margin-bottom: 0.5em;">
+			Listen to the Evidence
+			<div style="color: white;font-size: 1.3em">
+				<i id="Play" class="fa fa-play-circle" onclick="playAll()"
+				    title="Play all"></i>
+				<i id="Stop" class="fa fa-stop-circle" onclick="player.stop()"
+				   title="Stop playing"></i> 
+				<i id="Pause" class="fa fa-pause-circle" onclick="player.resume(); paintIcon();"
+				   title="Pause playing"></i> 
+				<i id="Next" class="fa fa-forward" onclick="player.next()" style="padding-left: 0.3em; padding-right: 0.2em"
+				   title="Next"></i>
+				<i id="SongPlaying"
+				   style="color: cornsilk; font-size: 0.5em; ">
+					<span style="color: #ccc; font-size: 1.15em;">play all</span>
+				</i>
+			</div>
+		</div>
+		<ol style="margin-top: 0">
+		@foreach(var song in Album.songs){		
+			var link = song.link ?? $"/{albumName}/" + song.title?.Replace(" ", "-");
+			if(!string.IsNullOrEmpty(song.groupStart))
+			{
+				<h3 class="header" style="margin-left: -0.5em">@song.groupStart</h3>
+			}
+
+			<li><a href="@link" title="Listen to @song.title">@song.title</a> <small>(@song.playTime)</small>
+				<div class="copyright">(@song.credits)</div>
+			</li>
+		}
+		</ol>
+
+		<h3 class="header">Guilty Parties</h3>
+
+		<style>
+			.artist { font-weight: bold; color: white; font-size: 1.1em; }			
+		</style>
+		<div>
+			<p>
+				<div class="artist">Rick Strahl</div>
+				<div class="copyright">
+					Guitar, Bass, Vocals, Backups<br/>
+				</div>
+			</p>
+			@if (albumName.Equals("Guilty", StringComparison.OrdinalIgnoreCase)) 
+			{
+				<p>
+					<div class="artist">Chris Kontos</div>
+					<div class="copyright">Drums, Backups, Vox</div>
+				</p>
+			}
+			<p>
+				<div class="artist">Andy Andersen</div>
+				<div class="copyright">Backups, Vox</div>
+			</p>
+
+			<hr>
+
+			<div class="liner" style="margin-top: 1.3em;margin-bottom: 1em;">
+				Punk Rock Garage Recorded<br/>
+				between 2000-2022<br/>
+				on Maui, HI and Oakland, CA
+			</div>		
+
+			<small style="font-size: 0.8em">&copy; Anti-Trust, 2002-2022<br>
+				&nbsp;&nbsp;all rights reserved</small>
+		</div>
+
+		
+		<div class="header">Bribes</div>
+		<div style="font-size: 0.5em; font-weight: normal; margin-bottom: 2em;">
+		<p>
+			You can listen to these songs here online all you want! 
+		</p>
+		<p> 
+		 	You can also download individual tracks or the entire album <b>for free</b>, buy a physical CD,
+			listen to our music on popular streaming services and print your own T-shirts.		
+		</p>
+		<p>
+			<b>Please share the site and music with your friends!</b>
+		</p>
+		</div>
+
+		<a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" class="buy-button">
+			<i class="fas fa-fw fa-cloud-download-alt text-green" style="font-size: 0.6em"></i> Download Album
+		</a>		
+		<a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="buy-button mt-1">
+			<i class="fas fa-fw fa-compact-disc text-green" style="font-size: 0.6em"></i> Buy the CD
+		</a>
+
+		<a href="/stream" class="buy-button mt-1" title="Stream on Spotify, Apple Music, Amazon or You Tube">
+			<i class="fas fa-fw fa-cloud-music text-green" style="font-size: 0.6em"></i> Stream Online
+		</a>
+
+		<a href="/t-shirt/readme.md" 
+		   class="buy-button mt-1" title="purchase digital version">
+			<i class="fas fa-fw fa-tshirt text-green" style="font-size: 0.6em"></i> Get the T-Shirt
+		</a>
+
+		<a href="https://github.com/RickStrahl/anti-trust-guilty-album#want-to-support-us" 
+		   class="buy-button mt-1" title="purchase digital version">
+			<i class="fas fa-fw fa-money-bill-wave text-green" style="font-size: 0.6em"></i> Support us
+		</a>
+
+		<div class="header">Share the Loot</div>              
+		<a title="Share on Twitter"  
+				href="https://twitter.com/intent/tweet?text=Check out this band: Anti-Trust%0A%0Ahttps://anti-trust.rocks%0A%23PunkRock %23AntiTrust" 
+				target="_blank"><i class="fab fa-twitter" style="color: #55acee"></i></a>                                        
+
+		<a title="Share on Facebook"  href="https://www.facebook.com/sharer.php?&u=https://anti-trust.rocks" target="_blank"><i class="fab fa-facebook" style="color: #3b5998"></i></a>      			
+		<a title="Share via Email"  href="mailto:recipient?subject=Anti-Trust Punk Rock Music&body=Check out this band: Anti-Trust%0A%0Ahttps://anti-trust.rocks%0A%23PunkRock %23AntiTrust" target="_blank"><i class="fas fa-envelope" style="color: #3b5998"></i></a>      			
+
+
+		<div class="header">Contact</div>              
+			<a title="Send a message to Anti-Trust" 
+					href="mailto:anti-trust.rocks"
+					target="_blank"><i class="fas fa-envelope" style="color: #55acee"></i></a>                                        
+			
+		<div class="header">All Offenses</div>
+		<ul style="margi-top:0">
+			<li><a href="/Guilty">Guilty <small style='font-size: 0.5em; font-weight: normal'>(2022)</small></a></li>
+			<li><a href="/Angry">Angry <small style='font-size: 0.5em; font-weight: normal'>(in progress)</small></li>
+		</ul>
+
+
+		<div class="header" >Mug Shots</div>
+	</div>
+
+	<div class="image-list">
+		<div class="image-container" >
+			<img src="images/Photo3.jpg"/>
+		</div>
+		<div class="image-container">
+			<img src="images/Photo2.jpg"/>
+		</div>
+		<div class="image-container" >
+			<img src="images/Photo4.jpg"/>
+		</div>
+		<div class="image-container">
+			<img src="images/Photo5.jpg"/>
+		</div>
+		<div class="image-container">
+			<img src="images/Photo6.jpg"/>
+		</div>
+		<div class="image-container">
+			<img src="images/Photo7.jpg"/>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<audio id="Player" controls style="display:none">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script>
+window.page = {
+	album: '@albumName',
+	songBaseUrl: '@Album.songBaseUrl'	
+}
+</script>
+<script src="music-player.js"></script>
+<script src="index.js"></script>
+
+@* <script type=module>
+	import 'https://cdn.jsdelivr.net/npm/@@pwabuilder/pwaupdate';
+
+	const el = document.createElement('pwa-update');
+	document.body.appendChild(el);
+</script> *@
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNCLNZM7P4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SNCLNZM7P4');
+</script>
+
+</body>
+</html>

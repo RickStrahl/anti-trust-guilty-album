@@ -1,0 +1,63 @@
+{    
+    "displayTitle": "Anti-Trust - Angry!",
+    "title": "Angry",
+    "description": "Garage Punk Rock from Maui and San Francisco with former members from Attitude Adjustment and Attitude",
+    "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
+    "songs": [
+        {
+            "title": "Speculate Speculate",
+            "playTime": "4.57",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "03 Speculate Speculate.mp3",
+            "lyrics": "03 Speculate Speculate.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": "https://youtu.be/9agtNlxMjmE"   
+        },        
+        {
+            "title": "Rat in a Cage",
+            "playTime": "3.08",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "04 Rat in a Cage.mp3",
+            "lyrics": "04 Rat in a Cage.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": ""   
+        },
+        {
+            "title": "Divide and Conquer",
+            "playTime": "3.51",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "02 Divide and Conquer.mp3",
+            "lyrics": "02 Divide and Conquer.txt",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": ""   
+        },
+        
+        {
+            "title": "Ghost Rider",
+            "playTime": "3:01",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "01 Ghost Rider.mp3",
+            "lyrics": "01 Ghost Rider.txt"
+        },
+
+        {
+            "title": "Culture of the Vulture",
+            "playTime": "3:20",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "05 Culture of the Vulture.mp3",
+            "lyrics": "05 Culture of the Vulture.txt"
+        }
+        
+    ]
+}

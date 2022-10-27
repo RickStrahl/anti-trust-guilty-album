@@ -1,0 +1,116 @@
+@page
+@using System.IO;
+@using Westwind.Utilities;
+
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment hostEnvironment;
+
+@functions {
+
+public class PostInfo {
+    public string Title { get; set; }
+
+    public DateTime PostDate {get; set; }
+    public int Comments { get; set; }
+
+    public string FullPath {get; set; }
+    public string Url { 
+        get {
+            var url = StringUtils.ExtractString(FullPath, "weblog\\", "\\post.md").Replace("\\","/");
+            if (string.IsNullOrEmpty(url))
+                url = StringUtils.ExtractString(FullPath, "weblog/", "/post.md");
+            if (string.IsNullOrEmpty(url))
+               return FullPath;
+
+            return  "/weblog/" + url.TrimStart('/');
+        }
+    }
+}
+public PostInfo GetPostInfo(string mdFile) {
+    var PostInfo = new PostInfo() { FullPath = mdFile };
+
+    var fi = new FileInfo(mdFile);
+    if (fi.Exists) {
+        var content = System.IO.File.ReadAllText(mdFile);
+        if (!content.StartsWith("---"))
+           PostInfo.Title = "NO YAML DATA";
+        else {
+            PostInfo.Title =  StringUtils.ExtractString(content,"title:","\n")?.Trim();
+            var postDate = StringUtils.ExtractString(content,"postDate:","\n")?.Trim();
+            if (!string.IsNullOrEmpty(postDate))
+            {
+                var date = JsonSerializationUtils.Deserialize<DateTime>("\"" + postDate + "\"");
+                PostInfo.PostDate = date;
+            }
+        }
+    }
+
+    return PostInfo;
+}
+
+}
+@{
+    string title = "Anti-Trust News";
+    
+    string pageUrl = "https://anti-trust.rocks/weblog";
+
+    var dir = new DirectoryInfo( System.IO.Path.Combine( hostEnvironment.WebRootPath, "weblog"));
+    var files = dir.GetFiles("*.md",SearchOption.AllDirectories);    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+
+    <title>@title</title>
+    <meta http-equiv="keywords" content="Anti-Trust,@title,Guilty,Punk,Hardcore,Metal,Rock,Maui,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen" />
+    <meta http-equiv="description" content="@title (song) by Anti-Trust. Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+   
+    <meta property="og:title" content="Anti-Trust News" />
+    <meta property="og:description" content="@title (song) by Anti-Trust. Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:url" content="@pageUrl" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- 
+        1200 x 628 or 1200x1200 
+        https://cards-dev.twitter.com/validator
+        https://developers.facebook.com/tools/debug/
+    -->
+    <meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png" />
+
+    <link rel="stylesheet" href="/album.css" />
+    <link rel="stylesheet" href="/song.css" />
+    <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="toolbarcontainer">
+        <a href="../" class="hoverbutton"><i class="fas fa-arrow-circle-left" style="color: steelblue"></i> Back to All Songs</a> |
+        <a href="https://store.west-wind.com/product/order/antitrust_guilty" class="hoverbutton"><i class="fas fa-money-bill-wave" style="color: green"></i> Buy Album</a>
+    </div>
+    
+    <div class="page-container" style="opacity: 0.08;top: 7rem; bottom: 5rem"></div>
+
+    <div class="container" id="Body">
+
+    <h1 style="border-bottom: 1px solid #eee; padding-bottom: 0.2em;">
+        @title
+    </h1>
+
+    @foreach (var file in files)
+    {
+        var pi = GetPostInfo(file.FullName);
+
+        <h2 style="margin-bottom: 0.2em"> <a href="@pi.Url" style="color: lightsteelblue">@pi.Title</a></h2>        
+        <div style="margin-top: 0">
+            <small>@TimeUtils.FriendlyDateString(pi.PostDate, false)</small>
+            <hr />
+            <div>@pi.Url</div>
+        </div>
+    }
+
+    </div>
+</body>
+</html>

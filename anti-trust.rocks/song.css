@@ -1,0 +1,84 @@
+html, body{
+    background: black !important;
+    color: white;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    position: fixed;
+    width: 100%;
+    top: 20px; left:0; right: 0; bottom: 0;
+    z-index: 1;
+    background-image: url(Guilty-Cover.jpg);
+    background-size: 100%;
+    padding: 0;
+    background-repeat:  no-repeat; 
+    background-color: black;
+    opacity: 0.2;
+    box-sizing: content-box;
+    max-width: 100%;    
+
+}
+.container {
+    position: absolute;
+    top: 0; left: 0;  bottom: 0; right: 0;
+    z-index: 5;    
+    box-sizing: content-box;
+    background: transparent;
+
+    padding: 0 5vmin;
+    max-width: 1440px;
+}
+
+/* Credits Table */
+.table { font-size: 0.8em; font-weight: normal }
+.table td { padding: 0.1em 1em; }
+.table td:nth-child(2) { font-weight: bold; color: #aaa;  }
+
+.song-title  {
+  font-weight: bold;  
+  font-size: 8.2vmin;
+  font-style: italic;
+  color: #ff0000;
+  text-shadow: 0.01em 0.01em #656565;
+}
+@media(min-width: 1441px) {
+    .song-title  {
+        font-size: 7.9vmin;
+    }
+}
+.song-info {
+    font-size: 2.75vmin; 
+    font-style: italic; 
+    color: #bbb;
+}
+.icon-bar {
+    font-size: 5vmin;
+}
+.lyrics {
+    font-size: 2.9vmin;
+    overflow: hidden;
+    padding-bottom: 1em;
+}
+.audio-player {    
+    margin-top: 35%;
+    font-size: 22vmin;
+    color: #ccc;
+    
+    text-align: center;
+    display: block;
+}
+.play-icon:hover {
+  color: cornsilk;
+  transition: 1s color;
+  
+}
+
+
+@media(min-width: 1441px) {
+    .audio-player {    
+       margin-top: 25%; 
+    }
+}

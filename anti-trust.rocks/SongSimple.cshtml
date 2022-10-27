@@ -1,0 +1,125 @@
+@page "/songsimple/{title?}"
+
+
+@using Westwind.Utilities
+
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+@functions {
+    public static AlbumData Album { get; set; } = new AlbumData();
+    public static SongData song { get; set; }
+
+    public class AlbumData
+    {
+        public string displayTitle { get; set; }
+        public string title { get; set; }
+        public List<SongData> songs { get; set; } = new List<SongData>();
+    }
+
+    public class SongData
+    {
+        public string title { get; set; }
+        public string credits { get; set; }
+        public string playTime { get; set; }
+        public string file { get; set; }
+        public string lyrics { get; set; }
+    }
+}
+
+@{
+    var title = RouteData.Values["title"] as string;
+    title = title?.Replace("-", " ");
+    string json = null;
+    string fileName = null;
+
+
+    if (Album == null || Album.songs.Count < 1)
+    {
+        fileName = System.IO.Path.Combine(Host.WebRootPath, "album.json");
+        json = await  System.IO.File.ReadAllTextAsync(fileName);
+
+        Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
+    }
+
+    song = Album.songs.FirstOrDefault(s => s.title.Equals(title, StringComparison.OrdinalIgnoreCase));
+    if (song == null)
+    {
+        song = new SongData();
+    }
+    else if (!song.lyrics.Contains("\n"))
+    {
+        song.lyrics = await System.IO.File.ReadAllTextAsync(System.IO.Path.Combine(Host.WebRootPath, song.lyrics));
+    }
+
+
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+
+    <title>Anti-Trust - @title - (Punk Rock Music)</title>
+    <meta http-equiv="keywords" content="Anti-Trust,@title,Guilty,Punk,Hardcore,Metal,Rock,Maui,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen" />
+    <meta http-equiv="description" content="Anti-Trust - @title (song). Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Anti-Trust - @title" />
+    <meta name="twitter:description" content="Anti-Trust - @title (song). Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <meta name="twitter:creator" content="@@rickstrahl" />
+    <meta name="twitter:domain" content="anti-trust.rocks" />
+
+    <meta property="og:title" content="Anti-Trust - @title" />
+    <meta property="og:description" content="Anti-Trust - @title (song). Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <meta property="og:type" content="music.album" />
+    <meta property="og:url" content="https://anti-trust.rocks" />
+
+    <meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover.png" />
+    <meta property="og:image:secure_url" content="https://anti-trust.rocks/Guilty-Cover.png" />
+
+    <link rel="stylesheet" href="/album.css">
+    <link rel="stylesheet" href="/SongSimple.css">
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="toolbarcontainer">
+        <a href="../" class="hoverbutton">Back to All Songs</a> |
+        <a href="https://store.west-wind.com/product/order/antitrust_guilty" class="hoverbutton">Buy Album</a>
+    </div>
+    <div class="page-container"></div>
+
+    <div class="container" id="Body">
+
+
+        <div style="margin: 0 auto; background: transparent;width: 85%;">
+            <div class="song-title">@song.title</div>
+
+            <pre class="lyrics">@song.lyrics
+            </pre>
+        </div>
+    </div>
+
+    <audio class="player">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/album.js"></script>
+    <script>
+        window.Globals = {
+            songToPlay: "/@song.file"
+        }
+    </script>
+<script src="/song.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNCLNZM7P4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SNCLNZM7P4');
+</script>
+
+</body>
+</html>
+

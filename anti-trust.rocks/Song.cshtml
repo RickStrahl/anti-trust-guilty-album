@@ -1,0 +1,213 @@
+@page "/{album}/{title?}"
+
+@using Westwind.Utilities
+@using Microsoft.AspNetCore.Http
+@using AlbumObjects   
+
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+
+@functions {
+    public static AlbumData Album { get; set; } = new AlbumData();
+    public static SongData song { get; set; }    
+}
+@{
+    var title = RouteData.Values["title"] as string;
+    var albumName = RouteData.Values["album"] as string ?? "guilty";
+
+    //var t = new Album();
+    var rawTitle = title;
+    title = title?.Replace("-", " ");
+    string json = null;
+    string fileName = null;
+    string pageUrl = "https://anti-trust.rocks" + HttpContext.Request.Path;
+
+    fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
+    json = await  System.IO.File.ReadAllTextAsync(fileName);
+
+    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
+
+
+    song = Album.songs.FirstOrDefault(s => s.title.Equals(title, StringComparison.OrdinalIgnoreCase));
+    if (song == null)
+    {
+        song = new SongData();
+        song.title = "Song unavailable";        
+    }
+    else if (!string.IsNullOrEmpty(song.lyrics) && !song.lyrics.Contains("\n")) 
+    {
+        string lyricsFilename = null;
+        try {
+            lyricsFilename = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName, song.lyrics);        
+            song.lyrics = await System.IO.File.ReadAllTextAsync(lyricsFilename);
+        } catch { 
+            song.lyrics = "lyrics unavailable "; // + lyricsFilename;
+        }
+    }
+
+    var downloadFileLink = Album.songBaseUrl + song.file;
+    if (song.file.StartsWith("http",StringComparison.OrdinalIgnoreCase)) {
+        downloadFileLink = song.file;
+    }
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+
+    <title>@title - Anti-Trust (Punk Rock Music)</title>
+    <meta http-equiv="keywords" content="Anti-Trust,@title,Guilty,Punk,Hardcore,Metal,Rock,Maui,Hawaii,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Andersen,Airborn" />
+    <meta http-equiv="description" content="@title (song) by Anti-Trust. @Album.description" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+   
+    <meta property="og:title" content="@title - Anti-Trust" />
+    <meta property="og:description" content="@title (song) by Anti-Trust. @Album.description" />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:music:song" content="@title" />
+    <meta property="og:music:album" content="@albumName" />
+    <meta property="og:music:musician" content="Anti-Trust (Punk Rock Music)" />
+    <meta property="og:url" content="@pageUrl" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- 
+        1200 x 628 or 1200x1200 
+        https://cards-dev.twitter.com/validator
+        https://developers.facebook.com/tools/debug/
+    --> 
+    <meta property="og:image" content="https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png" />
+
+    <link rel="stylesheet" href="/album.css?v1.1.5" />
+    <link rel="stylesheet" href="/song.css?v1.1.5" />
+    <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
+    	<script>
+        if (location.host === "americanparanoia.com")
+        {
+            window.location.href="https://anti-trust.rocks" + location.pathname;                        
+        }        
+    </script>
+    <style>
+        .page-container {
+            background-image: url(/albums/@albumName/coverImage.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbarcontainer">
+        <a href="../@albumName" class="hoverbutton"><i class="fas fa-play text-green" style="color: green"></i> Songs</a>         
+        <a href="https://github.com/RickStrahl/anti-trust-guilty-album" class="hoverbutton" title="Download album or songs for free"><i class="fas fa-cloud-download-alt" style="color: lightgray"></i> Download</a> 
+        <a href="/stream" class="hoverbutton" title="Listen or buy on Spotify, Amazon, Apple Music or YouTube"><i class="fas fa-cloud-music"  style="color: steelblue"></i> Stream</a> 
+        <a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="hoverbutton" title="Buy a physical CD you can hold in your hand"><i class="fas fa-compact-disc" style="color: goldenrod"></i> CD</a> 
+        
+        <a href="/t-shirt/readme.md" class="hoverbutton hidden-sm" title="Make your own T-shirts or buy one from us"><i class="fas fa-tshirt hidden-sm" style="color: darkgoldenrod"></i> T-Shirt</a>
+        <a href="/about" class="hoverbutton" title="Find out more about Anti-Trust and the making of the Guilty album"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
+
+    </div>
+    
+    <div class="page-container"></div>
+
+
+
+    <div class="container" id="Body">
+        <div style="margin: 0 auto;">   
+            <a class="audio-player" onclick="player.startStop()" title="Play song: @song.title">
+                <i class="play-icon far fa-play-circle"></i>
+            </a>
+            <div class="song-title">@Html.Raw(song.title)</div>                        
+            <div class="song-info">  
+
+              <table class="table">
+                    <tr>
+                        <td>time</td>
+                        <td>@song.playTime minutes</td>
+                    </tr>
+                    <tr>
+                        <td>instigators</td>
+                        <td>@song.credits</td>
+                    </tr>
+                    <tr>
+                        <td>suspects</td>
+                        <td>@song.players</td>
+                    </tr>
+
+                </table>                             
+                <hr style="margin: 1em 0 0.5em" />
+               
+                <span class="icon-bar"> 
+                    @{
+                        var postText = $"Check out the song '{title}'\nby Anti-Trust\n\n" + 
+                                         $"{pageUrl}\n" + 
+                                          "#PunkRock #AntiTrust";
+                        var twitterUrl = "https://twitter.com/intent/tweet?text=" +
+                                      System.Net.WebUtility.UrlEncode(postText);                        
+                        var facebookUrl = $"https://www.facebook.com/sharer.php?&u={pageUrl}";
+                    }                       
+                                   
+                    <a title="Share on Twitter"  href="@twitterUrl" target="_blank"><i class="fab fa-twitter" style="color: #55acee"></i></a>                                        
+                    <a title="Share on Facebook"  href="@facebookUrl" target="_blank"><i class="fab fa-facebook" style="color: #3b5998"></i></a>  
+
+                   
+                    <a title="Download Song" href="@downloadFileLink"><i class="fas fa-cloud-download"  style="color: #eee;padding-left: 1em;"></i></a>     
+                    <a title="Download Album" href="https://github.com/RickStrahl/anti-trust-guilty-album" target="_blank"><i class="fad fa-album" style="color: darkgoldenrod"></i></a>                                             
+                    <a title="Buy Album" href="https://store.west-wind.com/product/antitrust_guilty_cd" target="_blank" style="padding-right: 1em"><i class="fas fa-money-bill-wave" style="color: green; font-size: 0.8em"></i></a> 
+
+
+                    <a title="Stream album on your favorite music streaming service" href="https://anti-trust.rocks/stream" target="_blank"><i class="fas fa-cloud-music" style="color: steelblue"></i></a>
+
+                    @if(!string.IsNullOrEmpty(song.spotifyUrl)) 
+                    {
+                    <a href="@song.spotifyUrl" title="` to song on Spotify" target="_blank"><i class="fab fa-spotify" style="color: green" ></i></a>
+                    }
+                    
+                    @if(!string.IsNullOrEmpty(song.appleUrl)) {
+                    <a href="@song.appleUrl" title="listen or buy song on Apple Music" target="_blank"><i class="fab fa-apple" style="color: #eee"></i></a>
+                    }
+
+                    @if(!string.IsNullOrEmpty(song.amazonUrl)) {
+                    <a href="@song.amazonUrl" title="listen or buy song on Amazon Music" target="_blank"><i class="fab fa-amazon" style="color: goldenrod" ></i></a>
+                    }
+
+                     @if(!string.IsNullOrEmpty(song.googleUrl)) {
+                    <a href="@song.googleUrl" title="listen to song on You Tube or Google Music" target="_blank"><i class="fab fa-youtube" style="color: red" ></i></a>
+                    }
+                </span>
+            </div>           
+
+            <pre class="lyrics">@song.lyrics</pre>
+
+            <hr/>
+
+            <footer>
+                <div style="float: right; color: #aaa; padding-bottom:1em;">
+                    <small>&copy; Anti-Trust, 2002-@DateTime.Now.Year</small>
+                </div>
+
+                <div>
+                    <img src="/favicon-32x32.png" />
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <audio class="player">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/album.js"></script>
+    <script>                
+        window.Globals = {
+            songToPlay: "@downloadFileLink"
+        }
+    </script>
+<script src="/song.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNCLNZM7P4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SNCLNZM7P4');
+</script>
+
+</body>
+</html>

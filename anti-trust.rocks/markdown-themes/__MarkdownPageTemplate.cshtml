@@ -1,0 +1,115 @@
+@model Westwind.AspNetCore.Markdown.MarkdownModel
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @if (!string.IsNullOrEmpty(Model.BasePath))
+    {
+        <base href="@Model.BasePath" />
+    }
+    <title>@Model.Title</title>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+   
+    <link rel="stylesheet" href="/album.css" />
+    <link rel="stylesheet" href="/song.css" />
+    <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script>
+
+    <!-- *** Markdown Themes: Github, Dharkan, Westwind, Medium, Blackout -->
+    <link rel="stylesheet" href="~/markdown-themes/Blackout/Theme.css" />
+    <link rel="stylesheet" href="~/markdown-themes/scripts/fontawesome/css/font-awesome.min.css" />
+        
+    <link rel="stylesheet" href="/album.css" />
+    <link rel="stylesheet" href="/song.css" />
+    
+    <style>   
+        /* vs2015 theme specific*/
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 20pt;
+        }
+         pre {            
+            overflow-x: auto;
+            white-space: pre;
+            word-break: normal;
+            word-wrap: normal;            
+        }
+        pre > code {
+            white-space: pre;
+        }
+        #MainContent {
+            margin: inherit auto;
+            margin-top: -8.5vmin; 
+            font-size: 2.4vmin;
+            max-width: 1200px;
+            
+        }
+        @@media(max-width: 768px) {
+            #MainContent {
+                margin: inherit 10px !important;
+            }
+        }
+       
+        h1 {
+            font-size: 2.15em;            
+            font-weight: bold;
+            color: #FC1B0A;
+            margin-top: 1em;
+            margin-bottom: 0.3em;
+        }
+        a {
+            color: steelblue;
+        }
+        a:visited {
+            color: rgb(76, 155, 219);
+        }
+        .toolbarcontainer a {
+            color: #eee;
+        }
+        .post-time {
+            font-size: 0.8em;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+	 <div class="toolbarcontainer">
+	 	<a href="/" class="hoverbutton"><i class="fas fa-play text-green" style="color: green"></i> Listen</a> |
+        <a href="https://github.com/RickStrahl/anti-trust-guilty-album" class="hoverbutton"><i class="fas fa-cloud-download-alt text-green" style="color: steelblue"></i> Free Download</a> |
+		<a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="hoverbutton"><i class="fas fa-compact-disc"  style="color: goldenrod"></i>
+			 Buy CD</a> |
+        <a href="/t-shirt" class="hoverbutton"><i class="fas fa-tshirt" style="color: darkgoldenrod"></i> T-Shirts</a> |
+        <a href="https://github.com/RickStrahl/anti-trust-guilty-album#want-to-support-us" class="hoverbutton"><i class="fas fa-money-bill-wave" style="color: green"></i> Support us</a>
+    </div>
+
+    <img src="/images/Page-Header.png" style="opacity: 0.40"/>
+    
+    <div id="MainContent"  >                         
+        @Model.RenderedMarkdown 
+    </div>
+
+    <script src="~/markdown-themes/scripts/highlightjs/highlight.pack.js"></script>
+    <!-- https://github.com/RickStrahl/highlightjs-badge - copy code and syntax id on code snippets -->
+    <script src="~/markdown-themes/scripts/highlightjs-badge.min.js"></script>
+    
+    <!-- *** Code Syntax Themes: vs2015, vs, github, monokai, monokai-sublime, twilight -->
+    <link href="~/markdown-themes/scripts/highlightjs/styles/@(Model.FolderConfiguration.SyntaxTheme).css" rel="stylesheet" />
+    <script>
+        setTimeout(function () {
+            var pres = document.querySelectorAll("pre>code");
+            for (var i = 0; i < pres.length; i++) {
+                hljs.highlightBlock(pres[i]);
+            }
+        });
+      
+        setTimeout(function() {
+            var options = {  contentSelector: "#MainContent" }
+            window.highlightJsBadge(options);
+        },200);
+    </script>
+</body>
+</html>
