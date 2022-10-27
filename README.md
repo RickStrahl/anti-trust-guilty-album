@@ -20,7 +20,8 @@ You can also find, stream or buy 'Guilty' on your favorite streaming services:
 ## Download all Music
 In addition to the Web Site for **free streaming**, all the digital music and content is available here **for download for free**. This GitHub Repository Site provides access to all of the music and support content that you can download from here:
 
-* [Full Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip)
+* [Full Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip) 
+* [Buy a hard copy CD](https://store.west-wind.com/product/ANTITRUST_GUILTY_CD)
 * [Guilty Album - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Guilty/mp3)
 * [Angry Album (in progress) - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Angry/mp3)
 
