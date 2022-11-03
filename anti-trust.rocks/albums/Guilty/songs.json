@@ -198,6 +198,15 @@
             "link": "/Angry/Ghost-Rider"   
         },
         {
+            "title": "Culture of the Vulture",
+            "playTime": "3:20",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/05%20Culture%20of%20the%20Vulture.mp3",
+            "lyrics": "../Angry/Culture of the Vulture.txt",
+            "link": "/Angry/Culture-of-the-Vulture"   
+        },
+        {
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",
             "credits": "Music Garrat, Lyrics Harper",
