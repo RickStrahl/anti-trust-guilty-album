@@ -6,6 +6,9 @@ namespace AlbumObjects
         public string title { get; set; }
         public string description {get; set; }
         public string songBaseUrl { get; set; }
+
+        public string coverImage { get; set; } = "https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png";
+
         public List<SongData> songs { get; set; } = new List<SongData>();
     }
 

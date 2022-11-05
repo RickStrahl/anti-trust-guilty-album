@@ -3,6 +3,7 @@
     "title": "Angry",
     "description": "Garage Punk Rock from Maui and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
+    "coverImage": "https://anti-trust.rocks/Angry-Cover-Rectangle-Card.png",
     "songs": [
         {
             "title": "Speculate Speculate",
