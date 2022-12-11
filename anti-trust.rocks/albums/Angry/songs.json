@@ -50,7 +50,6 @@
             "file": "04 Ghost Rider.mp3",
             "lyrics": "Ghost Rider.txt"
         },
-
         {
             "title": "Culture of the Vulture",
             "playTime": "3:25",
@@ -58,7 +57,14 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "05 Culture of the Vulture.mp3",
             "lyrics": "Culture of the Vulture.txt"
+        },        
+        {
+            "title": "Arbiter of Truth",
+            "playTime": "3:07",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
+            "file": "06 Arbiter of Truth.mp3",
+            "lyrics": "Arbiter of Truth.txt"
         }
-        
     ]
 }
