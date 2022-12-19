@@ -1,7 +1,7 @@
 {    
     "displayTitle": "Anti-Trust - Angry!",
     "title": "Angry",
-    "description": "Garage Punk Rock from Maui and San Francisco with former members from Attitude Adjustment and Attitude",
+    "description": "Garage Punk Rock from Maui, Hawaii and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
     "coverImage": "https://anti-trust.rocks/Angry-Cover-Rectangle-Card.png",
     "songs": [
@@ -59,12 +59,12 @@
             "lyrics": "Culture of the Vulture.txt"
         },        
         {
-            "title": "Arbiter of Truth",
-            "playTime": "3:07",
+            "title": "The Arbiter of Truth",
+            "playTime": "3:04",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
-            "file": "06 Arbiter of Truth.mp3",
-            "lyrics": "Arbiter of Truth.txt"
+            "file": "06 The Arbiter of Truth.mp3",
+            "lyrics": "The Arbiter of Truth.txt"
         }
     ]
 }
