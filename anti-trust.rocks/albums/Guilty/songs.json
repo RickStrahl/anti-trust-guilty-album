@@ -152,7 +152,7 @@
             "title": "Speculate Speculate",
             "playTime": "4.57",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/01%20Speculate%20Speculate.mp3",
             "lyrics": "../Angry/Speculate Speculate.txt",
             "spotifyUrl": "",
@@ -166,7 +166,7 @@
             "title": "Rat in a Cage",
             "playTime": "3.08",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
+            "players": "Guitar, Bass, Vocals: Strah, Backups: Andersen & Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/04%20Rat%20in%20a%20Cage.mp3",
             "lyrics": "../Angry/Rat in a Cage.txt",
             "link": "/Angry/Rat-in-a-Cage",  
@@ -179,7 +179,7 @@
             "title": "Divide and Conquer",        
             "playTime": "3.51",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/02%20Divide%20and%20Conquer.mp3",
             "lyrics": "../AngryDivide and Conquer.txt",
             "spotifyUrl": "",
@@ -205,6 +205,14 @@
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/05%20Culture%20of%20the%20Vulture.mp3",
             "lyrics": "../Angry/Culture of the Vulture.txt",
             "link": "/Angry/Culture-of-the-Vulture"   
+        },
+        {
+            "title": "The Arbiter of Truth",
+            "playTime": "3:04",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/06%20The%20Arbiter%20of%20Truth.mp3",
+            "lyrics": "../Angry/The Arbiter of Truth.txt"
         },
         {
             "title": "Organized Crime (UK Subs)",
