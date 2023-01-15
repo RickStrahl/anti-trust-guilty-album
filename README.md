@@ -1,6 +1,6 @@
 # Anti-Trust Guilty Album Release to Web
 
-![](anti-trust.rocks/Guilty-Cover-Square-Card.png)
+![](anti-trust.rocks/albums/Guilty/card-rectangle.png)
 
 Anti-Trust is a Punk Rock music side project created by Rick Strahl, in collaboration with fellow former Attitude Adjustment band members [Chris Kontos](https://en.wikipedia.org/wiki/Chris_Kontos_(musician)) and Andy Andersen. 
 
