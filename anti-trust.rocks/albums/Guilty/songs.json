@@ -3,6 +3,22 @@
     "title": "Guilty",
     "description": "Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
+    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2000-2022<br/>\non Maui, HI and Oakland, CA",
+    "copyright": "Anti-Trust, 2002-2022",
+    "bandMembers":[
+        {
+            "name":"Rick Strahl",
+            "activity": "Guitar, Bass, Vocals, Backups"
+        },
+        {
+            "name":"Chris Kontos",
+            "activity": "Drums, Backups, Vocals on Sick Inside"
+        },
+        {
+            "name":"Andy Andersen",
+            "activity": "Backups, Vocals on Realities of Violence"
+        }
+    ],
     "songs": [
         {
             "title": "Fear Factory",
@@ -14,7 +30,8 @@
             "spotifyUrl": "https://open.spotify.com/track/0XG6piwnlNrMnMlfkOS0uo?si=bba76a6902bc42f4",
             "amazonUrl": "https://amzn.to/2Y46feo",
             "appleUrl": "https://music.apple.com/us/album/fear-factory/1586023179?i=1586023187",
-            "googleUrl": "https://youtube.com/watch?v=zfgNZtdNfDg&feature=share"            
+            "googleUrl": "https://youtube.com/watch?v=zfgNZtdNfDg&feature=share",
+            "lastUpdated": "2022-02-05T00:00:00Z"            
         },
         {
             "title": "Antisocial",
@@ -26,7 +43,8 @@
             "spotifyUrl": "https://open.spotify.com/track/5GlggfGYB6cQIWQo5ezmQC?si=d93735665b5a4c7e",
             "amazonUrl": "https://amzn.to/3nGtweX",
             "appleUrl": "https://music.apple.com/us/album/antisocial/1586023179?i=1586023182",
-            "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share"            
+            "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share",
+            "lastUpdated": "2021-07-07T00:00:00Z"            
         },
         {
             "title": "I am You",
@@ -38,7 +56,8 @@
             "spotifyUrl": "https://open.spotify.com/track/0Z1nllUyX5yKDGTXilCr2G?si=24ccfb9fef994ec8",
             "amazonUrl": "https://amzn.to/3Gyqpyl",
             "appleUrl": "https://music.apple.com/us/album/i-am-you/1586023179?i=1586023181",
-            "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share"       
+            "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"      
         },
         {
             "title": "No More Lies",
@@ -50,7 +69,8 @@
             "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
             "amazonUrl": "https://amzn.to/3nHi5Up",
             "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",
-            "googleUrl": "https://youtu.be/CS7Us3twQBM"      
+            "googleUrl": "https://youtu.be/CS7Us3twQBM",
+            "lastUpdated": "2022-11-10T00:00:00Z"
         },
         {
             "title": "Sick Inside",
@@ -62,7 +82,8 @@
             "spotifyUrl": "https://open.spotify.com/track/7idxLUi8AabGY2zw7ISpkN?si=12c28889737146a1",
             "amazonUrl": "https://amzn.to/2ZFWGTu",
             "appleUrl": "https://music.apple.com/us/album/sick-inside/1586023179?i=1586023184",
-            "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share"      
+            "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share",
+            "lastUpdated": "2021-07-05T00:00:00Z"           
         },
         {
             "title": "Day by Day",
@@ -74,7 +95,8 @@
             "spotifyUrl": "https://open.spotify.com/track/0I32wjVsoDs8UEvAtglBLN?si=f42954cd9b2e4be3",
             "amazonUrl": "https://amzn.to/2ZCLDu8",
             "appleUrl": "https://music.apple.com/us/album/day-by-day/1586023179?i=1586023183",
-            "googleUrl": "https://youtube.com/watch?v=4I07n2k2LXw&feature=share"               
+            "googleUrl": "https://youtube.com/watch?v=4I07n2k2LXw&feature=share",
+            "lastUpdated": "2021-12-13T00:00:00Z"                     
         },
         {
             "title": "No Privacy",
@@ -86,7 +108,8 @@
             "spotifyUrl": "https://open.spotify.com/track/56lYRsE2Y3RSQ3xU6SIUHt?si=e739ab15d34e4bfa",
             "amazonUrl": "https://amzn.to/3mtJVUK",
             "appleUrl": "https://music.apple.com/us/album/no-privacy/1586023179?i=1586023180",
-            "googleUrl": "https://youtube.com/watch?v=Guod9dmrCM4&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=Guod9dmrCM4&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"      
         },
         {
             "title": "Lost",
@@ -98,7 +121,8 @@
             "spotifyUrl": "https://open.spotify.com/track/0jpqbFF7e9iphJsDbhUmIV?si=27934a88804349c8",
             "amazonUrl": "https://amzn.to/3pNa4A5",
             "appleUrl": "https://music.apple.com/us/album/lost/1586023179?i=1586023186",
-            "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
+            "lastUpdated": "2021-07-05T00:00:00Z"         
         },
         {
             "title": "Guilty as Charged",
@@ -110,7 +134,8 @@
             "spotifyUrl": "https://open.spotify.com/track/7aClyBOi3QpY1TLl4Votnm?si=f05a89ecd3444a64",
             "amazonUrl": "https://amzn.to/31hpnGX",
             "appleUrl": "https://music.apple.com/us/album/guilty-as-charged/1586023179?i=1586023189",
-            "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"         
         },
         {
             "title": "Misery",
@@ -122,7 +147,8 @@
             "spotifyUrl": "https://open.spotify.com/track/184reEpjLABiiNkSPEtLMe?si=862a12c6fba04d81",
             "amazonUrl": "https://music.amazon.com/albums/B09FH7FVYQ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_vbJJa0b5sFGK48oGBFvXdmSS6&trackAsin=B09FH8DN8R",
             "appleUrl": "https://music.apple.com/us/album/misery/1586023179?i=1586023188",
-            "googleUrl": "https://youtube.com/watch?v=z8-BucAjkqM&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=z8-BucAjkqM&feature=share",
+            "lastUpdated": "2021-07-03T00:00:00Z"      
         },
         {
             "title": "Realities of Violence",
@@ -134,7 +160,8 @@
             "spotifyUrl": "https://open.spotify.com/track/0dSKVBD5oCHAsmDLiyoC2E?si=d9846dd7f75544e3",
             "amazonUrl": "https://amzn.to/3EuxcY9",
             "appleUrl": "https://music.apple.com/us/album/realities-of-violence/1586023179?i=1586023190",
-            "googleUrl": "https://youtube.com/watch?v=4dw8tKWajKw&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=4dw8tKWajKw&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"        
         },
         {
             "title": "Change",
@@ -146,7 +173,8 @@
             "spotifyUrl": "https://open.spotify.com/track/1HNE6x8jDvMuEHC1cLJLgs?si=5c721bbac36243f3",
             "amazonUrl": "https://amzn.to/3vWRgzo",
             "appleUrl": "https://music.apple.com/us/album/change/1586023179?i=1586023191",
-            "googleUrl": "https://youtube.com/watch?v=BPDxsMInDZ0&feature=share"   
+            "googleUrl": "https://youtube.com/watch?v=BPDxsMInDZ0&feature=share",
+            "lastUpdated": "2021-07-05T00:00:00Z"      
         },
         {
             "title": "Speculate Speculate",
@@ -160,7 +188,7 @@
             "appleUrl": "",
             "groupStart": "New Offenses",
             "link": "/Angry/Speculate-Speculate",  
-            "googleUrl": "https://youtu.be/9agtNlxMjmE"   
+            "googleUrl": "https://youtu.be/9agtNlxMjmE"            
         },    
         {
             "title": "Rat in a Cage",
@@ -173,7 +201,7 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": ""   
+            "googleUrl": ""            
         },            
         {
             "title": "Divide and Conquer",        
@@ -212,7 +240,8 @@
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/06%20The%20Arbiter%20of%20Truth.mp3",
-            "lyrics": "../Angry/The Arbiter of Truth.txt"
+            "lyrics": "../Angry/The Arbiter of Truth.txt",
+            "link": "/Angry/The-Arbiter-of-Truth"
         },
         {
             "title": "Organized Crime (UK Subs)",
@@ -225,7 +254,8 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "",
-            "groupStart": "Plea Bargains"   
+            "groupStart": "Plea Bargains",
+            "lastUpdated": "2021-07-03T00:00:00Z"         
         },
         {
             "title": "Protest the Possibility (Discharge)",
@@ -237,7 +267,8 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": ""   
+            "googleUrl": "",
+            "lastUpdated": "2021-07-03T00:00:00Z"         
         }
     ]
 }

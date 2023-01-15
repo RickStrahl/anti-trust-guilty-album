@@ -4,6 +4,18 @@
     "description": "Garage Punk Rock from Maui, Hawaii and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/",
     "coverImage": "https://anti-trust.rocks/Angry-Cover-Rectangle-Card.png",
+    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2023<br/>\non Maui, HI",
+    "copyright": "Anti-Trust, 2022-2023",
+    "bandMembers":[
+        {
+            "name":"Rick Strahl",
+            "activity": "Guitar, Bass, Vocals, Backups"
+        },
+        {
+            "name":"Andy Andersen",
+            "activity": "Backups"
+        }
+    ],
     "songs": [
         {
             "title": "Speculate Speculate",
@@ -15,7 +27,8 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": "https://youtu.be/9agtNlxMjmE"   
+            "googleUrl": "https://youtu.be/9agtNlxMjmE",
+            "lastUpdated": "2022-10-30T00:00:00Z"   
         },        
         {
             "title": "Rat in a Cage",
@@ -27,7 +40,8 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": ""   
+            "googleUrl": "",
+            "lastUpdated": "2022-12-18T00:00:00Z"   
         },
         {
             "title": "Divide and Conquer",
@@ -39,16 +53,17 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": ""   
-        },
-        
+            "googleUrl": "",   
+            "lastUpdated": "2022-11-22T00:00:00Z"
+        },        
         {
             "title": "Ghost Rider",
             "playTime": "3:01",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "04 Ghost Rider.mp3",
-            "lyrics": "Ghost Rider.txt"
+            "lyrics": "Ghost Rider.txt",
+            "lastUpdated": "2022-05-04T00:00:00Z"
         },
         {
             "title": "Culture of the Vulture",
@@ -56,7 +71,8 @@
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
             "file": "05 Culture of the Vulture.mp3",
-            "lyrics": "Culture of the Vulture.txt"
+            "lyrics": "Culture of the Vulture.txt",
+            "lastUpdated": "2023-01-08T00:00:00Z"
         },        
         {
             "title": "The Arbiter of Truth",
@@ -64,7 +80,8 @@
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 The Arbiter of Truth.mp3",
-            "lyrics": "The Arbiter of Truth.txt"
+            "lyrics": "The Arbiter of Truth.txt",
+            "lastUpdated": "2023-01-12T00:00:00Z"
         }
     ]
 }

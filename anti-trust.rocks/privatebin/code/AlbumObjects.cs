@@ -9,7 +9,24 @@ namespace AlbumObjects
 
         public string coverImage { get; set; } = "https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png";
 
+        
+        /// <summary>
+        /// By line displayed after song list and band members
+        /// </summary>
+        public string albumInformation { get; set; }
+
+        public string copyright { get; set;  }
+
+
         public List<SongData> songs { get; set; } = new List<SongData>();
+
+        public List<BandMember> bandMembers { get; set; } = new List<BandMember>();
+    }
+
+    public class BandMember
+    {
+        public string name { get; set;  }
+        public string activity { get; set;  }
     }
 
     public class SongData
@@ -20,9 +37,14 @@ namespace AlbumObjects
         public string players {get; set; }
         public string playTime { get; set; }
         public string file { get; set; }
+        public DateTime lastUpdated { get; set;  }
+
+        
         public string lyrics { get; set; }
         public string groupStart {get; set; }
+
         public string link {get; set;}
+
         public string spotifyUrl {get; set; }
         public string amazonUrl {get; set;} 
         public string appleUrl {get; set;}

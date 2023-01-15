@@ -117,41 +117,23 @@
 			.artist { font-weight: bold; color: white; font-size: 1.1em; }			
 		</style>
 		<div>
+			@foreach(var member in Album.bandMembers) {
 			<p>
-				<div class="artist">Rick Strahl</div>
+				<div class="artist">@member.name</div>
 				<div class="copyright">
-					Guitar, Bass, Vocals, Backups<br/>
+					@member.activity
 				</div>
 			</p>
-			@if (albumName.Equals("Guilty", StringComparison.OrdinalIgnoreCase)) 
-			{
-				<p>
-					<div class="artist">Chris Kontos</div>
-					<div class="copyright">Drums, Backups, Vocals on Sick Inside</div>
-				</p>
-				<p>
-					<div class="artist">Andy Andersen</div>
-					<div class="copyright">Backups, Vocals on Realities of Violence</div>
-				</p>
 			}
-			else {
-				<p>
-					<div class="artist">Andy Andersen</div>
-					<div class="copyright">Backups, Vox</div>
-				</p>
-			}
-			</div>
-		
+
 
 			<hr>
 		<div>	
 			<div class="liner" style="margin-top: 1.3em;margin-bottom: 1em;">
-				Punk Rock Garage Recorded<br/>
-				between 2000-2022<br/>
-				on Maui, HI and Oakland, CA
+				@Html.Raw(Album.albumInformation)				
 			</div>		
 
-			<small style="font-size: 0.8em">&copy; Anti-Trust, 2002-2022<br>
+			<small style="font-size: 0.8em">&copy; @Album.copyright<br>
 				&nbsp;&nbsp;all rights reserved</small>
 		</div>
 

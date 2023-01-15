@@ -130,6 +130,15 @@
                         <td>suspects</td>
                         <td>@song.players</td>
                     </tr>
+                    @if(song.lastUpdated > DateTime.MinValue) {
+                        <tr>
+                            <td>last update</td>                        
+                            <td>@song.lastUpdated.ToString("MMM dd, yyyy")</td>
+                        </tr>
+                    }
+                    <tr>
+
+                    </tr>
 
                 </table>                             
                 <hr style="margin: 1em 0 0.5em" />
