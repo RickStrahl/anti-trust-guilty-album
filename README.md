@@ -4,7 +4,9 @@
 
 Anti-Trust is a Punk Rock music side project created by Rick Strahl, in collaboration with fellow former Attitude Adjustment band members [Chris Kontos](https://en.wikipedia.org/wiki/Chris_Kontos_(musician)) and Andy Andersen. 
 
-This GitHub repository holds all the content for the official 12 song **Guilty** album release **plus 3 bonus songs**, **several new songs that are in progress** and some extras, including all the music files and support assets. You can download both individual songs and the full album from here **for free**.
+This GitHub repository holds all the content for the official 12 song **Guilty** album release **plus 3 bonus songs**, **several new songs that are in progress  for the next *Angry* release**, including all the music files and support assets. You can download both individual songs and the full album(s) from here **for free**. 
+
+Rip it, share it, spread it... 
 
 ## Listen Online
 You can check out and listen to all the music for this album on our Web Site:
@@ -13,15 +15,16 @@ You can check out and listen to all the music for this album on our Web Site:
 
 On that site you can find all the songs to browse through and play online, lyrics as well as old photos and band information.
 
-You can also find, stream or buy 'Guilty' on your favorite streaming services:
+You can also find, stream or buy the 'Guilty' album on your favorite streaming services:
 
 * [Listen on your favorite Streaming Service](https://anti-trust.rocks/stream)
 
 ## Download all Music
 In addition to the Web Site for **free streaming**, all the digital music and content is available here **for download for free**. This GitHub Repository Site provides access to all of the music and support content that you can download from here:
 
-* [Full Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip) 
-* [Buy a hard copy CD](https://store.west-wind.com/product/ANTITRUST_GUILTY_CD)
+* [Full Guilty Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip) 
+* [Angry Album (in progress) Download  as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Angry.zip)
+* [Buy a hard copy CD of Guilty](https://store.west-wind.com/product/ANTITRUST_GUILTY_CD)
 * [Guilty Album - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Guilty/mp3)
 * [Angry Album (in progress) - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Angry/mp3)
 
