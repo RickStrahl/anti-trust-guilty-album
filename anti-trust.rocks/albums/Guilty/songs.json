@@ -178,7 +178,7 @@
         },
         {
             "title": "Speculate Speculate",
-            "playTime": "4.57",
+            "playTime": "4:57",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/01%20Speculate%20Speculate.mp3",
@@ -192,7 +192,7 @@
         },    
         {
             "title": "Rat in a Cage",
-            "playTime": "3.08",
+            "playTime": "3:08",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strah, Backups: Andersen & Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/04%20Rat%20in%20a%20Cage.mp3",
@@ -205,7 +205,7 @@
         },            
         {
             "title": "Divide and Conquer",        
-            "playTime": "3.51",
+            "playTime": "3:51",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/02%20Divide%20and%20Conquer.mp3",
@@ -241,8 +241,10 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/06%20The%20Arbiter%20of%20Truth.mp3",
             "lyrics": "../Angry/The Arbiter of Truth.txt",
-            "link": "/Angry/The-Arbiter-of-Truth"
-        },
+            "link": "/Angry/The-Arbiter-of-Truth",
+            "googleUrl": "https://youtu.be/hI3zh27OhbU",
+            "lastUpdated": "2023-01-12T00:00:00Z"
+        },        
         {
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",

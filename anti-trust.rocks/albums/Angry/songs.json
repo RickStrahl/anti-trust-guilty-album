@@ -53,7 +53,7 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": "",   
+            "googleUrl": "",
             "lastUpdated": "2022-11-22T00:00:00Z"
         },        
         {
@@ -81,6 +81,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 The Arbiter of Truth.mp3",
             "lyrics": "The Arbiter of Truth.txt",
+            "googleUrl": "https://youtu.be/hI3zh27OhbU",
             "lastUpdated": "2023-01-12T00:00:00Z"
         }
     ]
