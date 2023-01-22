@@ -40,8 +40,8 @@
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": "",
-            "lastUpdated": "2022-12-18T00:00:00Z"   
+            "googleUrl": "https://youtu.be/6IJr2mtMK1k",
+            "lastUpdated": "2023-01-23T00:00:00Z"   
         },
         {
             "title": "Divide and Conquer",
@@ -81,7 +81,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 The Arbiter of Truth.mp3",
             "lyrics": "The Arbiter of Truth.txt",
-            "googleUrl": "https://youtu.be/hI3zh27OhbU",
+            "googleUrl": "https://youtu.be/6IJr2mtMK1k",
             "lastUpdated": "2023-01-12T00:00:00Z"
         }
     ]
