@@ -11,6 +11,8 @@
     public static SongData song { get; set; }    
 }
 @{
+    var baseSiteUrl = "https://" + Request.Host + "/";
+
     var title = RouteData.Values["title"] as string;
     var albumName = RouteData.Values["album"] as string ?? "guilty";
 
@@ -19,7 +21,7 @@
     title = title?.Replace("-", " ");
     string json = null;
     string fileName = null;
-    string pageUrl = "https://anti-trust.rocks" + HttpContext.Request.Path;
+    string pageUrl = baseSiteUrl.TrimEnd('/') + HttpContext.Request.Path;
 
     fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
     json = await  System.IO.File.ReadAllTextAsync(fileName);
@@ -48,7 +50,7 @@
             !song.ImageUrl.StartsWith("http") && 
             !song.ImageUrl.StartsWith(".."))
         {
-            song.ImageUrl = "http://anti-trust.rocks/albums/" + albumName + "/" + StringUtils.UrlEncode(song.ImageUrl);             
+            song.ImageUrl = baseSiteUrl + "albums/" + albumName + "/" + StringUtils.UrlEncode(song.ImageUrl);             
         }
     }
 
@@ -76,17 +78,24 @@
     <meta property="og:music:musician" content="Anti-Trust HI(Punk Rock Music)" />
     <meta property="og:url" content="@pageUrl" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@@antitrustHI" />
+        <meta name="twitter:site" content="@@antitrustHI" />
 	<meta name="twitter:creator" content="@@rickstrahl" />
 	<meta name="twitter:domain" content="anti-trust.rocks" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- 
         1200 x 628 (summary_large_image) or 1200x1200 (summary)
         https://cards-dev.twitter.com/validator <- no longer works use Tweet Editor
         https://developers.facebook.com/tools/debug/
     --> 
-    <meta property="og:image" content="https://anti-trust.rocks/albums/@albumName/card-rectangle.png" />
+    @if(string.IsNullOrEmpty(song.ImageUrl))
+    {
+        <meta property="og:image" content="@(baseSiteUrl)albums/@albumName/card-rectangle.png" />
+    }
+    else 
+    {
+        <meta property="og:image" content="@(song.ImageUrl)" />
+    }
     <meta property="og:image:alt" content="Anti-Trust @albumName cover image" />
 
     <link rel="stylesheet" href="/album.css?v1.1.5" />
@@ -95,12 +104,22 @@
     	<script>
         if (location.host === "americanparanoia.com")
         {
-            window.location.href="https://anti-trust.rocks" + location.pathname;                        
+            window.location.href= baseSiteUrl + location.pathname;                        
         }        
     </script>
     <style>
         .page-container {
-            background-image: url(/albums/@albumName/coverImage.jpg);
+            @if(string.IsNullOrEmpty(song.ImageUrl)) 
+            {   
+                <text>         
+                background-image: url(/albums/@albumName/coverImage.jpg);
+                </text>
+            }
+            else {
+                <text>
+                background-image: url(@song.ImageUrl);
+                </text>
+            }
         }
     </style>
 </head>
@@ -117,7 +136,7 @@
     </div>
     
     <div class="page-container"></div>
-
+        
     <div class="container" id="Body">
         <div style="margin: 0 auto;">   
             <a class="audio-player" onclick="player.startStop()" title="Play song: @song.title">

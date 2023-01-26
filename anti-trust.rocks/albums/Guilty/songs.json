@@ -183,6 +183,7 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/01%20Speculate%20Speculate.mp3",
             "lyrics": "../Angry/Speculate Speculate.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/Speculate%20Speculate.png",
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
@@ -198,6 +199,7 @@
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/04%20Rat%20in%20a%20Cage.mp3",
             "lyrics": "../Angry/Rat in a Cage.txt",
             "link": "/Angry/Rat-in-a-Cage",  
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/Rat%20in%20a%20Cage.png",
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
@@ -241,6 +243,7 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/06%20The%20Arbiter%20of%20Truth.mp3",
             "lyrics": "../Angry/The Arbiter of Truth.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/The%20Arbiter%20of%20Truth.png",
             "link": "/Angry/The-Arbiter-of-Truth",
             "googleUrl": "https://youtu.be/hI3zh27OhbU",
             "lastUpdated": "2023-01-12T00:00:00Z"
