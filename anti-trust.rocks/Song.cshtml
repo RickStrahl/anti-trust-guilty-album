@@ -33,14 +33,22 @@
         song = new SongData();
         song.title = "Song unavailable";        
     }
-    else if (!string.IsNullOrEmpty(song.lyrics) && !song.lyrics.Contains("\n")) 
-    {
-        string lyricsFilename = null;
-        try {
-            lyricsFilename = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName, song.lyrics);        
-            song.lyrics = await System.IO.File.ReadAllTextAsync(lyricsFilename);
-        } catch { 
-            song.lyrics = "lyrics unavailable "; // + lyricsFilename;
+    else {
+        if (!string.IsNullOrEmpty(song.lyrics) && !song.lyrics.Contains("\n")) 
+        {
+            string lyricsFilename = null;
+            try {
+                lyricsFilename = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName, song.lyrics);        
+                song.lyrics = await System.IO.File.ReadAllTextAsync(lyricsFilename);
+            } catch { 
+                song.lyrics = "lyrics unavailable "; // + lyricsFilename;
+            }
+        }
+        if (!string.IsNullOrEmpty(song.ImageUrl) && 
+            !song.ImageUrl.StartsWith("http") && 
+            !song.ImageUrl.StartsWith(".."))
+        {
+            song.ImageUrl = "http://anti-trust.rocks/albums/" + albumName + "/" + StringUtils.UrlEncode(song.ImageUrl);             
         }
     }
 

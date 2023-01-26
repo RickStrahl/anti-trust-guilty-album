@@ -37,6 +37,7 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
             "file": "02 Rat in a Cage.mp3",
             "lyrics": "Rat in a Cage.txt",
+            "imageUrl": "Rat in Cage.png",
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
@@ -81,6 +82,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 The Arbiter of Truth.mp3",
             "lyrics": "The Arbiter of Truth.txt",
+            "imageUrl": "The Arbiter of Truth.png",
             "googleUrl": "https://youtu.be/hI3zh27OhbU",
             "lastUpdated": "2023-01-12T00:00:00Z"
         }
