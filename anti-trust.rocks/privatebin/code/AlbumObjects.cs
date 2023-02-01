@@ -33,6 +33,8 @@ namespace AlbumObjects
     {
         public string displayTitle { get; set; }
         public string title { get; set; }
+
+        public string description {get; set;}
         public string credits { get; set; }
         public string players {get; set; }
         public string playTime { get; set; }

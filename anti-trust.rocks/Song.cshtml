@@ -55,7 +55,7 @@
     }
 
     var downloadFileLink = Album.songBaseUrl + song.file;
-    if (song.file.StartsWith("http",StringComparison.OrdinalIgnoreCase)) {
+    if (song.file != null && song.file.StartsWith("http",StringComparison.OrdinalIgnoreCase)) {
         downloadFileLink = song.file;
     }
 }
@@ -71,14 +71,14 @@
     <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
    
     <meta property="og:title" content="@title - Anti-Trust (Punk Rock Music)" />
-    <meta property="og:description" content="@title (song) by Anti-Trust. @Album.description" />
+    <meta property="og:description" content="@title (song) by Anti-Trust. @(song.description ?? Album.description)" />
     <meta property="og:type" content="music.song" />
     <meta property="og:music:song" content="@title" />
     <meta property="og:music:album" content="@albumName" />
     <meta property="og:music:musician" content="Anti-Trust HI(Punk Rock Music)" />
     <meta property="og:url" content="@pageUrl" />
 
-        <meta name="twitter:site" content="@@antitrustHI" />
+    <meta name="twitter:site" content="@@antitrustHI" />
 	<meta name="twitter:creator" content="@@rickstrahl" />
 	<meta name="twitter:domain" content="anti-trust.rocks" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -91,10 +91,12 @@
     @if(string.IsNullOrEmpty(song.ImageUrl))
     {
         <meta property="og:image" content="@(baseSiteUrl)albums/@albumName/card-rectangle.png" />
+        <meta name="twitter:image" content="@(baseSiteUrl)albums/@albumName/card-rectangle.png" />
     }
     else 
     {
         <meta property="og:image" content="@(song.ImageUrl)" />
+        <meta name="twitter:image" content="@(song.ImageUrl)" />
     }
     <meta property="og:image:alt" content="Anti-Trust @albumName cover image" />
 

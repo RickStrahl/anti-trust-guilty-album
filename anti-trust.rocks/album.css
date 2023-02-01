@@ -212,3 +212,9 @@ text-error {
         padding: 2px 2px;
     }
 }
+.footer {
+    float: right;
+    margin: 1em !important;
+    font-size: 18px !important;  
+    font-family: sans-serif
+}

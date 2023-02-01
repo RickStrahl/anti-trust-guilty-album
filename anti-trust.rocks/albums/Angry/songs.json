@@ -29,7 +29,8 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "https://youtu.be/9agtNlxMjmE",
-            "lastUpdated": "2022-10-30T00:00:00Z"   
+            "lastUpdated": "2022-10-30T00:00:00Z",
+            "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
         },        
         {
             "title": "Rat in a Cage",
@@ -43,13 +44,14 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "https://youtu.be/frIt68UKGF4",
-            "lastUpdated": "2023-01-23T00:00:00Z"   
+            "lastUpdated": "2023-01-27T00:00:00Z",
+            "description": "Garage Punk Rock from Maui, Hawaii. We're all just a rat in a cage, poked and prodded into a feral rage."
         },
         {
             "title": "Divide and Conquer",
             "playTime": "3.51",
-            "credits": "Music and Lyrics Strahl, Backups: Strahl & Andersen",
-            "players": "Guitar, Bass, Vocals: Strahl",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "03 Divide and Conquer.mp3",
             "lyrics": "Divide and Conquer.txt",
             "spotifyUrl": "",
