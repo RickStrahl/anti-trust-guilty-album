@@ -190,21 +190,16 @@
             "groupStart": "New Offenses",
             "link": "/Angry/Speculate-Speculate",  
             "googleUrl": "https://youtu.be/9agtNlxMjmE"            
-        },    
+        },  
         {
-            "title": "Rat in a Cage",
-            "playTime": "3:08",
+            "title": "Culture of the Vulture",
+            "playTime": "3:20",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strah, Backups: Andersen & Strahl",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/04%20Rat%20in%20a%20Cage.mp3",
-            "lyrics": "../Angry/Rat in a Cage.txt",
-            "link": "/Angry/Rat-in-a-Cage",  
-            "imageUrl": "https://anti-trust.rocks/albums/Angry/Rat%20in%20a%20Cage.png",
-            "spotifyUrl": "",
-            "amazonUrl": "",
-            "appleUrl": "",
-            "googleUrl": "https://youtu.be/frIt68UKGF4"          
-        },            
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/02%20Culture%20of%20the%20Vulture.mp3",
+            "lyrics": "../Angry/Culture of the Vulture.txt",
+            "link": "/Angry/Culture-of-the-Vulture"   
+        },              
         {
             "title": "Divide and Conquer",        
             "playTime": "3:51",
@@ -228,13 +223,19 @@
             "link": "/Angry/Ghost-Rider"   
         },
         {
-            "title": "Culture of the Vulture",
-            "playTime": "3:20",
+            "title": "Rat in a Cage",
+            "playTime": "3:08",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/05%20Culture%20of%20the%20Vulture.mp3",
-            "lyrics": "../Angry/Culture of the Vulture.txt",
-            "link": "/Angry/Culture-of-the-Vulture"   
+            "players": "Guitar, Bass, Vocals: Strah, Backups: Andersen & Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/05%20Rat%20in%20a%20Cage.mp3",
+            "lyrics": "../Angry/Rat in a Cage.txt",
+            "link": "/Angry/Rat-in-a-Cage",  
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/Rat%20in%20a%20Cage.png",
+            "lastUpdated": "2023-02-09T00:00:00Z",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": "https://youtu.be/frIt68UKGF4"          
         },
         {
             "title": "The Arbiter of Truth",

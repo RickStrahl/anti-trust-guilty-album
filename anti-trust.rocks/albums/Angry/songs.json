@@ -33,19 +33,13 @@
             "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
         },        
         {
-            "title": "Rat in a Cage",
-            "playTime": "3.07",
+            "title": "Culture of the Vulture",
+            "playTime": "3:25",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
-            "file": "02 Rat in a Cage.mp3",
-            "lyrics": "Rat in a Cage.txt",
-            "imageUrl": "Rat in a Cage.png",
-            "spotifyUrl": "",
-            "amazonUrl": "",
-            "appleUrl": "",
-            "googleUrl": "https://youtu.be/frIt68UKGF4",
-            "lastUpdated": "2023-02-02T00:00:00Z",
-            "description": "Garage Punk Rock from Maui, Hawaii. We're all just a rat in a cage, poked and prodded into a feral rage."
+            "file": "02 Culture of the Vulture.mp3",
+            "lyrics": "Culture of the Vulture.txt",
+            "lastUpdated": "2023-01-08T00:00:00Z"
         },
         {
             "title": "Divide and Conquer",
@@ -68,16 +62,22 @@
             "file": "04 Ghost Rider.mp3",
             "lyrics": "Ghost Rider.txt",
             "lastUpdated": "2022-05-04T00:00:00Z"
-        },
+        },       
         {
-            "title": "Culture of the Vulture",
-            "playTime": "3:25",
+            "title": "Rat in a Cage",
+            "playTime": "3.07",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
-            "file": "05 Culture of the Vulture.mp3",
-            "lyrics": "Culture of the Vulture.txt",
-            "lastUpdated": "2023-01-08T00:00:00Z"
-        },        
+            "file": "05 Rat in a Cage.mp3",
+            "lyrics": "Rat in a Cage.txt",
+            "imageUrl": "Rat in a Cage.png",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": "https://youtu.be/frIt68UKGF4",
+            "lastUpdated": "2023-02-09T00:00:00Z",
+            "description": "Garage Punk Rock from Maui, Hawaii. We're all just a rat in a cage, poked and prodded into a feral rage."
+        },
         {
             "title": "The Arbiter of Truth",
             "playTime": "3:04",
