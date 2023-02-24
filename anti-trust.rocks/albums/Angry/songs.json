@@ -24,11 +24,11 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
             "file": "01 Speculate Speculate.mp3",
             "lyrics": "Speculate Speculate.txt",
-            "imageUrl": "Speculate Speculate.png",
+            "imageUrl": "Speculate Speculate.jpg",
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
-            "googleUrl": "https://youtu.be/9agtNlxMjmE",
+            "googleUrl": "https://youtu.be/de78P7O3dCE",
             "lastUpdated": "2022-10-30T00:00:00Z",
             "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
         },        
@@ -39,6 +39,7 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
             "file": "02 Culture of the Vulture.mp3",
             "lyrics": "Culture of the Vulture.txt",
+            "imageUrl": "Culture of the Vulture.jpg",
             "lastUpdated": "2023-01-08T00:00:00Z"
         },
         {
@@ -88,6 +89,17 @@
             "imageUrl": "The Arbiter of Truth.png",
             "googleUrl": "https://youtu.be/hI3zh27OhbU",
             "lastUpdated": "2023-01-12T00:00:00Z"
+        },
+        {
+            "title": "War Machine",
+            "playTime": "2:08",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "07 War Machine.mp3",            
+            "lyrics": "War Machine.txt",
+            "imageUrl": "War Machine.png",
+            "googleUrl": null,
+            "lastUpdated": "2023-02-23T00:00:00Z"
         }
     ]
 }
