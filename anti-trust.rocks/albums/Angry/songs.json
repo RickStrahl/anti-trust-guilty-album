@@ -81,14 +81,14 @@
         },
         {
             "title": "The Arbiter of Truth",
-            "playTime": "3:04",
+            "playTime": "3:05",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "06 The Arbiter of Truth.mp3",
             "lyrics": "The Arbiter of Truth.txt",
             "imageUrl": "The Arbiter of Truth.png",
             "googleUrl": "https://youtu.be/hI3zh27OhbU",
-            "lastUpdated": "2023-01-12T00:00:00Z"
+            "lastUpdated": "2023-03-06T00:00:00Z"
         },
         {
             "title": "War Machine",
@@ -98,8 +98,8 @@
             "file": "07 War Machine.mp3",            
             "lyrics": "War Machine.txt",
             "imageUrl": "War Machine.png",
-            "googleUrl": null,
-            "lastUpdated": "2023-02-26T00:00:00Z"
+            "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
+            "lastUpdated": "2023-03-04T00:00:00Z"
         }
     ]
 }
