@@ -58,6 +58,7 @@
     </script>	
 </head>
 <body> 
+
     <div class="toolbarcontainer">
 	 	<a href="#divSongTitles" class="hoverbutton" title="Listen to one or all songs on this site"><i class="fas fa-play text-green" style="color: green"></i> Listen</a>        
 		<a href="/stream" class="hoverbutton"><i class="fas fa-cloud-music"  style="color: steelblue" title="Stream or buy this album from Spotify, Amazon, Apple Music or YouTube Music"></i> Stream</a>
@@ -68,8 +69,8 @@
 		<a href="https://twitter.com/antitrustHI" class="hoverbutton" title="Follow us on Twitter"><i class="fab fa-twitter text-info"></i> Twitter</a>
 		<a href="/about" class="hoverbutton" title="About Anti-Trust and the Guilty Release" title="Find out more about Anti-Trust and the making of 'Guilty'"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
     </div>
-	
-<div class="page-container">
+
+<div class="page-container">	
 
 <div class="container">	
 	<img id="cover-image" src="/albums/@albumName/coverImage.jpg"
@@ -221,12 +222,20 @@
 		</div>
 	</div>
 </div>
+
 </div>
+	<div class="twitter-sidebar">
+		          <a class="twitter-timeline" data-chrome="noscrollbar"  data-theme="dark"  
+				  data-height="2000" href="https://twitter.com/antitrustHI" ></a>                                  
+           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+</div>
+
 <footer style="padding: 0.5em; border-top: 0.4px solid #eee">
 	<div style="float: right; color: #aaa; padding-bottom:1em;">
 		<small>&copy; Anti-Trust, 2002-@DateTime.Now.Year</small>
 		<div style="text-align: right; font-family: sans-serif; font-size: 0.4em; color: #777">		
-			LiveReload Server v@(LiveReloadServer.Program.Version) &bull;
+			<a href="https://github.com/RickStrahl/LiveReloadServer" target="_blank" style="xtext-decoration: none; color: #999">LiveReload Server</a> v@(LiveReloadServer.Program.Version) &bull;
 			@System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription
 		</div>
 	</div>

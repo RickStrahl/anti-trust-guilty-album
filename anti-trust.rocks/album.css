@@ -20,14 +20,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-container {
-    background: linear-gradient(#222 10%, #000 100%);     
+    display: flex;
+    background: black;  
     min-height: 100%;    
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 100%;
+   
+}
+@media(min-width: 1100px) {
+    .twitter-sidebar {
+        min-width: 330px;
+        max-width: 500px;
+        min-height: 100%;        
+        padding:1.5em 0.5em 0;
+        background: black;
+    }
+}
+@media(min-width: 1400px) {
+    .twitter-sidebar {
+        min-width: 500px;
+    }
+}
+@media(max-width: 1100px) {
+    .twitter-sidebar {
+        display: none;
+    }
 }
 .container {
     margin: 0 auto;
     background: black;
+    max-width: 1400px;
 }
 
 #divSongTitles {
@@ -47,7 +69,6 @@ body::-webkit-scrollbar-thumb {
     overflow-y: hidden;
     margin: 0.2em;
 }
-
 .image-container img {
     max-width: 100%;
 }
@@ -218,3 +239,4 @@ text-error {
     font-size: 18px !important;  
     font-family: sans-serif
 }
+
