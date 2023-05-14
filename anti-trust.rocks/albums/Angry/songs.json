@@ -97,9 +97,18 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "07 War Machine.mp3",            
             "lyrics": "War Machine.txt",
-            "imageUrl": "War Machine.png",
+            "imageUrl": "War Machine Dollar.png",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
             "lastUpdated": "2023-03-06T00:00:00Z"
+        },
+        {
+            "title": "Follow the Money",
+            "playTime": "3:20",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "08 Follow the Money.mp3",            
+            "lyrics": "Follow the Money.txt",
+            "lastUpdated": "2023-05-13T00:00:00Z"
         }
     ]
 }
