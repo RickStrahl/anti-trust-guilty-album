@@ -264,6 +264,17 @@
             "lastUpdated": "2023-03-04T00:00:00Z"
         },
         {
+            "title": "Follow the Money",
+            "playTime": "2:50",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/08%20Follow%20the%20Money.mp3",            
+            "lyrics": "Follow the money.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/Follow%20the%20Money.png",
+            "link": "/Angry/Follow-the-Money",
+            "lastUpdated": "2023-05-25T00:00:00Z"
+        },        
+        {
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",
             "credits": "Music Garrat, Lyrics Harper",
