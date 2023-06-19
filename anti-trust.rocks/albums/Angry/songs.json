@@ -110,6 +110,15 @@
             "imageUrl": "Follow the Money.jpg",        
             "lyrics": "Follow the Money.txt",
             "lastUpdated": "2023-05-27T00:00:00Z"
+        },
+        {
+            "title": "So What?",
+            "playTime": "1:13",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "09 So What.mp3",                
+            "lyrics": "So What.txt",
+            "lastUpdated": "2023-06-20T00:00:00Z"
         }
     ]
 }
