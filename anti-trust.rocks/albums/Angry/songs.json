@@ -116,9 +116,10 @@
             "playTime": "1:13",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "09 So What.mp3",                
+            "file": "09 So What.mp3",  
+            "imageUrl": "So What.jpg",                 
             "lyrics": "So What.txt",
-            "lastUpdated": "2023-06-20T00:00:00Z"
+            "lastUpdated": "2023-06-30T00:00:00Z"
         }
     ]
 }
