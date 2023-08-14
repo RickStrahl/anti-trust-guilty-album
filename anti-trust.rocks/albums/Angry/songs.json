@@ -62,6 +62,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "04 Ghost Rider.mp3",
             "lyrics": "Ghost Rider.txt",
+            "imageUrl": "Ghost Rider.jpg",
             "lastUpdated": "2022-05-04T00:00:00Z"
         },       
         {
@@ -97,7 +98,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "07 War Machine.mp3",            
             "lyrics": "War Machine.txt",
-            "imageUrl": "War Machine Dollar.png",
+            "imageUrl": "War Machine Bomb.jpg",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
             "lastUpdated": "2023-03-06T00:00:00Z"
         },
@@ -119,7 +120,64 @@
             "file": "09 So What.mp3",  
             "imageUrl": "So What.jpg",                 
             "lyrics": "So What.txt",
-            "lastUpdated": "2023-06-30T00:00:00Z"
-        }
+            "lastUpdated": "2023-06-30T00:00:00Z",
+            "googleUrl": "https://youtu.be/m9oUu1wHsDM"
+        },
+
+        {
+            "title": "Fear Factory",
+            "playTime": "2:50",
+            "credits": "Music and Lyrics Strahl",
+            "groupStart": "Past Offenses",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/08%20Fear%20Factory.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
+            "lyrics": "../Guilty/08 Fear Factory.txt",
+            "spotifyUrl": "https://open.spotify.com/track/0XG6piwnlNrMnMlfkOS0uo?si=bba76a6902bc42f4",
+            "amazonUrl": "https://amzn.to/2Y46feo",
+            "appleUrl": "https://music.apple.com/us/album/fear-factory/1586023179?i=1586023187",
+            "googleUrl": "https://youtube.com/watch?v=zfgNZtdNfDg&feature=share",
+            "imageUrl": "https://anti-trust.rocks/albums/Guilty/Fear%20Factory.jpg",
+            "lastUpdated": "2022-02-05T00:00:00Z"            
+        },
+        {
+            "title": "Antisocial",
+            "playTime": "2:26",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals, Strahl, Drums: Kontos, Backups: Strahl & Kontos",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/03%20Antisocial.mp3",
+            "lyrics": "../Guilty/03 Antisocial.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/Guilty/Antisocial.png",
+            "spotifyUrl": "https://open.spotify.com/track/5GlggfGYB6cQIWQo5ezmQC?si=d93735665b5a4c7e",
+            "amazonUrl": "https://amzn.to/3nGtweX",
+            "appleUrl": "https://music.apple.com/us/album/antisocial/1586023179?i=1586023182",
+            "googleUrl": "https://youtu.be/_jvoBHy0jDs",
+            "lastUpdated": "2021-07-07T00:00:00Z"            
+        },
+        {
+            "title": "No More Lies",
+            "playTime": "2:15",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/06 No More Lies.mp3",
+            "lyrics": "../Guilty/06 No More Lies.txt",
+            "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
+            "amazonUrl": "https://amzn.to/3nHi5Up",
+            "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",
+            "googleUrl": "https://youtu.be/CS7Us3twQBM",
+            "lastUpdated": "2022-11-10T00:00:00Z"
+        },
+        {
+            "title": "Sick Inside",
+            "playTime": "1:44",
+            "credits": "Music and Lyrics Strahl & Kontos",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/05 Sick Inside.mp3",
+            "players": "Vocals: Kontos, Guitar, Bass: Strahl, Backups: Strahl & Kontos",
+            "lyrics": "../Guilty/05 Sick Inside.txt",
+            "spotifyUrl": "https://open.spotify.com/track/7idxLUi8AabGY2zw7ISpkN?si=12c28889737146a1",
+            "amazonUrl": "https://amzn.to/2ZFWGTu",
+            "appleUrl": "https://music.apple.com/us/album/sick-inside/1586023179?i=1586023184",
+            "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share",
+            "lastUpdated": "2021-07-05T00:00:00Z"           
+        },
     ]
 }
