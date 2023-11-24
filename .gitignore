@@ -62,8 +62,6 @@ ipch/
 
 # ReSharper is a .NET coding add-in
 _ReSharper*
-.vs/
-.vscode/
 .idea/
 
 # NCrunch
@@ -96,7 +94,6 @@ thumbs.db
 [Bb]in
 [Oo]bj
 sql
-TestResults
 [Tt]est[Rr]esult*
 *.Cache
 ClientBin
@@ -118,3 +115,4 @@ Temp
 jquery-watch.sln
 website.publishproj
 /downloads/Anti-Trust-Guilty.zip
+/.DS_Store
