@@ -4,7 +4,7 @@
     "description": "Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
     "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2000-2022<br/>\non Maui, HI and Oakland, CA",
-    "copyright": "Anti-Trust, 2002-2022",
+    "copyright": "Anti-Trust, 2002-2023",
     "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -283,7 +283,19 @@
             "lyrics": "/Angry/So-What.txt",
             "link": "/Angry/So-What",
             "lastUpdated": "2023-06-30T00:00:00Z"
-        },    
+        },  
+        {
+            "title": "The Masters of Disaster",
+            "playTime": "4:52",
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Angry/mp3/10%20Masters%20of%20Disaster.mp3",  
+            "imageUrl": "https://anti-trust.rocks/albums/Angry/Masters%20of%20Disaster.jpg",                 
+            "lyrics": "/Angry/Masters of Disaster.txt",
+            "link": "/Angry/The-Masters-of-Disaster",
+            "lastUpdated": "2023-11-25T00:00:00Z",
+            "googleUrl": null
+        },
         {
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",

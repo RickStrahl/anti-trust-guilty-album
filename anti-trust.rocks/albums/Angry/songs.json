@@ -125,13 +125,13 @@
         },
         {
             "title": "The Masters of Disaster",
-            "playTime": "4:51",
+            "playTime": "4:52",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "10 Masters of Disaster.mp3",  
             "imageUrl": "Masters of Disaster.jpg",                 
             "lyrics": "Masters of Disaster.txt",
-            "lastUpdated": "2023-11-18T00:00:00Z",
+            "lastUpdated": "2023-11-25T00:00:00Z",
             "googleUrl": null
         },
         {
@@ -188,6 +188,6 @@
             "appleUrl": "https://music.apple.com/us/album/sick-inside/1586023179?i=1586023184",
             "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share",
             "lastUpdated": "2021-07-05T00:00:00Z"           
-        },
+        }
     ]
 }
