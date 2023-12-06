@@ -44,6 +44,9 @@ html, body{
   color: #ff0000;
   text-shadow: 0.01em 0.01em #656565;
 }
+a, a:visited {
+    color: steelblue;
+}
 @media(min-width: 1441px) {
     .song-title  {
         font-size: 7.9vmin;
@@ -61,6 +64,11 @@ html, body{
     font-size: 2.9vmin;
     overflow: hidden;
     padding-bottom: 1em;
+}
+.lyric-notes {
+    font-size: 0.7em;
+    font-weight: normal;
+    font-family: sans-serif;
 }
 .audio-player {    
     margin-top: 35%;

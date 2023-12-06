@@ -44,6 +44,8 @@ namespace AlbumObjects
         
         public string lyrics { get; set; }
 
+        public string lyricNotes {get; set;}
+
         public string ImageUrl {get; set; }
         
         public string groupStart {get; set; }

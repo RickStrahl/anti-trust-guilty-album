@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntiTrustWebSite", "AntiTrustWebSite.csproj", "{6985F07B-7BF0-4DB0-A377-30CB11C4AE70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "privatebin", "privatebin", "{42625E6C-5802-4832-B947-38A7BA3302B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbumObjects", "privatebin\code\AlbumObjects.csproj", "{8969AF22-30F7-4541-A10F-B588ABA85C33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6985F07B-7BF0-4DB0-A377-30CB11C4AE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6985F07B-7BF0-4DB0-A377-30CB11C4AE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6985F07B-7BF0-4DB0-A377-30CB11C4AE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6985F07B-7BF0-4DB0-A377-30CB11C4AE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8969AF22-30F7-4541-A10F-B588ABA85C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8969AF22-30F7-4541-A10F-B588ABA85C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8969AF22-30F7-4541-A10F-B588ABA85C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8969AF22-30F7-4541-A10F-B588ABA85C33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8969AF22-30F7-4541-A10F-B588ABA85C33} = {42625E6C-5802-4832-B947-38A7BA3302B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19F6990C-7D06-4F33-A97E-B85443CE0B0F}
+	EndGlobalSection
+EndGlobal
