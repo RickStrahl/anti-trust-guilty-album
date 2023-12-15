@@ -23,10 +23,10 @@ You can also find, stream or buy the 'Guilty' album on your favorite streaming s
 In addition to the Web Site for **free streaming**, all the digital music and content is available here **for download for free**. This GitHub Repository Site provides access to all of the music and support content that you can download from here:
 
 * [Full Guilty Album Download as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Guilty.zip) 
-* [Angry Album (in progress) Download  as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-Angry.zip)
+* [The Masters of Disaster (in progress) Download  as a Zip File](https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Anti-Trust-The-Masters-of-Disaster.zip)
 * [Buy a hard copy CD of Guilty](https://store.west-wind.com/product/ANTITRUST_GUILTY_CD)
 * [Guilty Album - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Guilty/mp3)
-* [Angry Album (in progress) - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/Angry/mp3)
+* [The Masters of Disaster Album (in progress) - Individual Song Downloads](https://github.com/RickStrahl/anti-trust-guilty-album/tree/main/Albums/The-Masters-of-Disaster/mp3)
 
 ## Print your own T-Shirts
 Want an Anti-Trust T-Shirt? We're making artwork available, so you can print your own T-Shirts or other typical merchandise using readily available online services at Amazon and other retailers. You can download the T-Shirt Artwork and use any printing service (we provide a few links) to customize your own T-Shirt.
