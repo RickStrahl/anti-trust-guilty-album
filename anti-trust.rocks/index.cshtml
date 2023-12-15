@@ -1,6 +1,7 @@
 ﻿@page "/{album?}"
 
-@using AlbumObjects
+@using AlbumObjects;
+
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
 @functions {
     public  AlbumData Album { get; set; } = new AlbumData();
@@ -110,7 +111,7 @@
 		<div class="header">All Offenses</div>
 		<ul style="margin-top:0">
 			<li style="list-style:none"><a href="/Guilty">Guilty <small style='font-size: 0.5em; font-weight: normal'>(2022)</small></a></li>
-			<li style="list-style:none" ><a href="/Angry">Angry <small style='font-size: 0.5em; font-weight: normal'>(in progress)</small></a></li>
+			<li style="list-style:none" ><a href="/The-Masters-of-Disaster">The Masters of Disaster <small style='font-size: 0.5em; font-weight: normal'>(in progress)</small></a></li>
 		</ul>
 
 
