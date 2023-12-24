@@ -27,25 +27,28 @@ body::-webkit-scrollbar-thumb {
     max-width: 100%;
    
 }
-@media(min-width: 1100px) {
+
+.twitter-sidebar {
+    display: none;
+}
+
+@media(min-width: 1400px) {
     .twitter-sidebar {
         min-width: 330px;
         max-width: 500px;
         min-height: 100%;        
         padding:1.5em 0.5em 0;
         background: black;
+        display: block;
     }
 }
-@media(min-width: 1400px) {
+@media(min-width: 1900px) {
     .twitter-sidebar {
         min-width: 500px;
+        display: block;
     }
 }
-@media(max-width: 1100px) {
-    .twitter-sidebar {
-        display: none;
-    }
-}
+
 .container {
     margin: 0 auto;
     background: black;

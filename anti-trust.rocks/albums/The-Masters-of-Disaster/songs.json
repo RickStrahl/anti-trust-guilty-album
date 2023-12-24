@@ -19,6 +19,7 @@
     "songs": [
         {
             "title": "Speculate Speculate",
+            "dontShowTitle": true,
             "playTime": "4.57",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
@@ -34,6 +35,7 @@
         },        
         {
             "title": "Culture of the Vulture",
+            "dontShowTitle": true,
             "playTime": "3:25",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
@@ -45,6 +47,7 @@
         {
             "title": "So What",
             "playTime": "1:13",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "03 So What.mp3",  
@@ -55,6 +58,7 @@
         },
         {
             "title": "The Masters of Disaster",
+            "dontShowTitle": true,
             "playTime": "4:54",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
@@ -68,6 +72,7 @@
         {
             "title": "Rat in a Cage",
             "playTime": "3.07",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
             "file": "05 Rat in a Cage.mp3",
@@ -96,6 +101,7 @@
         {
             "title": "The Arbiter of Truth",
             "playTime": "3:05",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "07 The Arbiter of Truth.mp3",
@@ -107,6 +113,7 @@
         {
             "title": "Follow the Money",
             "playTime": "3:51",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "08 Follow the Money.mp3",    
@@ -117,6 +124,7 @@
         {
             "title": "Ghost Rider",
             "playTime": "3:01",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "09 Ghost Rider.mp3",
@@ -125,16 +133,28 @@
             "lastUpdated": "2022-05-04T00:00:00Z"
         },       
         {
-            "title": "War Machine",
+            "title": "Poison Pill",
             "playTime": "2:33",
+            "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "10 War Machine.mp3",            
+            "file": "10 Poison Pill.mp3",            
+            "lyrics": "Poison Pill.txt",
+            "imageUrl": "Poison Pill.jpg",            
+            "lastUpdated": "2023-12-22T00:00:00Z"
+        },
+        {
+            "title": "War Machine",
+            "playTime": "2:33",
+            "dontShowTitle": true,
+            "credits": "Music and Lyrics Strahl",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "11 War Machine.mp3",            
             "lyrics": "War Machine.txt",
             "imageUrl": "War Machine Bomb.jpg",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
             "lastUpdated": "2023-03-06T00:00:00Z"
-        },
+        },   
         {
             "title": "Fear Factory",
             "playTime": "2:50",

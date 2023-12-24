@@ -34,6 +34,8 @@ namespace AlbumObjects
         public string displayTitle { get; set; }
         public string title { get; set; }
 
+        public bool dontShowTitle {get; set; }
+
         public string description {get; set;}
         public string credits { get; set; }
         public string players {get; set; }

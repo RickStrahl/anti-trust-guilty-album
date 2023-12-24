@@ -144,7 +144,10 @@
             <a class="audio-player" onclick="player.startStop()" title="Play song: @song.title">
                 <i class="play-icon far fa-play-circle"></i>
             </a>
-            <div class="song-title">@Html.Raw(song.title)</div>                        
+
+            @if (!song.dontShowTitle) {
+                <div class="song-title">@Html.Raw(song.title)</div>                        
+            }
             <div class="song-info">  
 
               <table class="table">
