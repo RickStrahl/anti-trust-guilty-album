@@ -133,15 +133,15 @@
             "lastUpdated": "2022-05-04T00:00:00Z"
         },       
         {
-            "title": "Poison Pill",
-            "playTime": "2:25",
+            "title": "`Poison` Pill",
+            "playTime": "2:26",
             "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "10 Poison Pill.mp3",            
             "lyrics": "Poison Pill.txt",
             "imageUrl": "Poison Pill.jpg",            
-            "lastUpdated": "2023-12-22T00:00:00Z"
+            "lastUpdated": "2023-12-28T00:00:00Z"
         },
         {
             "title": "War Machine",
@@ -190,7 +190,7 @@
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/06 No More Lies.mp3",
-            "lyrics": "https://anti-trust.rocks/albums/Guilty/06 No More Lies.txt",
+            "lyrics": "../Guilty/06 No More Lies.txt",
             "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
             "amazonUrl": "https://amzn.to/3nHi5Up",
             "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",
