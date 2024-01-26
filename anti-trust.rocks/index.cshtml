@@ -9,6 +9,7 @@
 }
 @{
 	var albumName = RouteData.Values["album"] as string ?? "Guilty"; 
+	var title = albumName?.Replace("-", " ");
 
 	var fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
     var json = await  System.IO.File.ReadAllTextAsync(fileName);
@@ -22,14 +23,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
 	@* <link rel="manifest" href="manifest.json" /> *@
 
-	<title>Anti-Trust - @albumName! (Punk Rock Music - Full Album)</title>
+	<title>Anti-Trust - @title (Punk Rock Music - Full Album)</title>
 	<meta http-equiv="keywords" content="Anti-Trust,Guilty,Punk,Hardcore,Metal,Rock,CrunchCore,Maui,Hawaii,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen,mp3" />
 	<meta http-equiv="description" content="Anti-Trust - Guilty: Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
 
 	<link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
 
-	<meta property="og:title" content="Anti-Trust - Guilty" />
-	<meta property="og:description" content="Anti-Trust - Guilty: Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />    
+	<meta property="og:title" content="Anti-Trust - @title" />
+	<meta property="og:description" content="Anti-Trust - @title: Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />    
 	<meta property="og:url" content="https://anti-trust.rocks" />
 	<meta property="og:type" content="music.album" />
     <meta property="og:music:album" content="@albumName" />
