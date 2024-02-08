@@ -46,7 +46,18 @@ namespace AlbumObjects
         
         public string lyrics { get; set; }
 
-        public string lyricNotes {get; set;}
+        /// <summary>
+        /// A notification box that shows up above the lyrics
+        /// to alert the user to something important like
+        /// a video is available etc.
+        /// </summary>
+        public string Notification {get; set; }
+
+        /// <summary>
+        /// Additional information that is shown below
+        /// the lyrics in small text
+        /// </summary>
+        public string lyricNotes {get; set;}        
 
         public string ImageUrl {get; set; }
         

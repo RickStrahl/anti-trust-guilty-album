@@ -1,8 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <Version>1.0.5</Version>
     <TargetFramework>net8.0</TargetFramework>    
     <ImplicitUsings>enable</ImplicitUsings>
     <DebugType>embedded</DebugType>
 	  <DebugSymbols>true</DebugSymbols>    
+    <!--- This creates a .dep.json file that causes problesm with loading -->
+    <!-- <OutputPath>..\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath> -->
   </PropertyGroup>
 </Project>

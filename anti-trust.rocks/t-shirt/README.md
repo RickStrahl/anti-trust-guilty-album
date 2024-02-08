@@ -7,20 +7,24 @@ Want an Anti-Trust Guilty T-Shirt? In the open source spirit **you can make your
 ### Buy a Ready-Made T-Shirt
 You can buy a ready-made T-Shirt from our merchandise shop at:
 
-* [Anti-Trust Merchandise](https://anti-trust.myspreadshop.com/)
+* [Anti-Trust Merchandise](https://anti-trust-merchandise.printify.me/products)
 
-You can find various types of T-Shirts, sweat shirts, hoodies and other paraphenelia.
+There are several designs to choose from.
 
 ### Print your own T-Shirts using Amazon Vendors printing Shirts
 You can download a  transparent image `png` file, that you can use to print your own T-Shirts, hats, patches etc. The image contained here is a **negative image** of the Guilty cover logo (ie. white/red foreground with transparent background), which means it **will only work for printing onto a black or dark background surfaces**.
 
-[Open and Save T-Shirt Image](T-Shirt-Art-Negative.png){target="_blank"}
+**Negative Images for Black T-Shirts**
+
+* [Guilty Album Cover](T-Shirt-Art-Negative.png){target="_blank"}
+* [The Masters of Disaster](T-Shirt-Masters-Of-Disaster-Negative.png){target="_blank"}
+* [War is the Real Enemy](T-Shirt-War-Is-The-Real-Enemy.png)
 
 There are a number of shops online that you can use to get T-Shirts Printed and shipped to you. 
 
 Here are a couple of Amazon vendors I've used personally to print these shirts and that provide good prints and decent quality shirts:
 
-* [Hopen Brand Custom T-Shirt](https://amzn.to/3bOIPgJ)
+* [Awkward Styles Store](https://amzn.to/3vO0MIV)
 * [Custume Agent Store T-Shirt](https://amzn.to/3oHCOaB)
 
 Here's on vendor on Amazon Germany - but haven't used them:

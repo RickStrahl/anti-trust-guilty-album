@@ -2,7 +2,7 @@
 
 @using Westwind.Utilities
 @using Microsoft.AspNetCore.Http
-@using AlbumObjects   
+@using AlbumObjects
 
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
 
@@ -172,8 +172,17 @@
                     <tr>
 
                     </tr>
+                </table> 
 
-                </table>                             
+                @if(!string.IsNullOrEmpty(song.Notification)) {
+                <div class="song-notification" style="display: flex; margin-top: 0.4em;">            
+                    <i class="fas fa-info-circle  d-block" style="color: rgb(146, 18, 18); font-size: 2em; margin-top: 0.25em; margin-right: 0.35em; "></i> 
+                    <div>
+                        <markdown>@song.Notification</markdown>
+                    </div>                        
+                </div>
+                }
+
                 <hr style="margin: 1em 0 0.5em" />
                
         
@@ -217,6 +226,9 @@
                     }
                 </span>
             </div>           
+
+
+     
 
             <pre class="lyrics">@song.lyrics</pre>
 

@@ -1,3 +1,4 @@
-dotnet build -c release
+dotnet build -c Release
 
-Copy-Item .\bin\Release\net6.0\AlbumObjects.dll ..\
+mkdir ..\updates -force
+Copy-Item .\bin\Release\net8.0\AlbumObjects.dll ..\updates\AlbumObjects.dll -force 

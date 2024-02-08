@@ -32,6 +32,24 @@ html, body{
     max-width: 1440px;
 }
 
+.song-notification {
+    font-family:sans-serif;
+    background-color: goldenrod;
+    font-size: 0.85em;
+    color: #252525;
+    padding: 0em 1em;
+    margin-bottom: 1em;
+    border-radius: 0.4em;    
+}
+.song-notification a, .song-notification a:visited {    
+    color: rgb(28, 82, 125);
+}
+.song-notification a:hover  {    
+    color: firebrick;
+}
+
+
+
 /* Credits Table */
 .table { font-size: 0.8em; font-weight: normal }
 .table td { padding: 0.1em 1em; }
