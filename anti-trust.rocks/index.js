@@ -52,7 +52,12 @@ if (navigator.mediaSession) {
 paintIcon();
 
 function playAll() {
-    $.get("/albums/" + page.album + "/songs.json?1.15",function(album) {        
+    var url = "/albums/" + page.album.replace(" ","-") + "/songs.json?1.20";
+    console.log(url);
+    debugger;
+    $.get(url)
+    .then( function(album) {    
+        debugger;    
         var player = window.player;
         album.songs.forEach(function(song) {
             if (!song.file.startsWith('http'))
@@ -80,6 +85,10 @@ function playAll() {
         player.playSongs();
 
         paintIcon();
+    })
+    .fail(function(err) {
+        debugger;
+       alert(err);
     });
 }
 
