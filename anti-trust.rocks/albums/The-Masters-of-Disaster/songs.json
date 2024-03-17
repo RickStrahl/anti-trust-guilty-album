@@ -158,14 +158,15 @@
         },   
         {
             "title": "End of the Line",
-            "playTime": "1:14",
+            "playTime": "2:39",
             "dontShowTitle": false,
             "credits": "Music Strahl",
             "players": "Guitar, Bass: Strahl",
-            "file": "12 End of the Line.mp3",                        
+            "file": "12 End of the Line.mp3", 
+            "lyrics": "End of the Line.txt",                       
             "imageUrl": "End of the Line.jpg",
             "googleUrl": null,
-            "lastUpdated": "2024-02-12T00:00:00Z"
+            "lastUpdated": "2024-03-14T00:00:00Z"
         },
         {
             "title": "Fear Factory",

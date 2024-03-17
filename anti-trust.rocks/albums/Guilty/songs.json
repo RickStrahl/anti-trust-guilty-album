@@ -313,16 +313,16 @@
         },
         {
             "title": "End of the Line",
-            "playTime": "1:14",
+            "playTime": "2:39",
             "dontShowTitle": false,
             "credits": "Music Strahl",
             "players": "Guitar, Bass: Strahl",                        
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/12%20End%20of%20the%20Line.mp3",            
-            "lyrics": "War Machine.txt",
-            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/War%20Machine.png",
-            "link": "/The-Masters-of-Disaster/War-Machine",
+            "lyrics": "The End of the Line.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/End%20of%20the%20line.png",
+            "link": "/The-Masters-of-Disaster/End-of-the-Line",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
-            "lastUpdated": "2024-02-12T00:00:00Z"
+            "lastUpdated": "2024-03-14T00:00:00Z"
         },
         {
             "title": "Organized Crime (UK Subs)",
@@ -336,6 +336,7 @@
             "appleUrl": "",
             "googleUrl": "",
             "groupStart": "Plea Bargains",
+            
             "lastUpdated": "2021-07-03T00:00:00Z"         
         },
         {
