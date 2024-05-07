@@ -183,6 +183,20 @@
                 </div>
                 }
 
+
+
+             @if(song.embeddedVideoUrl != null) {
+                <hr style="margin: 1em 0 0.5em" />
+                <div style="position: relative; width: 100%; padding-bottom: 56.25%">
+                <iframe src="@song.embeddedVideoUrl" 
+                        title="@song.title" frameborder="0" allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        style="position: absolute; width: 100%; height: 100%;">
+                </iframe>
+                </div>
+            }
+
+
                 <hr style="margin: 1em 0 0.5em" />
                
         
@@ -227,9 +241,6 @@
                 </span>
             </div>           
 
-
-     
-
             <pre class="lyrics">@song.lyrics</pre>
 
             @if(!string.IsNullOrEmpty(song.lyricNotes)) {            
@@ -237,6 +248,10 @@
                 <markdown>@song.lyricNotes</markdown>
             </div>
             }
+
+    
+
+
 
             <hr/>
 

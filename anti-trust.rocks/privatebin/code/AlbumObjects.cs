@@ -17,6 +17,12 @@ namespace AlbumObjects
 
         public string copyright { get; set;  }
 
+        /// <summary>
+        /// Notification message that gets displayed at the top of the album list as
+        /// an 'alert' message
+        /// </summary>
+        public string notification {get; set; }
+
 
         public List<SongData> songs { get; set; } = new List<SongData>();
 
@@ -70,6 +76,8 @@ namespace AlbumObjects
         public string appleUrl {get; set;}
         public string googleUrl {get; set; }
         public string youTubeUrl {get; set; }
+
+        public string embeddedVideoUrl {get; set; }
     }
 
 }

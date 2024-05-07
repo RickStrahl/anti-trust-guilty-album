@@ -51,7 +51,7 @@
 	<meta name="twitter:image" content="https://anti-trust.rocks/albums/@albumName/card-rectangle.png" />
     <meta property="og:image:alt" content="Anti-Trust @albumName cover image" />
 
-	<link rel="stylesheet" href="album.css?v1.1.3" />
+	<link rel="stylesheet" href="album.css?v1.1.4" />
 	@* <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script> *@
 	<link rel="stylesheet" href="/lib/fontawesome/css/all.css"></script>   
 	<script>
@@ -79,6 +79,8 @@
 	<img id="cover-image" src="/albums/@albumName/coverImage.jpg"
 		 style="width: 100%; display: block;margin-top: 0.5em; " />
  	<div id="divSongTitles">
+		
+
 		<div  class="header" style="margin-bottom: 0.5em;">
 			Listen to the Evidence
 			<div style="color: white;font-size: 1.3em">
@@ -96,6 +98,14 @@
 				</i>
 			</div>
 		</div>
+
+		@if(Album.notification != null)
+		{
+			<div class="notification" style="z-index: 999999999">
+				@Html.Raw(Album.notification)
+			</div>
+		}
+		
 		<ol style="margin-top: 0">
 		@foreach(var song in Album.songs){		
 			var link = song.link ?? $"/{albumName}/" + song.title?.Replace(" ", "-");

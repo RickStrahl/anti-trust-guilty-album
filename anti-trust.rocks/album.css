@@ -55,6 +55,23 @@ body::-webkit-scrollbar-thumb {
     max-width: 1400px;
 }
 
+.notification {
+    font-family:sans-serif;
+    background-color: goldenrod;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: #252525;
+    padding: 0.7em 0.9em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;    
+}
+.notification a, .notification a:visited {    
+    color: rgb(43, 43, 197);
+}
+.notification a:hover  {    
+    color: firebrick;
+}
+
 #divSongTitles {
     width: 100%;
     max-width: 100%;

@@ -5,7 +5,8 @@
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/",
     "coverImage": "https://anti-trust.rocks/Angry/coverImage.jpg",
     "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2023<br/>\non Maui, HI",
-    "copyright": "Anti-Trust, 2022-2023",
+    "copyright": "Anti-Trust, 2022-2024",
+    "notification": "Check out new videos for <a href='https://www.youtube.com/watch?v=5zFzz5bxpMU' target='_blank'>Masters of Disaster</a> and <a href='https://www.youtube.com/watch?v=C5fKGla-RtQ' target='_blank'>No More Lies</a>",
     "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -65,9 +66,10 @@
             "file": "04 Masters of Disaster.mp3",  
             "imageUrl": "Masters of Disaster.jpg",                 
             "lyrics": "Masters of Disaster.txt",
-            "lastUpdated": "2024-01-22T00:00:00Z",
-            "notification": "Check out the [new video on YouTube](https://www.youtube.com/watch?v=5zFzz5bxpMU).",
+            "lastUpdated": "2024-01-22T00:00:00Z",            
+            "embeddedVideoUrl": "https://www.youtube.com/embed/5zFzz5bxpMU",
             "googleUrl": "https://www.youtube.com/watch?v=5zFzz5bxpMU",
+
             "lyricNotes": "### End of song Quotes\r\n\r\n*Madeline Albright: 1/2 million children is worth it*  \r\nhttps://youtube.com/shorts/1T5JRVR53Eo\r\n\r\n*George Bush Senior: Saddam's Nuclear Bomb capabilities*  \r\nhttps://youtu.be/IFrnQHaQWoA?si=EWd1taGu3zNM-s1-\r\n\r\n*Judge Jeanine: Bomb them*   \r\nhttps://youtu.be/yCHdow7wvSw?si=RHtCoVrzymGlTZbA\r\n\r\n*Wesley Clarke: Memo on invading 7 countries in 5 years*  \r\nhttps://www.youtube.com/watch?v=6Knt3rKTqCk\r\n\r\n*Hillary Clinton: We came, we saw, he died (on Qhaddafy)*  \r\nhttps://www.youtube.com/watch?v=6DXDU48RHLU\r\n\r\n*Bank Debt isn't principle protected by design (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5775s\r\n\r\n*Ben Bernanke (2005): Housing Prices have never gone down*  \r\nhttps://www.youtube.com/watch?v=cBrV1MszSjI\r\n\r\n*Bank Bail Ins (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5120s\r\n\r\n*Faith in the Banks of Bankers (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5147s\r\n\r\n*Fed Chair Jerome Powell (2023): Close the fucking door*  \r\nhttps://www.youtube.com/watch?v=1PHhrG9G_SM"
         },
         {

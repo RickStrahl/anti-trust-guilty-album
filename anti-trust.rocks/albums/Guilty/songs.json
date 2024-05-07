@@ -4,7 +4,8 @@
     "description": "Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
     "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2000-2022<br/>\non Maui, HI and Oakland, CA",
-    "copyright": "Anti-Trust, 2002-2023",
+    "copyright": "Anti-Trust, 2002-2024",
+    "notification": "Check out new videos for <a href='https://www.youtube.com/watch?v=5zFzz5bxpMU' target='_blank'>Masters of Disaster</a> and <a href='https://www.youtube.com/watch?v=C5fKGla-RtQ' target='_blank'>No More Lies</a>",
     "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -73,9 +74,10 @@
             "imageUrl": "No More Lies.jpg",
             "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
             "amazonUrl": "https://amzn.to/3nHi5Up",
-            "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",
-            "googleUrl": "https://youtu.be/CS7Us3twQBM",
-            "lastUpdated": "2022-11-10T00:00:00Z"
+            "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",            
+            "googleUrl": "https://youtu.be/C5fKGla-RtQ",
+            "embeddedVideoUrl": "https://www.youtube.com/embed/C5fKGla-RtQ",
+            "lastUpdated": "2024-01-26T00:00:00Z"
         },
         {
             "title": "Sick Inside",
