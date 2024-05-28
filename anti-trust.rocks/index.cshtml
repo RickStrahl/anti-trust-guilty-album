@@ -1,21 +1,22 @@
 @page "/{album?}"
 
-@using AlbumObjects;
+@using AlbumObjects
 @using Westwind.Utilities
 
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+
 @functions {
     public  AlbumData Album { get; set; } = new AlbumData();
     public SongData song { get; set; }
 }
 @{
-	var albumName = RouteData.Values["album"] as string ?? "Guilty"; 
+	var albumName = RouteData.Values["album"] as string ?? "The-Masters-of-Disaster"; 
 	var title = albumName?.Replace("-", " ");
 
 	var fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
-    var json = await  System.IO.File.ReadAllTextAsync(fileName);
-
-    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
+    var json = await System.IO.File.ReadAllTextAsync(fileName);
+	
+	Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -120,13 +121,27 @@
 		}
 		</ol>
 
-		<div class="header">All Offenses</div>
-		<ul style="margin-top:0">
-			<li style="list-style:none"><a href="/Guilty">Guilty <small style='font-size: 0.5em; font-weight: normal'>(2022)</small></a></li>
-			<li style="list-style:none" ><a href="/The-Masters-of-Disaster">The Masters of Disaster <small style='font-size: 0.5em; font-weight: normal'>(in progress)</small></a></li>
+		<div class="header">Court Record</div>
+		
+			<div style="height: 2.5em;">
+				<img src="/albums/Guilty/albumcover-small.jpg" style="height: 2.2em; float: left;margin-left: -1em; margin-right: 0.3em" />
+				<div class="artist"><a href="/Guilty">Guilty</a></div>
+				<div class="copyright">
+					released in 2021
+				</div>
+			</div>
+
+			<div style="height: 2.5em">
+				
+				<img src="/albums/The-Masters-of-Disaster/albumcover-small.jpg" 
+					style="height: 2.2em; float: left;margin-right: 0.3em; margin-left: -1em" />
+			<div class="artist mt-1"><a href="/The-Masters-of-Disaster">The Masters of Disaster</a></div>
+			<div class="copyright">
+				to be released in 2024
+			</div>
+			</div>
+	
 		</ul>
-
-
 		
 		<div class="header">Guilty Parties</div>
 

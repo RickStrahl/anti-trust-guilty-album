@@ -184,20 +184,18 @@
             "lastUpdated": "2021-07-05T00:00:00Z"      
         },
         {
-            "title": "Speculate Speculate",
-            "playTime": "4:57",
+            "title": "The Masters of Disaster",
+            "playTime": "4:52",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/01%20Speculate%20Speculate.mp3",
-            "lyrics": "../The-Masters-of-Disaster/Speculate Speculate.txt",
-            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/Speculate%20Speculate.jpg",
-            "spotifyUrl": "",
-            "amazonUrl": "",
-            "appleUrl": "",
-            "groupStart": "New Offenses",
-            "link": "/The-Masters-of-Disaster/Speculate-Speculate",  
-            "googleUrl": "https://youtu.be/de78P7O3dCE"            
-        },  
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/01%20Masters%20of%20Disaster.mp3",  
+            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/Masters%20of%20Disaster.jpg",                 
+            "lyrics": "/The-Masters-of-Disaster/Masters of Disaster.txt",
+            "link": "/The-Masters-of-Disaster/The-Masters-of-Disaster",
+            "lastUpdated": "2023-11-25T00:00:00Z",
+            "googleUrl": null,
+            "groupStart": "New Offenses"            
+        },        
         {
             "title": "Culture of the Vulture",
             "playTime": "3:20",
@@ -218,17 +216,19 @@
             "lastUpdated": "2023-06-30T00:00:00Z"
         },             
         {
-            "title": "The Masters of Disaster",
-            "playTime": "4:52",
+            "title": "Speculate Speculate",
+            "playTime": "4:57",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/04%20Masters%20of%20Disaster.mp3",  
-            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/Masters%20of%20Disaster.jpg",                 
-            "lyrics": "/The-Masters-of-Disaster/Masters of Disaster.txt",
-            "link": "/The-Masters-of-Disaster/The-Masters-of-Disaster",
-            "lastUpdated": "2023-11-25T00:00:00Z",
-            "googleUrl": null
-        },
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/04%20Speculate%20Speculate.mp3",
+            "lyrics": "../The-Masters-of-Disaster/Speculate Speculate.txt",
+            "imageUrl": "https://anti-trust.rocks/albums/The-Masters-of-Disaster/Speculate%20Speculate.jpg",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "link": "/The-Masters-of-Disaster/Speculate-Speculate",  
+            "googleUrl": "https://youtu.be/de78P7O3dCE"            
+        },  
         {
             "title": "Rat in a Cage",
             "playTime": "3:08",

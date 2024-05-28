@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>1.1.8</Version>
+    <RazorCompileOnPublish>true</RazorCompileOnPublish>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <NoWarn>$(NoWarn); ASP0014</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+<PackageReference Include="Westwind.AspNetCore.Markdown" Version="3.12.0" />
+		<PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.5.0" />
+		<PackageReference Include="Westwind.Utilities" Version="5.0.1" />
+		<PackageReference Include="Westwind.Utilities.Data" Version="5.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.4" />
+  </ItemGroup>
+
+  
+</Project>

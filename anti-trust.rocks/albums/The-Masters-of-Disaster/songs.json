@@ -4,7 +4,7 @@
     "description": "Garage Punk Rock from Maui, Hawaii and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/",
     "coverImage": "https://anti-trust.rocks/Angry/coverImage.jpg",
-    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2023<br/>\non Maui, HI",
+    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2024<br/>\non Maui, Hawaii",
     "copyright": "Anti-Trust, 2022-2024",
     "notification": "Check out new videos for <a href='https://www.youtube.com/watch?v=5zFzz5bxpMU' target='_blank'>Masters of Disaster</a> and <a href='https://www.youtube.com/watch?v=C5fKGla-RtQ' target='_blank'>No More Lies</a>",
     "bandMembers":[
@@ -19,21 +19,20 @@
     ],
     "songs": [
         {
-            "title": "Speculate Speculate",
+            "title": "The Masters of Disaster",
             "dontShowTitle": true,
-            "playTime": "4.57",
+            "playTime": "4:54",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
-            "file": "01 Speculate Speculate.mp3",
-            "lyrics": "Speculate Speculate.txt",
-            "imageUrl": "Speculate Speculate.jpg",
-            "spotifyUrl": "",
-            "amazonUrl": "",
-            "appleUrl": "",
-            "googleUrl": "https://youtu.be/de78P7O3dCE",
-            "lastUpdated": "2022-10-30T00:00:00Z",
-            "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
-        },        
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "file": "01 Masters of Disaster.mp3",  
+            "imageUrl": "Masters of Disaster.jpg",                 
+            "lyrics": "Masters of Disaster.txt",
+            "lastUpdated": "2024-01-22T00:00:00Z",            
+            "embeddedVideoUrl": "https://www.youtube.com/embed/5zFzz5bxpMU",
+            "googleUrl": "https://www.youtube.com/watch?v=5zFzz5bxpMU",
+
+            "lyricNotes": "### End of song Quotes\r\n\r\n*Madeline Albright: 1/2 million children is worth it*  \r\nhttps://youtube.com/shorts/1T5JRVR53Eo\r\n\r\n*George Bush Senior: Saddam's Nuclear Bomb capabilities*  \r\nhttps://youtu.be/IFrnQHaQWoA?si=EWd1taGu3zNM-s1-\r\n\r\n*Judge Jeanine: Bomb them*   \r\nhttps://youtu.be/yCHdow7wvSw?si=RHtCoVrzymGlTZbA\r\n\r\n*Wesley Clarke: Memo on invading 7 countries in 5 years*  \r\nhttps://www.youtube.com/watch?v=6Knt3rKTqCk\r\n\r\n*Hillary Clinton: We came, we saw, he died (on Qhaddafy)*  \r\nhttps://www.youtube.com/watch?v=6DXDU48RHLU\r\n\r\n*Bank Debt isn't principle protected by design (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5775s\r\n\r\n*Ben Bernanke (2005): Housing Prices have never gone down*  \r\nhttps://www.youtube.com/watch?v=cBrV1MszSjI\r\n\r\n*Bank Bail Ins (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5120s\r\n\r\n*Faith in the Banks of Bankers (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5147s\r\n\r\n*Fed Chair Jerome Powell (2023): Close the fucking door*  \r\nhttps://www.youtube.com/watch?v=1PHhrG9G_SM"
+        },
         {
             "title": "Culture of the Vulture",
             "dontShowTitle": true,
@@ -57,21 +56,23 @@
             "lastUpdated": "2023-10-10T00:00:00Z",
             "googleUrl": "https://youtu.be/m9oUu1wHsDM"
         },
+       
         {
-            "title": "The Masters of Disaster",
+            "title": "Speculate Speculate",
             "dontShowTitle": true,
-            "playTime": "4:54",
+            "playTime": "4.57",
             "credits": "Music and Lyrics Strahl",
-            "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "04 Masters of Disaster.mp3",  
-            "imageUrl": "Masters of Disaster.jpg",                 
-            "lyrics": "Masters of Disaster.txt",
-            "lastUpdated": "2024-01-22T00:00:00Z",            
-            "embeddedVideoUrl": "https://www.youtube.com/embed/5zFzz5bxpMU",
-            "googleUrl": "https://www.youtube.com/watch?v=5zFzz5bxpMU",
-
-            "lyricNotes": "### End of song Quotes\r\n\r\n*Madeline Albright: 1/2 million children is worth it*  \r\nhttps://youtube.com/shorts/1T5JRVR53Eo\r\n\r\n*George Bush Senior: Saddam's Nuclear Bomb capabilities*  \r\nhttps://youtu.be/IFrnQHaQWoA?si=EWd1taGu3zNM-s1-\r\n\r\n*Judge Jeanine: Bomb them*   \r\nhttps://youtu.be/yCHdow7wvSw?si=RHtCoVrzymGlTZbA\r\n\r\n*Wesley Clarke: Memo on invading 7 countries in 5 years*  \r\nhttps://www.youtube.com/watch?v=6Knt3rKTqCk\r\n\r\n*Hillary Clinton: We came, we saw, he died (on Qhaddafy)*  \r\nhttps://www.youtube.com/watch?v=6DXDU48RHLU\r\n\r\n*Bank Debt isn't principle protected by design (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5775s\r\n\r\n*Ben Bernanke (2005): Housing Prices have never gone down*  \r\nhttps://www.youtube.com/watch?v=cBrV1MszSjI\r\n\r\n*Bank Bail Ins (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5120s\r\n\r\n*Faith in the Banks of Bankers (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5147s\r\n\r\n*Fed Chair Jerome Powell (2023): Close the fucking door*  \r\nhttps://www.youtube.com/watch?v=1PHhrG9G_SM"
-        },
+            "players": "Guitar, Bass, Vocals: Strahl, Backups: Andersen & Strahl",
+            "file": "04 Speculate Speculate.mp3",
+            "lyrics": "Speculate Speculate.txt",
+            "imageUrl": "Speculate Speculate.jpg",
+            "spotifyUrl": "",
+            "amazonUrl": "",
+            "appleUrl": "",
+            "googleUrl": "https://youtu.be/de78P7O3dCE",
+            "lastUpdated": "2022-10-30T00:00:00Z",
+            "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
+        },    
         {
             "title": "Rat in a Cage",
             "playTime": "3.07",
@@ -173,6 +174,7 @@
         {
             "title": "Fear Factory",
             "playTime": "2:50",
+            "link": "https://anti-trust.rocks/Guilty/Fear-Factory",
             "credits": "Music and Lyrics Strahl",
             "groupStart": "Past Offenses",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/08%20Fear%20Factory.mp3",
@@ -190,6 +192,7 @@
             "playTime": "2:26",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals, Strahl, Drums: Kontos, Backups: Strahl & Kontos",
+            "link": "https://anti-trust.rocks/Guilty/Antisocial",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/03%20Antisocial.mp3",
             "lyrics": "../Guilty/03 Antisocial.txt",
             "imageUrl": "https://anti-trust.rocks/albums/Guilty/Antisocial.png",
@@ -200,10 +203,25 @@
             "lastUpdated": "2021-07-07T00:00:00Z"            
         },
         {
+            "title": "I am You",
+            "playTime": "2:39",
+            "credits": "Music Strahl, Lyrics Andersen",            
+            "players": "Guitar, Bass: Strahl, Vocals: Strahl & Kontos, Drums: Kontos",            
+            "link": "https://anti-trust.rocks/Guilty/I-am-You",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/02%20I%20am%20You.mp3",
+            "lyrics": "../Guilty/02 I am You.txt",
+            "spotifyUrl": "https://open.spotify.com/track/0Z1nllUyX5yKDGTXilCr2G?si=24ccfb9fef994ec8",
+            "amazonUrl": "https://amzn.to/3Gyqpyl",
+            "appleUrl": "https://music.apple.com/us/album/i-am-you/1586023179?i=1586023181",
+            "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"      
+        },
+        {
             "title": "No More Lies",
             "playTime": "2:15",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
+            "link": "https://anti-trust.rocks/Guilty/No-More-Lies",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/06 No More Lies.mp3",
             "lyrics": "../Guilty/06 No More Lies.txt",
             "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
@@ -216,6 +234,7 @@
             "title": "Sick Inside",
             "playTime": "1:44",
             "credits": "Music and Lyrics Strahl & Kontos",
+            "link": "https://anti-trust.rocks/Guilty/Sick-Inside",
             "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/05 Sick Inside.mp3",
             "players": "Vocals: Kontos, Guitar, Bass: Strahl, Backups: Strahl & Kontos",
             "lyrics": "../Guilty/05 Sick Inside.txt",
@@ -224,6 +243,20 @@
             "appleUrl": "https://music.apple.com/us/album/sick-inside/1586023179?i=1586023184",
             "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share",
             "lastUpdated": "2021-07-05T00:00:00Z"           
+        },
+        {
+            "title": "Guilty as Charged",
+            "playTime": "2:08",
+            "credits": "Music and Lyrics Strahl",
+            "link": "https://anti-trust.rocks/Guilty/Guilty-as-Charged",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/10%20Guilty20as20Charged.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl, Drums: Kontos",
+            "lyrics": "10 Guilty as Charged.txt",
+            "spotifyUrl": "https://open.spotify.com/track/7aClyBOi3QpY1TLl4Votnm?si=f05a89ecd3444a64",
+            "amazonUrl": "https://amzn.to/31hpnGX",
+            "appleUrl": "https://music.apple.com/us/album/guilty-as-charged/1586023179?i=1586023189",
+            "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
+            "lastUpdated": "2021-07-04T00:00:00Z"         
         }
     ]
 }

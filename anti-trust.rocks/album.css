@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 .notification {
     font-family:sans-serif;
     background-color: goldenrod;
-    font-size: 0.6em;
+    font-size: 0.527em;
     font-weight: 600;
     color: #252525;
     padding: 0.7em 0.9em;
@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
     padding: 2em 0.2em 2em 2em;
     background-color: transparent;
     box-sizing: border-box;
-    font-size: 4.4vmin;
+    font-size: 4.3vmin;
 }
 
 .image-container {

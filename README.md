@@ -61,8 +61,10 @@ If you like what you're hearing, you can also buy a hand numbered, limited run C
 ### Credit Card or PayPal
 
 * [Buy a CD](https://store.west-wind.com/product/ANTITRUST_GUILTY_CD)  <small>(first run, hand numbered)</small>
+* [Buy a T-Shirt](https://anti-trust.rocks/t-shirt)
 * [Buy Stickers](https://store.west-wind.com/product/ANTI_TRUST_GUILTY_STICKERS)
 * [Donate with PayPal](https://www.paypal.com/donate?hosted_button_id=GRGZEC46JJL3Q)
+* Sponsor (click the Sponsor Link at the top of the page)
 
 ### Crypto Donations
 

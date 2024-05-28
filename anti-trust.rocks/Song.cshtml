@@ -26,8 +26,7 @@
     fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
     json = await  System.IO.File.ReadAllTextAsync(fileName);
 
-    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
-
+    Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;    
 
     song = Album.songs.FirstOrDefault(s => s.title.Equals(title, StringComparison.OrdinalIgnoreCase));
     if (song == null)
