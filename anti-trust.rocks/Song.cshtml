@@ -131,8 +131,8 @@
            title="Download album or songs for free"><i class="fas fa-cloud-download-alt" style="color: lightgray"></i> Download</a> 
         <a href="/stream" class="hoverbutton" title="Listen or buy on Spotify, Amazon, Apple Music or YouTube"><i class="fas fa-cloud-music"  style="color: steelblue"></i> Stream</a> 
         <a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" class="hoverbutton" title="Buy a physical CD you can hold in your hand"><i class="fas fa-compact-disc" style="color: goldenrod"></i> CD</a>         
-        <a href="/t-shirt/readme.md" class="hoverbutton hidden-sm" title="Make your own T-shirts or buy one from us"><i class="fas fa-tshirt hidden-sm" style="color: darkgoldenrod"></i> T-Shirt</a>
-        <a href="https://twitter.com/antitrustHI" class="hoverbutton" title="Follow us on Twitter"><i class="fab fa-twitter text-info"></i> Twitter</a>
+        <a href="/t-shirt/readme.md" class="hoverbutton hidden-sm" title="T-Shirts and Merch"><i class="fas fa-tshirt hidden-sm" style="color: darkgoldenrod"></i> T-Shirt</a>
+        <a href="https://www.facebook.com/profile.php?id=61560707882462" class="hoverbutton" title="Follow us on Facebook" target="_blank"><i class="fa-brands fa-square-facebook text-info" style="font-size: 1.2em"></i> Follow</a>
         <a href="/about" class="hoverbutton" title="Find out more about Anti-Trust and the making of the Guilty album"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
     </div>
     
@@ -223,7 +223,7 @@
 
                     @if(!string.IsNullOrEmpty(song.spotifyUrl)) 
                     {
-                    <a href="@song.spotifyUrl" title="` to song on Spotify" target="_blank"><i class="fab fa-spotify" style="color: green" ></i></a>
+                    <a href="@song.spotifyUrl" title="listen to song on Spotify" target="_blank"><i class="fab fa-spotify" style="color: green" ></i></a>
                     }
                     
                     @if(!string.IsNullOrEmpty(song.appleUrl)) {

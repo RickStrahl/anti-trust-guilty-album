@@ -30,7 +30,10 @@
             "lastUpdated": "2024-01-22T00:00:00Z",            
             "embeddedVideoUrl": "https://www.youtube.com/embed/5zFzz5bxpMU",
             "googleUrl": "https://www.youtube.com/watch?v=5zFzz5bxpMU",
-
+            "amazonUrl": "https://music.amazon.com/albums/B0D63W8L13",
+            "appleUrl": "https://music.apple.com/us/album/the-masters-of-disaster-single/1750312887",
+            "pandoraUrl": "https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALp3jvjn3cjp7XP",
+            "spotifyUrl": "https://open.spotify.com/album/2vIOJoP4CHwxL6qKaf4Agq?si=Z22nX8qyRnGrfF1PQVG9cw",
             "lyricNotes": "### End of song Quotes\r\n\r\n*Madeline Albright: 1/2 million children is worth it*  \r\nhttps://youtube.com/shorts/1T5JRVR53Eo\r\n\r\n*George Bush Senior: Saddam's Nuclear Bomb capabilities*  \r\nhttps://youtu.be/IFrnQHaQWoA?si=EWd1taGu3zNM-s1-\r\n\r\n*Judge Jeanine: Bomb them*   \r\nhttps://youtu.be/yCHdow7wvSw?si=RHtCoVrzymGlTZbA\r\n\r\n*Wesley Clarke: Memo on invading 7 countries in 5 years*  \r\nhttps://www.youtube.com/watch?v=6Knt3rKTqCk\r\n\r\n*Hillary Clinton: We came, we saw, he died (on Qhaddafy)*  \r\nhttps://www.youtube.com/watch?v=6DXDU48RHLU\r\n\r\n*Bank Debt isn't principle protected by design (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5775s\r\n\r\n*Ben Bernanke (2005): Housing Prices have never gone down*  \r\nhttps://www.youtube.com/watch?v=cBrV1MszSjI\r\n\r\n*Bank Bail Ins (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5120s\r\n\r\n*Faith in the Banks of Bankers (FDIC Meeting 2023)*  \r\nhttps://www.youtube.com/watch?v=0PtULsOtI2o&t=5147s\r\n\r\n*Fed Chair Jerome Powell (2023): Close the fucking door*  \r\nhttps://www.youtube.com/watch?v=1PHhrG9G_SM"
         },
         {
@@ -169,7 +172,7 @@
             "lyrics": "End of the Line.txt",                       
             "imageUrl": "End of the Line.jpg",
             "googleUrl": null,
-            "lastUpdated": "2024-05-10T00:00:00Z"
+            "lastUpdated": "2024-06-17T00:00:00Z"
         },
         {
             "title": "Fear Factory",
@@ -257,6 +260,17 @@
             "appleUrl": "https://music.apple.com/us/album/guilty-as-charged/1586023179?i=1586023189",
             "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
             "lastUpdated": "2021-07-04T00:00:00Z"         
+        },
+
+        {
+            "title": "Upside down World",
+            "playTime": "2:45",
+            "credits": "Music and Lyrics Strahl",
+            "groupStart": "New Offenses",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Bonus/01%20-%20Upside%20down%20World.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "lyrics": "Upside Down World.txt",            
+            "lastUpdated": "2024-06-17T00:00:00Z"         
         }
     ]
 }
