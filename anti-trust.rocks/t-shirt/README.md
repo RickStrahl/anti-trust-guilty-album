@@ -10,29 +10,45 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
     flex-wrap: wrap;
  }
  #TShirtContainer div { text-align: center; margin: 1em; margin-right: .5em; }
- #TShirtContainer img { max-height: 375px; height: 375px; min-height: 375px;  }
- #TShirtContainer small { font-size: 0.7em; display: block; }
-</style>
+ #TShirtContainer img { max-height: 375px; height: 375px; min-height: 375px; display: block }
+ #TShirtContainer small { font-size: 0.5em; display: block; font-weight: 400;  }
+ </style>
 
 <div id="TShirtContainer">
   <div>
     <a href="https://amzn.to/4dz04ke">
         <img src="TShirt-Demo-Guilty.png" />
+        <small>
+          <a href="https://amzn.to/4dz04ke">us</a>  &nbsp;
+          <a href="https://www.amazon.de/dp/B0D4B3Y4SX">de</a>  
+        </small>
     </a>
   </div>
   <div>
     <a href="https://amzn.to/3UXn2sT">
         <img src="Tshirt-Demo-Masters-of-Disaster.png" />
+        <small>
+          <a href="https://amzn.to/3UXn2sT">us</a>  &nbsp;
+          <a href="https://www.amazon.de/dp/B0D5BV4P3P">de</a>  
+          </small>
     </a>
   </div>
  <div>
     <a href="https://amzn.to/3V1KqGP">
-        <img src="T-Shirt-Demo-Rat-in-a-Cage.png" />
+        <img src="T-Shirt-Demo-Rat-in-a-Cage.png" />              
+        <small>
+          <a href="https://amzn.to/3V1KqGP">us</a>  &nbsp;
+          <a href="https://www.amazon.de/dp/B0D4J8MDGT">de</a>  
+        </small>    
     </a>
   </div>
    <div>
-    <a href="https://amzn.to/4az1jNG">
-        <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />
+    <a href="https://amzn.to/4ccijtR">
+        <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />         
+        <small>
+          <a href="https://amzn.to/4ccijtR">us</a>  &nbsp;
+          <a href="https://www.amazon.de/dp/B0D5F74CSD">de</a>  
+        </small>        
     </a>
   </div>
  
@@ -48,7 +64,7 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
 ### Buy a T-Shirt
 You can buy a T-Shirt from Amazon or our custom shop at:
 
-* [Anti-Trust Merchandise on Amazon](https://amzn.to/4bzXgl4) <a href="https://www.amazon.de/s?rh=n%3A77028031%2Cp_4%3AAnti-Trust+Productions&language=en&ref=bl_sl_s_ap_web_77028031" style="font-style: italic; font-size: 0.75em; font-weight: normal">(Germany)</a>
+* [Anti-Trust Merchandise on Amazon](https://amzn.to/4bzXgl4) <a href="https://www.amazon.de/dp/B0D5BV4P3P" style="font-style: italic; font-size: 0.75em; font-weight: normal">(Germany)</a>
 * [Anti-Trust Shop](https://anti-trust-merchandise.printify.me/products)
 
 There are several designs to choose from.
