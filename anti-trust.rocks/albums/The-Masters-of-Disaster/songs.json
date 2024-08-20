@@ -139,6 +139,19 @@
             "lastUpdated": "2022-05-04T00:00:00Z"
         },       
         {
+            "title": "Upside down World",
+            "playTime": "2:45",
+            "credits": "Music and Lyrics Strahl",
+            "dontShowTitle": true,
+            "imageUrl": "Upside down World.jpg",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Bonus/10%20-%20Upside%20down%20World.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "lyrics": "Upside Down World.txt",            
+            "lastUpdated": "2024-08-19T00:00:00Z",
+            "x-groupStart": "New Offenses"
+      
+        },
+        {
             "title": "Poison Pill",
             "playTime": "2:26",
             "dontShowTitle": true,
@@ -262,15 +275,6 @@
             "lastUpdated": "2021-07-04T00:00:00Z"         
         },
 
-        {
-            "title": "Upside down World",
-            "playTime": "2:45",
-            "credits": "Music and Lyrics Strahl",
-            "groupStart": "New Offenses",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Bonus/01%20-%20Upside%20down%20World.mp3",
-            "players": "Guitar, Bass, Vocals: Strahl",
-            "lyrics": "Upside Down World.txt",            
-            "lastUpdated": "2024-06-17T00:00:00Z"         
-        }
+
     ]
 }

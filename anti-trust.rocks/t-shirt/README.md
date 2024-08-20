@@ -10,17 +10,17 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
     flex-wrap: wrap;
  }
  #TShirtContainer div { text-align: center; margin: 1em; margin-right: .5em; }
- #TShirtContainer img { max-height: 375px; height: 375px; min-height: 375px; display: block }
+ #TShirtContainer img { max-height: 425px; height: 425px; min-height: 425px; display: block }
  #TShirtContainer small { font-size: 0.5em; display: block; font-weight: 400;  }
  </style>
 
 <div id="TShirtContainer">
   <div>
-    <a href="https://amzn.to/4dz04ke">
+    <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">
         <img src="TShirt-Demo-Guilty.png" />
         <small>
-          <a href="https://amzn.to/4dz04ke">us</a>  &nbsp;
-          <a href="https://www.amazon.de/dp/B0D4B3Y4SX">de</a>  
+          <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">de</a>  
         </small>
     </a>
   </div>
@@ -42,12 +42,22 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
         </small>    
     </a>
   </div>
-   <div>
+  <div>
     <a href="https://amzn.to/4ccijtR">
         <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />         
         <small>
           <a href="https://amzn.to/4ccijtR">us</a>  &nbsp;
           <a href="https://www.amazon.de/dp/B0D5F74CSD">de</a>  
+        </small>        
+    </a>
+  </div>
+
+  <div>
+    <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">
+        <img src="T-Shirt-Upside-Down-World.png" />         
+        <small>
+          <a href="hhttps://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">de</a>  
         </small>        
     </a>
   </div>
