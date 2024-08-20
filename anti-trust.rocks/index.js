@@ -52,12 +52,9 @@ if (navigator.mediaSession) {
 paintIcon();
 
 function playAll() {
-    var url = "/albums/" + page.album.replace(" ","-") + "/songs.json?1.20";
-    console.log(url);
-    debugger;
+    var url = "/albums/" + page.album.replace(" ","-") + "/songs.json";    
     $.get(url)
-    .then( function(album) {    
-        debugger;    
+    .then( function(album) {            
         var player = window.player;
         album.songs.forEach(function(song) {
             if (!song.file.startsWith('http'))
@@ -86,9 +83,8 @@ function playAll() {
 
         paintIcon();
     })
-    .fail(function(err) {
-        debugger;
-       alert(err);
+    .fail(function(err) {        
+       console.log(err);
     });
 }
 

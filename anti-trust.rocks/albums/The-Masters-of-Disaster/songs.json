@@ -144,7 +144,7 @@
             "credits": "Music and Lyrics Strahl",
             "dontShowTitle": true,
             "imageUrl": "Upside down World.jpg",
-            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Bonus/10%20-%20Upside%20down%20World.mp3",
+            "file": "10 Upside down World.mp3",
             "players": "Guitar, Bass, Vocals: Strahl",
             "lyrics": "Upside Down World.txt",            
             "lastUpdated": "2024-08-19T00:00:00Z",
@@ -157,7 +157,7 @@
             "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "10 Poison Pill.mp3",            
+            "file": "11 Poison Pill.mp3",            
             "lyrics": "Poison Pill.txt",
             "imageUrl": "Poison Pill.jpg",            
             "googleUrl": "https://youtu.be/jkfk6Kt8v88",
@@ -169,7 +169,7 @@
             "dontShowTitle": true,
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "11 War Machine.mp3",            
+            "file": "12 War Machine.mp3",            
             "lyrics": "War Machine.txt",
             "imageUrl": "War Machine Bomb.jpg",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
@@ -181,7 +181,7 @@
             "dontShowTitle": false,
             "credits": "Music Strahl",
             "players": "Guitar, Bass: Strahl",
-            "file": "12 End of the Line.mp3", 
+            "file": "13 End of the Line.mp3", 
             "lyrics": "End of the Line.txt",                       
             "imageUrl": "End of the Line.jpg",
             "googleUrl": null,
@@ -273,8 +273,6 @@
             "appleUrl": "https://music.apple.com/us/album/guilty-as-charged/1586023179?i=1586023189",
             "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
             "lastUpdated": "2021-07-04T00:00:00Z"         
-        },
-
-
+        }
     ]
 }
