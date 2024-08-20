@@ -54,7 +54,7 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
 
   <div>
     <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">
-        <img src="T-Shirt-Upside-Down-World.png" />         
+        <img src="T-Shirt-Demo-Upside-Down-World.png" />         
         <small>
           <a href="hhttps://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">us</a>  &nbsp;
           <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">de</a>  
@@ -88,5 +88,6 @@ You can also download a transparent image `png` file, that you can use to print 
 * [The Masters of Disaster](T-Shirt-Masters-Of-Disaster-Negative.png){target="_blank"}
 * [War is the Real Enemy](T-Shirt-War-Is-The-Real-Enemy.png)
 * [Rat in a Cage](T-Shirt-RatInACage.png)
+* [Upside Down World](T-Shirt-Upside-Down-World.png)
 
 There are a number of shops online and on Amazon that you can use to get T-Shirts and other items printed and shipped to you.
