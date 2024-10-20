@@ -188,6 +188,16 @@
             "lastUpdated": "2024-06-17T00:00:00Z"
         },
         {
+            "title": "Enshittify",
+            "playTime": "4:10",            
+            "credits": "Music and Lyrics Strahl",
+            "groupStart": "Planned Capers",
+            "file": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Unreleased/00%20Enshittify.mp3",
+            "players": "Guitar, Bass, Vocals: Strahl",
+            "lyrics": "../Unreleased/Enshittify.txt",
+             "lastUpdated": "2024-10-20T00:00:00Z"            
+        },
+        {
             "title": "Fear Factory",
             "playTime": "2:50",
             "link": "https://anti-trust.rocks/Guilty/Fear-Factory",
