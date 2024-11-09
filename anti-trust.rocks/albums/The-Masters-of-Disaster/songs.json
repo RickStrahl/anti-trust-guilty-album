@@ -143,13 +143,11 @@
             "playTime": "2:45",
             "credits": "Music and Lyrics Strahl",
             "dontShowTitle": true,
-            "imageUrl": "Upside down World.jpg",
+            "imageUrl": "Upside-down-World.jpg",
             "file": "10 Upside down World.mp3",
             "players": "Guitar, Bass, Vocals: Strahl",
             "lyrics": "Upside Down World.txt",            
-            "lastUpdated": "2024-08-19T00:00:00Z",
-            "x-groupStart": "New Offenses"
-      
+            "lastUpdated": "2024-08-19T00:00:00Z",                  
         },
         {
             "title": "Poison Pill",
