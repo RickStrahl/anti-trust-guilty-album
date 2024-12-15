@@ -109,6 +109,8 @@
             "players": "Guitar, Bass, Vocals: Strahl, Backups: Strahl & Andersen",
             "file": "07 Divide and Conquer.mp3",
             "lyrics": "Divide and Conquer.txt",
+            "imageUrl": "Divide and Conquer.jpg",
+            "dontShowTitle": true,
             "spotifyUrl": "",
             "amazonUrl": "",
             "appleUrl": "",
