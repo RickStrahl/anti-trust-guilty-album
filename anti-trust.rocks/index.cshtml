@@ -107,23 +107,35 @@
 			</div>
 		}
 		
-		<ol style="margin-top: 0">
+		<ol style="margin-top: 0; margin-left: -0.5em">
 		@foreach(var song in Album.songs){		
 			var link = song.link ?? $"/{albumName}/" + song.title?.Replace(" ", "-");
+			
+			var coverImage = song.coverImageUrl;
+			if (string.IsNullOrEmpty(coverImage))
+				coverImage = "/albums/" + albumName + "/AlbumCover.jpg";
+			else if (!coverImage.StartsWith("http"))
+				coverImage = "/albums/" + albumName + "/" + coverImage;
+
 			if(!string.IsNullOrEmpty(song.groupStart))
 			{
 				<h3 class="header" style="margin-left: -0.5em">@song.groupStart</h3>
 			}
 
-			<li><a href="@link" title="Listen to @song.title">@song.title</a>
+			<li style="min-height: 2.5em">
+				<div style="float:left">
+					<img src="@coverImage" style="height: 2.5em; margin-right: 0.5em" />
+				</div>
+				<a href="@link" title="Listen to @song.title">@song.title</a>
 				<div class="copyright"><b style="font-size: 1.1em">@song.playTime</b> &bull; @song.credits</div>
+				
 			</li>
 		}
 		</ol>
 
 		<div class="header">Court Record</div>
 		
-			<div style="height: 2.5em;">
+			<div style="height: 2.6em;">
 				<img src="/albums/Guilty/albumcover-small.jpg" style="height: 2.2em; float: left;margin-left: -1em; margin-right: 0.3em" />
 				<div class="artist"><a href="/Guilty">Guilty</a></div>
 				<div class="copyright">
@@ -131,10 +143,9 @@
 				</div>
 			</div>
 
-			<div style="height: 2.5em">
-				
+			<div style="height: 2.6em">				
 				<img src="/albums/The-Masters-of-Disaster/albumcover-small.jpg" 
-					style="height: 2.2em; float: left;margin-right: 0.3em; margin-left: -1em" />
+					style="height: 2.5em; float: left;margin-right: 0.3em; margin-left: -1em" />
 			<div class="artist mt-1"><a href="/The-Masters-of-Disaster">The Masters of Disaster</a></div>
 			<div class="copyright">
 				to be released in 2024

@@ -8,7 +8,6 @@ namespace AlbumObjects
         public string songBaseUrl { get; set; }
 
         public string coverImage { get; set; } = "https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png";
-
         
         /// <summary>
         /// By line displayed after song list and band members
@@ -65,7 +64,20 @@ namespace AlbumObjects
         /// </summary>
         public string lyricNotes {get; set;}        
 
+        /// <summary>
+        /// The Url of the image that is displayed as the background images
+        /// for the song. If not set, the album cover image is used.
+        /// </summary>
         public string ImageUrl {get; set; }
+
+        /// <summary>
+        /// Official Album Cover Image for the song. This is the image        
+        /// used for the actual MP3 song as album art.
+        /// 
+        /// Used to display next to the song. If not set uses
+        /// the album's cover image.
+        /// </summary>
+        public string coverImageUrl {get; set; }
         
         public string groupStart {get; set; }
 

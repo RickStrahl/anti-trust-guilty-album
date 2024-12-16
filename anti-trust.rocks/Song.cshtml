@@ -57,6 +57,10 @@
     if (song.file != null && song.file.StartsWith("http",StringComparison.OrdinalIgnoreCase)) {
         downloadFileLink = song.file;
     }
+
+    var coverImage = song.coverImageUrl;
+    if (!string.IsNullOrEmpty(coverImage) && !coverImage.StartsWith("http"))
+        coverImage = "/albums/" + albumName + "/" + coverImage;
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -248,10 +252,10 @@
             </div>
             }
 
+            @if(!string.IsNullOrEmpty(coverImage)) {
+            <img src="@coverImage" style="max-width: 100%;margin-top: 1em" alt="@song.title song cover image"/>
+            }
     
-
-
-
             <hr/>
 
             <footer>
