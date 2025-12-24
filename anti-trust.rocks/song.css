@@ -9,21 +9,21 @@ html, body{
 .page-container {
     position: fixed;
     width: 100%;
-    top: 20px; left:0; right: 0; bottom: 0;
+    top:1.05em; left:0; right: 0; bottom: 0;
     z-index: 1;
     background-image: url(Guilty-Cover.jpg);
     background-size: 100%;
     padding: 0;
     background-repeat:  no-repeat; 
     background-color: black;
-    opacity: 0.25;
+    opacity: 0.35;
     box-sizing: content-box;
     max-width: 100%;    
 
 }
 .container {
     position: absolute;
-    top: 0; left: 0;  bottom: 0; right: 0;
+    top: 1em; left: 0;  bottom: 0; right: 0;
     z-index: 5;    
     box-sizing: content-box;
     background: transparent;

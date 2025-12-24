@@ -2,8 +2,8 @@
 
 @using AlbumObjects
 @using Westwind.Utilities
-
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Host
+@addTagHelper *, Westwind.AspNetCore.Markdown
 
 @functions {
     public  AlbumData Album { get; set; } = new AlbumData();
@@ -16,7 +16,7 @@
 	var fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
     var json = await System.IO.File.ReadAllTextAsync(fileName);
 	
-	Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
+	Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;	
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -52,7 +52,7 @@
 	<meta name="twitter:image" content="https://anti-trust.rocks/albums/@albumName/card-rectangle.png" />
     <meta property="og:image:alt" content="Anti-Trust @albumName cover image" />
 
-	<link rel="stylesheet" href="album.css?v1.1.4" />
+	<link rel="stylesheet" href="album.css?v1.2.01" />
 	@* <script src="https://kit.fontawesome.com/003736a39d.js" crossorigin="anonymous"></script> *@
 	<link rel="stylesheet" href="/lib/fontawesome/css/all.css"></script>   
 	<script>
@@ -73,14 +73,15 @@
 		<a href="https://www.facebook.com/profile.php?id=61560707882462" class="hoverbutton" title="Follow us on Facebook" target="_blank"><i class="fa-brands fa-square-facebook text-info" style="font-size: 1.2em"></i> Follow</a>
 		<a href="/about" class="hoverbutton" title="About Anti-Trust and the Guilty Release" title="Find out more about Anti-Trust and the making of 'Guilty'"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
     </div>
+	
+ 
 
 <div class="page-container">	
 
-<div class="container">	
+<div class="container" style="margin-top: 0.8em">	
 	<img id="cover-image" src="/albums/@albumName/coverImage.jpg"
-		 style="width: 100%; display: block;margin-top: 0.5em; " />
+		 style="display:block; width: 100%; display: block; " />
  	<div id="divSongTitles">
-		
 
 		<div  class="header" style="margin-bottom: 0.5em;">
 			Listen to the Evidence
@@ -99,6 +100,7 @@
 				</i>
 			</div>
 		</div>
+		
 
 		@if(Album.notification != null)
 		{
@@ -119,10 +121,10 @@
 
 			if(!string.IsNullOrEmpty(song.groupStart))
 			{
-				<h3 class="header" style="margin-left: -0.5em">@song.groupStart</h3>
+				<h3 class="header" style="margin-left: -0.5em">@song.groupStart</h3>				
 			}
 
-			<li style="min-height: 2.5em">
+			<li style="min-height: 2.60em">
 				<div style="float:left">
 					<img src="@coverImage" style="height: 2.5em; margin-right: 0.5em" />
 				</div>
@@ -132,6 +134,7 @@
 			</li>
 		}
 		</ol>
+
 
 		<div class="header">Court Record</div>
 		

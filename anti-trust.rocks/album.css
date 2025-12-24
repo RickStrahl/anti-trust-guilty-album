@@ -24,8 +24,7 @@ body::-webkit-scrollbar-thumb {
     background: black;  
     min-height: 100%;    
     margin: 0 auto;
-    max-width: 100%;
-   
+    max-width: 100%;   
 }
 
 .twitter-sidebar {

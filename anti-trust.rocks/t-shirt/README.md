@@ -16,10 +16,10 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
 
 <div id="TShirtContainer">
   <div>
-    <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">
+    <a href="https://amzn.to/4c6yBpG">
         <img src="TShirt-Demo-Guilty.png" />
         <small>
-          <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">us</a>  &nbsp;
+          <a href="https://amzn.to/4c6yBpG">us</a>  &nbsp;
           <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">de</a>  
         </small>
     </a>

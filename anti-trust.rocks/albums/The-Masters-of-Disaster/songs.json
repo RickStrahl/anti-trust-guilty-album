@@ -5,8 +5,8 @@
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/",
     "coverImage": "https://anti-trust.rocks/Angry/coverImage.jpg",
     "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2024<br/>\non Maui, Hawaii",
-    "copyright": "Anti-Trust, 2022-2024",
-    "notification": "Check out new videos for <a href='https://www.youtube.com/watch?v=5zFzz5bxpMU' target='_blank'>Masters of Disaster</a> and <a href='https://www.youtube.com/watch?v=C5fKGla-RtQ' target='_blank'>No More Lies</a>",
+    "copyright": "Anti-Trust, 2022-2024",    
+    "notification": "New album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>, <a href='https://music.apple.com/us/album/the-masters-of-disaster/1862380886' target='_blank'>Pandora</a> and more!",
     "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -60,7 +60,7 @@
             "coverImageUrl": "SoWhat-Cover.jpg",                
             "lyrics": "So What.txt",
             "lastUpdated": "2023-10-10T00:00:00Z",
-            "googleUrl": "https://youtu.be/m9oUu1wHsDM"
+            "googleUrl": "https://youtu.be/embed/m9oUu1wHsDM"
         },
         {
             "title": "Enshittify",
@@ -72,6 +72,7 @@
             "lyrics": "Enshittify.txt",
             "imageUrl": "Enshittify.jpg",
             "coverImageUrl": "Enshittify-Cover.jpg",
+            "embeddedVideoUrl": "https://www.youtube.com/embed/FtgwOIMKoVk?si=zFuBCdxSrbbwGXGL",
              "lastUpdated": "2024-11-22T00:00:00Z"            
         },
        
@@ -89,7 +90,7 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "https://youtu.be/de78P7O3dCE",
-            "lastUpdated": "2022-10-30T00:00:00Z",
+            "lastUpdated": "2024-12-15T00:00:00Z",
             "description": "Garage Punk Rock from Maui, Hawaii. Speculate, Speculate: Finacialized, Hypnotized, Compromised... Demonized."
         },    
         {
@@ -122,7 +123,7 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "",
-            "lastUpdated": "2022-11-22T00:00:00Z"
+            "lastUpdated": "2024-12-14T00:00:00Z"
         },      
         {
             "title": "The Arbiter of Truth",
