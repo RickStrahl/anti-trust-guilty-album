@@ -3,10 +3,10 @@
     "title": "The Masters of Disaster",
     "description": "Garage Punk Rock from Maui, Hawaii and San Francisco with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/The-Masters-of-Disaster/mp3/",
-    "coverImage": "https://anti-trust.rocks/Angry/coverImage.jpg",
-    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2024<br/>\non Maui, Hawaii",
+    "coverImage": "https://anti-trust.rocks/The-Masters-of-Disaster/coverImage.jpg",
+    "albumInformation": "Punk Rock Garage Recorded<br/>\nbetween 2022-2025<br/>\non Maui, Hawaii",
     "copyright": "Anti-Trust, 2022-2024",    
-    "notification": "New album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>, <a href='https://music.apple.com/us/album/the-masters-of-disaster/1862380886' target='_blank'>Pandora</a> and more!",
+    "notification": "New album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>, <a href='https://music.apple.com/us/album/the-masters-of-disaster/1862380886' target='_blank'>Pandora</a> etc.!",
     "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -25,7 +25,7 @@
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "01 Masters of Disaster.mp3",  
-            "imageUrl": "Masters of Disaster.jpg", 
+            "imageUrl": "Masters of Disaster-Card.jpg", 
             "coverImageUrl": "MastersOfDisaster-Cover.jpg",                
             "lyrics": "Masters of Disaster.txt",
             "lastUpdated": "2024-01-22T00:00:00Z",            
@@ -195,7 +195,7 @@
             "players": "Guitar, Bass, Vocals: Strahl",
             "file": "13 War Machine.mp3",            
             "lyrics": "War Machine.txt",
-            "imageUrl": "War Machine Bomb.jpg",
+            "imageUrl": "War Machine Bomb-Card.jpg",
             "coverImageUrl": "WarMachine-Cover.jpg",
             "googleUrl": "https://youtu.be/3CM1_Ji6fJ8",
             "lastUpdated": "2023-03-06T00:00:00Z"
