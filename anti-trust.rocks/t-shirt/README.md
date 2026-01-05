@@ -7,7 +7,7 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
     display: flex;
     flex-direction: row;
     
-    flex-wrap: wrap;
+    flex-wrap: wrap;s
  }
  #TShirtContainer div { text-align: center; margin: 1em; margin-right: .5em; }
  #TShirtContainer img { max-height: 425px; height: 425px; min-height: 425px; display: block }
@@ -21,6 +21,15 @@ Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or f
         <small>
           <a href="https://amzn.to/4c6yBpG">us</a>  &nbsp;
           <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">de</a>  
+        </small>
+    </a>
+  </div>
+  <div>
+      <a href="https://amzn.to/4c6yBpG">
+        <img src="T-Shirt-Guilty-Band.png" />
+        <small>
+          <a href="https://anti-trust-merchandise.printify.me/product/26036102">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/26036102">de</a>  
         </small>
     </a>
   </div>
