@@ -1,6 +1,6 @@
 # Get a T-Shirt
 
-Want an Anti-Trust Guilty T-Shirt? You can purchase a T-Shirt from our shop or from Amazon, or - in the open source spirit - **you can also make your own T-shirts** from our artwork.
+Want an Anti-Trust T-Shirt? You can purchase a T-Shirt from [our shop](https://anti-trust-merchandise.printify.me/) or from Amazon, or - in the open source spirit - **you can also make your own T-shirts** from our provided artwork.
 
 <style>
  #TShirtContainer {

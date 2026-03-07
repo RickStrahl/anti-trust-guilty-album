@@ -34,7 +34,7 @@
 
     if (Album == null || Album.songs.Count < 1)
     {
-        fileName = System.IO.Path.Combine(Host.WebRootPath, "album.json");
+        fileName = System.IO.Path.Combine(Host.WebRootPath , "albums/The-Masters-of-Disaster",  "songs.json");
         json = await  System.IO.File.ReadAllTextAsync(fileName);
 
         Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;
@@ -47,7 +47,7 @@
     }
     else if (!song.lyrics.Contains("\n"))
     {
-        song.lyrics = await System.IO.File.ReadAllTextAsync(System.IO.Path.Combine(Host.WebRootPath, song.lyrics));
+        song.lyrics = await System.IO.File.ReadAllTextAsync(System.IO.Path.Combine(Host.WebRootPath, "albums/The-Masters-of-Disaster", song.lyrics));
     }
 
 
@@ -80,6 +80,9 @@
     <link rel="stylesheet" href="/album.css">
     <link rel="stylesheet" href="/SongSimple.css">
     <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+    <style>
+        .song-title { font-size: 5.5vmin }
+    </style>
 </head>
 <body>
     <div class="toolbarcontainer">
