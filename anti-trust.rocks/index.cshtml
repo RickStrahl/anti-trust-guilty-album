@@ -20,7 +20,7 @@
 
     <title>Anti-Trust - Punk Rock Music</title>
     <meta http-equiv="keywords" content="Anti-Trust,Guilty,The Masters of Disaster,Punk,Hardcore,Metal,Rock,CrunchCore,Maui,Hawaii,Oakland,SF,Attitude,Attitude Adjustment,Rick Strahl,Chris Kontos,Andy Airborne Andersen,mp3" />
-    <meta http-equiv="description" content="Anti-Trust - Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude." />
+    <meta http-equiv="description" content="Anti-Trust - Anti-Trust is a garage punk rock band from Maui, Hawaii. We make very loud and angry Hardcore, Crossover Punk Rock mixed with old school British style NWOBHM and Thrash Metal." />
 
     <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
 
@@ -47,6 +47,14 @@
 			padding: 0 1.5em;
 			box-sizing: border-box;
         }
+		@@media (max-width: 600px) {
+			.content-center {
+				padding: 0 0.75em;
+			}
+			#Intro {				
+				font-size: 0.7em;
+			}			
+		}
         .albums-grid {
             display: flex;
             flex-wrap: wrap;
@@ -85,8 +93,8 @@
             margin-top: 0.35em;
         }
         .album-card-info {
-            font-size: 0.42em;
-            color: #666;
+            font-size: 0.65em;
+            color: #888;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: normal;
             margin-top: 0.15em;
@@ -110,18 +118,33 @@
 <body>
 
     <div class="toolbarcontainer">
+		<a href="/The-Masters-of-Disaster" class="hoverbutton"><i class="fad fa-headphones" style="color: steelblue"></i> Listen</a>
         <a href="/stream" class="hoverbutton"><i class="fas fa-cloud-music" style="color: steelblue"></i> Stream</a>
         <a href="https://github.com/RickStrahl/anti-trust-guilty-album" class="hoverbutton" title="Download the entire album or individual songs for free"><i class="fas fa-cloud-download-alt" style="color: lightgray"></i> Rip</a>
         <a href="https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album" class="hoverbutton" title="Buy a CD or Vinyl"><i class="fas fa-compact-disc" style="color: goldenrod"></i> Cd/Vinyl</a>
         <a href="/t-shirt/README.md" class="hoverbutton hidden-sm" title="Make your own t-shirts or buy one from us"><i class="fas fa-tshirt" style="color: darkgoldenrod"></i> T-Shirts</a>
-        <a href="https://www.facebook.com/profile.php?id=61560707882462" class="hoverbutton" title="Follow us on Facebook" target="_blank"><i class="fa-brands fa-square-facebook text-info" style="font-size: 1.2em"></i> Follow</a>
-        <a href="/about" class="hoverbutton" title="About Anti-Trust"><i class="fas fa-info-circle" style="color: steelblue"></i> About</a>
+        <a href="https://www.facebook.com/profile.php?id=61560707882462" class="hoverbutton" title="Follow us on Facebook" target="_blank"><i class="fa-brands fa-square-facebook text-info" style="font-size: 1.2em"></i>
+			<span class="hidden-sm">Follow</span>
+		</a>
+        <a href="/about" class="hoverbutton" title="About Anti-Trust"><i class="fas fa-info-circle" style="color: steelblue">
+		</i>
+		<span class="hidden-sm">About</span>
+		</a>
     </div>
 
     <div class="container">
 		<img src="/images/FullBand-Wide.jpg" style="width: 100%; display: block;margin-top: 1em" alt="Anti-Trust" />
 
+
+
         <div class="content-center">
+		<div id="Intro" style="font-family: monospace; font-weight: normal; color: #aaa; margin-bottom: 1.5em;">
+			<markdown>
+				Anti-Trust is a garage punk rock band from Maui, Hawaii. We make very loud and angry Hardcore, Crossover Punk Rock mixed with old school British style NWOBHM and Thrash Metal.
+				
+				Our music is a mix of fast and aggressive songs with catchy choruses and biting lyrics. With former members from Attitude Adjustment and Attitude, we are influenced by bands like Discharge, Motörhead, GBH, old Corrosion of Conformity, Poison Idea, Uk Subs, Exodus, Early Man, Social Distortion and many more. 
+			</markdown>
+		</div>
 
         <!-- News -->
         @if (mastersAlbum?.notification != null || guiltyAlbum?.notification != null)
@@ -130,11 +153,19 @@
                 <div class="header">News</div>
                 @if (mastersAlbum?.notification != null)
                 {
-                    <div class="notification">@Html.Raw(mastersAlbum.notification)</div>
+					<div class="notification">
+					<b>The Masters of Disaster</b> album is now available on <a href='https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album' target='_blank'>Vinyl or Cd</a>
+					 </div>
+                    <div class="notification">						
+						New <b>Masters of Disaster</b> album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>   
+					</div>
                 }
                 @if (guiltyAlbum?.notification != null)
                 {
-                    <div class="notification">@Html.Raw(guiltyAlbum.notification)</div>
+
+					<div class="notification">
+						Check out new videos for <a href="https://www.youtube.com/watch?v=5zFzz5bxpMU" target="_blank">Masters of Disaster</a> and <a href="https://www.youtube.com/watch?v=C5fKGla-RtQ" target="_blank">No More Lies</a>
+					</div>
                 }
             </div>
         }
@@ -152,7 +183,7 @@
                         <a href="/The-Masters-of-Disaster">The Masters of Disaster</a>
                     </div>
                     <div class="album-card-info">
-                        released 2025<br />
+                        <i>released 2025</i><br />
                         @mastersAlbum?.albumInformation
                     </div>
                     <div class="album-links">
@@ -170,7 +201,7 @@
                         <a href="/Guilty">Guilty</a>
                     </div>
                     <div class="album-card-info">
-                        released 2021<br />
+                        <i>released 2021</i><br />
                         @guiltyAlbum?.albumInformation
                     </div>
                     <div class="album-links">
@@ -212,7 +243,7 @@
         </div>
 
         <!-- Band Members -->
-        <div class="section">
+        @* <div class="section">
             <div class="header">Guilty Parties</div>
             @foreach (var member in guiltyAlbum.bandMembers)
             {
@@ -222,13 +253,13 @@
                 </p>
             }
             <hr />
-            <div class="liner" style="margin-top: 1em; margin-bottom: 0.5em; font-size: 0.9em; font-weight: normal;">
-                Garage Punk Rock recorded between 2000&ndash;2025<br />
+            <div class="liner" style="margin-top: 1em; margin-bottom: 0.45em; font-size: 0.8em; font-weight: normal;">
+                Garage Punk Rock recorded between 2000&ndash;2026<br />
                 on Maui, Hawaii and Oakland, CA
             </div>
             <small style="font-size: 0.8em">&copy; Anti-Trust, 2002&ndash;@DateTime.Now.Year<br />
                 &nbsp;&nbsp;all rights reserved</small>
-        </div>
+        </div> *@
 
         <!-- Share -->
         <div class="section">
