@@ -11,6 +11,8 @@
 
     var guiltyFile = System.IO.Path.Combine(Host.WebRootPath, "albums", "Guilty", "songs.json");
     var guiltyAlbum = JsonSerializationUtils.DeserializeFromFile(guiltyFile, typeof(AlbumData), false) as AlbumData;
+
+    List<AlbumData> albums =  new List<AlbumData> { mastersAlbum, guiltyAlbum };
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,6 +42,7 @@
     <link rel="stylesheet" href="/album.css?v1.2.01" />
     <link rel="stylesheet" href="/lib/fontawesome/css/all.css" />
     <style>
+        a { text-decoration: none !important; }
         .content-center {
             width: 100%;
 			max-width: 1080px;
@@ -51,9 +54,9 @@
 			.content-center {
 				padding: 0 0.75em;
 			}
-			#Intro {				
+			#Intro {
 				font-size: 0.7em;
-			}			
+			}
 		}
         .albums-grid {
             display: flex;
@@ -62,7 +65,7 @@
         }
         .album-card {
             flex: 1;
-            min-width: 300px;			
+            min-width: 300px;
             display: flex;
             flex-direction: column;
         }
@@ -73,7 +76,7 @@
         .album-links {
             margin-top: auto;
             padding-top: 1em;
-            font-size: 0.6em; 
+            font-size: 0.6em;
             display: flex;
             flex-wrap: wrap;
             gap: 0.8em;
@@ -100,7 +103,7 @@
             margin-top: 0.15em;
             line-height: 1.5;
         }
-        .section {            
+        .section {
 			width: 100%;
         }
         .artist {
@@ -135,14 +138,12 @@
     <div class="container">
 		<img src="/images/FullBand-Wide.jpg" style="width: 100%; display: block;margin-top: 1em" alt="Anti-Trust" />
 
-
-
         <div class="content-center">
 		<div id="Intro" style="font-family: monospace; font-weight: normal; color: #aaa; margin-bottom: 1.5em;">
 			<markdown>
-				Anti-Trust is a garage punk rock band from Maui, Hawaii. We make very loud and angry Hardcore, Crossover Punk Rock mixed with old school British style NWOBHM and Thrash Metal.
-				
-				Our music is a mix of fast and aggressive songs with catchy choruses and biting lyrics. With former members from Attitude Adjustment and Attitude, we are influenced by bands like Discharge, Motörhead, GBH, old Corrosion of Conformity, Poison Idea, Uk Subs, Exodus, Early Man, Social Distortion and many more. 
+				Anti-Trust is a punk rock band from Maui, Hawaii. We make very loud and angry Hardcore, Crossover Punk Rock mixed with old school British style Punk, NWOBHM and Thrash Metal.
+
+				Our music is a mix of fast and aggressive songs with catchy choruses and biting lyrics. With former members from Attitude Adjustment and Attitude, influenced by bands like Discharge, Motörhead, GBH, Uk Subs, Poison Idea, old C.O.C., SNFU, Exodus, Angelwitch, Early Man, Social Distortion, Bad Religion and many more.
 			</markdown>
 		</div>
 
@@ -156,8 +157,8 @@
 					<div class="notification">
 					<b>The Masters of Disaster</b> album is now available on <a href='https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album' target='_blank'>Vinyl or Cd</a>
 					 </div>
-                    <div class="notification">						
-						New <b>Masters of Disaster</b> album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>   
+                    <div class="notification">
+						New <b>Masters of Disaster</b> album now streaming on <a href='https://open.spotify.com/album/1uT2BgJhcWyJOdMPzRbOr7' target='_blank'>Spotify</a>, <a href='https://www.pandora.com/artist/anti-trust/the-masters-of-disaster/ALz6fzmKmfVfc9g' target='_blank'>Apple Music</a>
 					</div>
                 }
                 @if (guiltyAlbum?.notification != null)
@@ -174,48 +175,89 @@
         <div class="section">
             <div class="header">Albums</div>
             <div class="albums-grid">
-                <div class="album-card">
-                    <a href="/The-Masters-of-Disaster" title="Listen to The Masters of Disaster">
-                        <img src="/albums/The-Masters-of-Disaster/MastersofDisaster-Cover.jpg" alt="The Masters of Disaster album cover" 
-						 alt="The Masters of Disaster album cover" />
-                    </a>
-                    <div class="album-card-title">
-                        <a href="/The-Masters-of-Disaster">The Masters of Disaster</a>
+                @foreach(var album in albums)
+                {
+                    <div class="album-card">
+                        <a href="/@album.slug" title="Listen to @album.title">
+                            <img src="@album.albumImage" alt="@album.title album cover"
+                            alt="@album.title album cover" />
+                        </a>
+                        <div class="album-card-title">
+                            <a href="/@album.slug">@album.title</a>
+                        </div>
+                        <div class="album-card-info">
+                            <i>released @album.releaseYear</i><br />
+                            @album?.albumInformation
+                        </div>
+                        <div class="album-links">
+                            <a href="/@album.slug" title="Listen to @album.title, check out lyrics, album artwork and download songs for free">
+                                <i class="fas fa-play" style="color: forestgreen" ></i> Listen
+                            </a>
+                             @* <a href="/stream" title="Stream on your favorite service">
+                                <i class="fad fa-cloud-music" style="font-size: 1.1em; --fa-primary-color: goldenrod; --fa-secondary-color: #555"></i> Stream
+                            </a> *@
+                            <a href="@album.albumPurchaseLink" target="_blank" title="Buy CD or Vinyl on ElasticStage">
+                                <i class="fad fa-compact-disc" style="--fa-secondary-color: #222; --fa-secondary-opacity: 1; --fa-primary-color: goldenrod"></i> Buy Album
+                            </a>
+                                <a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" target="_blank" title="Download High Quality MP3s (Free)"><i class="fas fa-download" style="color: DodgerBlue"></i> Buy Digital
+                            </a>
+                        </div>
                     </div>
-                    <div class="album-card-info">
-                        <i>released 2025</i><br />
-                        @mastersAlbum?.albumInformation
-                    </div>
-                    <div class="album-links">
-                        <a href="/The-Masters-of-Disaster" title="Listen to The Masters of Disaster"><i class="fas fa-play"></i> Listen</a>
-                        <a href="https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album" target="_blank" title="Buy CD or Vinyl on ElasticStage"><i class="fas fa-compact-disc"></i> Buy Album</a>
-                        <a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" target="_blank" title="Download High Quality MP3s (Free)"><i class="fas fa-download"></i> Buy Digital</a>
-                        <a href="/stream" title="Stream on your favorite service"><i class="fas fa-cloud-music"></i> Stream</a>  
-                    </div>
-                </div>
-                <div class="album-card">
-                    <a href="/Guilty" title="Listen to Guilty">
-                        <img src="/albums/Guilty/coverImage.jpg" alt="Guilty album cover" />
-                    </a>
-                    <div class="album-card-title">
-                        <a href="/Guilty">Guilty</a>
-                    </div>
-                    <div class="album-card-info">
-                        <i>released 2021</i><br />
-                        @guiltyAlbum?.albumInformation
-                    </div>
-                    <div class="album-links">
-                        <a href="/Guilty" title="Listen to Guilty"><i class="fas fa-play"></i> Listen</a>
-                        <a href="https://store.west-wind.com/product/ANTITRUST_GUILTY_CD" title="Buy a CD"><i class="fas fa-compact-disc"></i> Buy Album</a>
-                        <a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" target="_blank" title="Download High Quality MP3s (Free)"><i class="fas fa-download"></i> Buy Digital</a>
-                        <a href="/stream" title="Stream on your favorite service"><i class="fas fa-cloud-music"></i> Stream</a>  
-                    </div>
-                </div>
+                }
+        </div>
+
+<style>
+     .button-container {            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;  
+        }
+        .buy-button {
+            margin: 0.4rem;            
+            display: block ;
+            width: 32vmin;
+            padding: 0.5em;
+            font-size: 5vmin;
+        }
+        #GetTheMusic .buy-button {
+            width: 100%;
+        }   
+</style>
+        <div class="section">
+            <div class="header">Streaming</div>
+             <div class="button-container">
+            <a href="https://open.spotify.com/artist/1nZaejK22WSaTWM3ArprrF" 
+                title="Stream on Spotify"
+                target="_blank" class="buy-button">
+                <i class="fab fa-fw fa-spotify text-green" style="color: #1ed760"></i> Spotify
+            </a>
+
+            <a href="https://music.apple.com/us/artist/anti-trust/1584511777" 
+                title="Stream on Apple Music" 
+                target="_blank" class="buy-button">
+                <i class="fab fa-fw fa-apple" style="color: white;"></i> Apple
+            </a>
+
+    
+
+            <a href="https://www.youtube.com/playlist?list=PLKc_OgvtBhy9uQPl2vXCnEwukAr67F7US" 
+                title="Stream on YouTube"
+                target="_blank" class="buy-button">
+                <i class="fab fa-fw fa-youtube" style="color: firebrick;"></i> YouTube
+            </a>
+
+            <a href="https://www.pandora.com/artist/anti-trust/ARbzX7V3gKwjP4J"
+                 title="Stream on Pandora"
+                 target="_blank" class="buy-button">
+                <img src="images/pandora-128x128.png" style="width: 1em;padding-right: 0.2em"  />  Pandora
+            </a>
             </div>
         </div>
 
+
         <!-- Get the Music -->
-        <div class="section">
+        <div id="GetTheMusic" class="section">
             <div class="header">Get the Music</div>
             <div style="font-size: 0.5em; font-weight: normal; margin-bottom: 1.5em;">
                 <p>
@@ -224,48 +266,27 @@
                 </p>
                 <p><b>Please share the site and music with your friends!</b></p>
             </div>
-
-            <a href="/stream" class="buy-button" title="Stream on Spotify, Apple Music, Amazon or YouTube">
-                <i class="fas fa-fw fa-cloud-music" style="font-size: 0.6em; color: #f0f0f0"></i> Stream Online
-            </a>
-            <a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" class="buy-button mt-1">
-                <i class="fas fa-fw fa-cloud-download-alt" style="font-size: 0.6em; color: white"></i> Download Albums for Free
-            </a>
-            <a href="https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album" class="buy-button mt-1" title="Buy a CD or Vinyl">
-                <i class="fas fa-fw fa-compact-disc" style="font-size: 0.6em; color: GoldenRod"></i> Buy CD or Vinyl
-            </a>
-            <a href="/t-shirt/readme.md" class="buy-button mt-1" title="Purchase or print your own t-shirt">
-                <i class="fas fa-fw fa-tshirt" style="font-size: 0.6em; color: #aaa"></i> Get a T-Shirt
-            </a>
-            <a href="https://github.com/RickStrahl/anti-trust-guilty-album#want-to-support-us" class="buy-button mt-1">
-                <i class="fas fa-fw fa-money-bill-wave" style="font-size: 0.6em;"></i> Support Us
-            </a>
-        </div>
-
-        <!-- Band Members -->
-        @* <div class="section">
-            <div class="header">Guilty Parties</div>
-            @foreach (var member in guiltyAlbum.bandMembers)
-            {
-                <p>
-                    <div class="artist">@member.name</div>
-                    <div class="copyright">@member.activity</div>
-                </p>
-            }
-            <hr />
-            <div class="liner" style="margin-top: 1em; margin-bottom: 0.45em; font-size: 0.8em; font-weight: normal;">
-                Garage Punk Rock recorded between 2000&ndash;2026<br />
-                on Maui, Hawaii and Oakland, CA
+                <div class="button-container">
+                    <a href="https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music" class="buy-button mt-1">
+                        <i class="fas fa-fw fa-cloud-download-alt" style="font-size: 0.6em; color: white"></i> Free Album Download
+                    </a>
+                    <a href="https://elasticstage.com/anti-trust/releases/the-masters-of-disaster-album" class="buy-button mt-1" title="Buy a CD or Vinyl">
+                        <i class="fas fa-fw fa-compact-disc" style="font-size: 0.6em; color: GoldenRod"></i> Buy CD or Vinyl
+                    </a>
+                    <a href="/t-shirt/readme.md" class="buy-button mt-1" title="Purchase or print your own t-shirt">
+                        <i class="fas fa-fw fa-tshirt" style="font-size: 0.6em; color: #aaa"></i> Get a T-Shirt
+                    </a>
+                    <a href="https://github.com/RickStrahl/anti-trust-guilty-album#want-to-support-us" class="buy-button mt-1">
+                        <i class="fas fa-fw fa-money-bill-wave" style="font-size: 0.6em;"></i> Support Us
+                    </a>
             </div>
-            <small style="font-size: 0.8em">&copy; Anti-Trust, 2002&ndash;@DateTime.Now.Year<br />
-                &nbsp;&nbsp;all rights reserved</small>
-        </div> *@
+        </div>
 
         <!-- Share -->
         <div class="section">
             <div class="header">Share the Loot</div>
             <a title="Share on Twitter"
-               href="https://twitter.com/intent/tweet?text=Check out this band: Anti-Trust%0A%0Ahttps://anti-trust.rocks%0A%23PunkRock @@AntiTrustHI"
+               href="https://x.com/intent/post?text=Check+out+this+band:+Anti-Trust%0A%0Ahttps://anti-trust.rocks%0A%23PunkRock @@AntiTrustHI"
                target="_blank"><i class="fab fa-twitter" style="color: #55acee"></i></a>
             <a title="Share on Facebook" href="https://www.facebook.com/sharer.php?&u=https://anti-trust.rocks" target="_blank"><i class="fab fa-facebook" style="color: #3b5998"></i></a>
             <a title="Share via Email" href="mailto:recipient?subject=Anti-Trust Punk Rock Music&body=Check out this band: Anti-Trust%0A%0Ahttps://anti-trust.rocks%0A%23PunkRock %23AntiTrust" target="_blank"><i class="fas fa-envelope" style="color: #3b5998"></i></a>

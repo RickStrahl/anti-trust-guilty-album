@@ -1,10 +1,14 @@
-{    
+{
     "displayTitle": "Anti-Trust - Guilty!",
     "title": "Guilty",
     "description": "Garage Punk Rock from Maui and Oakland with former members from Attitude Adjustment and Attitude",
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Guilty/mp3/",
-    "albumInformation": "First release from Anti-Trust brings together old school punk rock and metal songs recorded between 2002-2021 on Maui, HI and Oakland, CA. Featuring Chris Kontos and Andy Andersen from Attitude Adjustment and Attitude.",
+    "albumImage": "https://anti-trust.rocks/albums/Guilty/albumcover-small.jpg",
+    "albumInformation": "First release from Anti-Trust brings together old school punk rock and metal songs recorded between 2002-2021 on Maui, HI and Oakland, CA. Featuring Rick Strahl and cameos by Chris Kontos and Andy Andersen from Attitude Adjustment and Attitude.",
     "copyright": "Anti-Trust, 2002-2024",
+     "releaseYear": "2021",
+    "slug": "Guilty",
+    "albumPurchaseLink": "https://github.com/RickStrahl/anti-trust-guilty-album#anti-trust-guilty-album---punk-rock-music",
     "notification": "Check out new videos for <a href='https://www.youtube.com/watch?v=5zFzz5bxpMU' target='_blank'>Masters of Disaster</a> and <a href='https://www.youtube.com/watch?v=C5fKGla-RtQ' target='_blank'>No More Lies</a>",
     "bandMembers":[
         {
@@ -34,7 +38,7 @@
             "appleUrl": "https://music.apple.com/us/album/fear-factory/1586023179?i=1586023187",
             "googleUrl": "https://youtu.be/77llUik72Ks",
             "imageUrl": "Fear Factory.jpg",
-            "lastUpdated": "2022-02-05T00:00:00Z"            
+            "lastUpdated": "2022-02-05T00:00:00Z"
         },
         {
             "title": "Antisocial",
@@ -48,7 +52,7 @@
             "amazonUrl": "https://amzn.to/3nGtweX",
             "appleUrl": "https://music.apple.com/us/album/antisocial/1586023179?i=1586023182",
             "googleUrl": "https://youtu.be/_jvoBHy0jDs",
-            "lastUpdated": "2021-07-07T00:00:00Z"            
+            "lastUpdated": "2021-07-07T00:00:00Z"
         },
         {
             "title": "I am You",
@@ -61,7 +65,7 @@
             "amazonUrl": "https://amzn.to/3Gyqpyl",
             "appleUrl": "https://music.apple.com/us/album/i-am-you/1586023179?i=1586023181",
             "googleUrl": "https://youtube.com/watch?v=Hgvuvzi9-zY&feature=share",
-            "lastUpdated": "2021-07-04T00:00:00Z"      
+            "lastUpdated": "2021-07-04T00:00:00Z"
         },
         {
             "title": "No More Lies",
@@ -74,7 +78,7 @@
             "imageUrl": "No More Lies.jpg",
             "spotifyUrl": "https://open.spotify.com/track/4xJSciDZwAM1FlEJot2Hsj?si=d40dfb5e4460428e",
             "amazonUrl": "https://amzn.to/3nHi5Up",
-            "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",            
+            "appleUrl": "https://music.apple.com/us/album/no-more-lies/1586023179?i=1586023185",
             "googleUrl": "https://youtu.be/C5fKGla-RtQ",
             "embeddedVideoUrl": "https://www.youtube.com/embed/C5fKGla-RtQ",
             "lastUpdated": "2024-01-26T00:00:00Z"
@@ -90,7 +94,7 @@
             "amazonUrl": "https://amzn.to/2ZFWGTu",
             "appleUrl": "https://music.apple.com/us/album/sick-inside/1586023179?i=1586023184",
             "googleUrl": "https://youtube.com/watch?v=xGxx7VZERP8&feature=share",
-            "lastUpdated": "2021-07-05T00:00:00Z"           
+            "lastUpdated": "2021-07-05T00:00:00Z"
         },
         {
             "title": "Day by Day",
@@ -103,7 +107,7 @@
             "amazonUrl": "https://amzn.to/2ZCLDu8",
             "appleUrl": "https://music.apple.com/us/album/day-by-day/1586023179?i=1586023183",
             "googleUrl": "https://youtube.com/watch?v=4I07n2k2LXw&feature=share",
-            "lastUpdated": "2021-12-13T00:00:00Z"                     
+            "lastUpdated": "2021-12-13T00:00:00Z"
         },
         {
             "title": "No Privacy",
@@ -116,7 +120,7 @@
             "amazonUrl": "https://amzn.to/3mtJVUK",
             "appleUrl": "https://music.apple.com/us/album/no-privacy/1586023179?i=1586023180",
             "googleUrl": "https://youtube.com/watch?v=Guod9dmrCM4&feature=share",
-            "lastUpdated": "2021-07-04T00:00:00Z"      
+            "lastUpdated": "2021-07-04T00:00:00Z"
         },
         {
             "title": "Lost",
@@ -129,7 +133,7 @@
             "amazonUrl": "https://amzn.to/3pNa4A5",
             "appleUrl": "https://music.apple.com/us/album/lost/1586023179?i=1586023186",
             "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
-            "lastUpdated": "2021-07-05T00:00:00Z"         
+            "lastUpdated": "2021-07-05T00:00:00Z"
         },
         {
             "title": "Guilty as Charged",
@@ -142,7 +146,7 @@
             "amazonUrl": "https://amzn.to/31hpnGX",
             "appleUrl": "https://music.apple.com/us/album/guilty-as-charged/1586023179?i=1586023189",
             "googleUrl": "https://youtube.com/watch?v=PyEfof91W94&feature=share",
-            "lastUpdated": "2021-07-04T00:00:00Z"         
+            "lastUpdated": "2021-07-04T00:00:00Z"
         },
         {
             "title": "Misery",
@@ -155,7 +159,7 @@
             "amazonUrl": "https://music.amazon.com/albums/B09FH7FVYQ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_vbJJa0b5sFGK48oGBFvXdmSS6&trackAsin=B09FH8DN8R",
             "appleUrl": "https://music.apple.com/us/album/misery/1586023179?i=1586023188",
             "googleUrl": "https://youtube.com/watch?v=z8-BucAjkqM&feature=share",
-            "lastUpdated": "2021-07-03T00:00:00Z"      
+            "lastUpdated": "2021-07-03T00:00:00Z"
         },
         {
             "title": "Realities of Violence",
@@ -168,7 +172,7 @@
             "amazonUrl": "https://amzn.to/3EuxcY9",
             "appleUrl": "https://music.apple.com/us/album/realities-of-violence/1586023179?i=1586023190",
             "googleUrl": "https://youtube.com/watch?v=4dw8tKWajKw&feature=share",
-            "lastUpdated": "2021-07-04T00:00:00Z"        
+            "lastUpdated": "2021-07-04T00:00:00Z"
         },
         {
             "title": "Change",
@@ -181,8 +185,8 @@
             "amazonUrl": "https://amzn.to/3vWRgzo",
             "appleUrl": "https://music.apple.com/us/album/change/1586023179?i=1586023191",
             "googleUrl": "https://youtube.com/watch?v=BPDxsMInDZ0&feature=share",
-            "lastUpdated": "2021-07-05T00:00:00Z"      
-        },       
+            "lastUpdated": "2021-07-05T00:00:00Z"
+        },
         {
             "title": "Organized Crime (UK Subs)",
             "playTime": "2:00",
@@ -195,8 +199,8 @@
             "appleUrl": "",
             "googleUrl": "",
             "groupStart": "Plea Bargains",
-            
-            "lastUpdated": "2021-07-03T00:00:00Z"         
+
+            "lastUpdated": "2021-07-03T00:00:00Z"
         },
         {
             "title": "Protest the Possibility (Discharge)",
@@ -209,7 +213,7 @@
             "amazonUrl": "",
             "appleUrl": "",
             "googleUrl": "",
-            "lastUpdated": "2021-07-03T00:00:00Z"         
+            "lastUpdated": "2021-07-03T00:00:00Z"
         }
     ]
 }

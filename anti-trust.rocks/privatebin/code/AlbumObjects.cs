@@ -7,8 +7,31 @@ namespace AlbumObjects
         public string description {get; set; }
         public string songBaseUrl { get; set; }
 
+/// <summary>
+/// Image that is used as the background image for the album page.
+/// </summary>
         public string coverImage { get; set; } = "https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png";
         
+
+        /// <summary>
+        /// Image for this album's cover
+        /// </summary>
+        public string albumImage { get; set;} = "https://anti-trust.rocks/Guilty-Cover-Rectangle-Card.png";
+
+        /// <summary>
+        /// Year the album was released.
+        /// </summary>
+        public int releaseYear { get; set;  } = 0;
+
+
+        public string slug {get; set; } = "Guilty";
+
+        /// <summary>
+        /// A link to purchase the album. This is used to link to the album on ElasticStage where you can buy the CD or Vinyl. If not set, the "Buy Album" link is not shown.
+        /// </summary>
+        public string albumPurchaseLink { get; set;} = "https://elasticstage.com/anti-trust/";
+
+
         /// <summary>
         /// By line displayed after song list and band members
         /// </summary>

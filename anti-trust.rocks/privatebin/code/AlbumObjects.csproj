@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.0.7</Version>
-    <TargetFramework>net8.0</TargetFramework>    
+    <Version>1.1</Version>
+    <TargetFramework>net10.0</TargetFramework>    
     <ImplicitUsings>enable</ImplicitUsings>
     <DebugType>embedded</DebugType>
 	  <DebugSymbols>true</DebugSymbols>    
@@ -11,6 +11,6 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetDir)AlbumObjects.dll ..\AlbumObject.dll" />
+    <Exec Command="copy $(TargetDir)AlbumObjects.dll ..\updates\AlbumObjects.dll" />
   </Target>
 </Project>
