@@ -8,9 +8,9 @@
     "releaseYear": "2025",
     "slug": "Unreleased",
     "albumPurchaseLink": "https://elasticstage.com/anti-trust/",
-    "albumInformation": "",
+    "albumInformation": null,
     "copyright": "Anti-Trust, 2002-2026",
-    "notification": "",
+    "notification": null,
      "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -24,7 +24,7 @@
             "playTime": "2:41",
             "credits": "Music and Lyrics Strahl",
             "players": "Guitar, Bass, Vocals: Strahl",
-            "file": "01 An Eye for an AI.mp3",
+            "file": "01 - An Eye for an AI.mp3",
             "imageUrl": "An-Eye-For-An-AI.jpg",
             "coverImageUrl": "An-Eye-For-An-AI-Cover.jpg",
             "lyrics": "An-Eye-For-An-AI.txt",
