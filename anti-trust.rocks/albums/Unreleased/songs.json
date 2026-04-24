@@ -5,12 +5,13 @@
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Unreleased/mp3/",
     "coverImage": "https://anti-trust.rocks/albums/Unreleased/Unreleased.jpg",
     "albumImage": "https://anti-trust.rocks/albums/Unreleased/Unreleased-Cover.jpg",
-    "releaseYear": "2025",
+    "releaseYear": "2026",
     "slug": "Unreleased",
-    "albumPurchaseLink": "https://elasticstage.com/anti-trust/",
-    "albumInformation": null,
+    "albumPurchaseLink": "https://elasticstage.com/anti-trust/",    
     "copyright": "Anti-Trust, 2002-2026",
     "notification": null,
+    "homeUrl": null,
+    "albumInformation": "A collection of songs that were recorded but not released or not released yet. Some old, some new, and some vintage music from days gone by.",
      "bandMembers":[
         {
             "name":"Rick Strahl",

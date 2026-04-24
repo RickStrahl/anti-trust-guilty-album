@@ -12,7 +12,10 @@
     var guiltyFile = System.IO.Path.Combine(Host.WebRootPath, "albums", "Guilty", "songs.json");
     var guiltyAlbum = JsonSerializationUtils.DeserializeFromFile(guiltyFile, typeof(AlbumData), false) as AlbumData;
 
-    List<AlbumData> albums =  new List<AlbumData> { mastersAlbum, guiltyAlbum };
+    var unreleasedFile = System.IO.Path.Combine(Host.WebRootPath, "albums", "Unreleased", "songs.json");
+    var unreleasedAlbum = JsonSerializationUtils.DeserializeFromFile(unreleasedFile, typeof(AlbumData), false) as AlbumData;
+
+    List<AlbumData> albums =  new List<AlbumData> { mastersAlbum, guiltyAlbum, unreleasedAlbum };
 }
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -186,7 +189,13 @@
                             <a href="/@album.slug">@album.title</a>
                         </div>
                         <div class="album-card-info">
+                            @if(!string.IsNullOrEmpty(album.releaseYear)) {
                             <i>released @album.releaseYear</i><br />
+                            }
+                            else {
+                            <i>unreleased</i><br />
+                            }
+
                             @album?.albumInformation
                         </div>
                         <div class="album-links">

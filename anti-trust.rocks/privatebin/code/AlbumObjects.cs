@@ -21,10 +21,20 @@ namespace AlbumObjects
         /// <summary>
         /// Year the album was released.
         /// </summary>
-        public int releaseYear { get; set;  } = 0;
+        public string releaseYear { get; set;  } = null;
 
-
+        /// <summary>
+        /// Display Slug for this album
+        /// </summary>
         public string slug {get; set; } = "Guilty";
+
+        /// <summary>
+        /// The album back link for this album. Defaults to the album
+        /// page, but can be set to an explicit Url with this value.
+        /// 
+        /// For example, unreleased songs might go back to the home page.
+        /// </summary>
+        public string homeUrl { get; set; } = null;
 
         /// <summary>
         /// A link to purchase the album. This is used to link to the album on ElasticStage where you can buy the CD or Vinyl. If not set, the "Buy Album" link is not shown.

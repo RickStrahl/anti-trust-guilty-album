@@ -16,6 +16,7 @@
     var title = RouteData.Values["title"] as string;
     var albumName = RouteData.Values["album"] as string ?? "guilty";
 
+
     //var t = new Album();
     var rawTitle = title;
     title = title?.Replace("-", " ");
@@ -25,9 +26,9 @@
 
     fileName = System.IO.Path.Combine(Host.WebRootPath, "albums", albumName,  "songs.json");
     json = await  System.IO.File.ReadAllTextAsync(fileName);
-
     Album = JsonSerializationUtils.DeserializeFromFile(fileName, typeof(AlbumData), false) as AlbumData;    
-
+    string homeUrl = Album.homeUrl ?? "../" + @albumName;
+    
     song = Album.songs.FirstOrDefault(s => s.title.Equals(title, StringComparison.OrdinalIgnoreCase));
     if (song == null)
     {
@@ -130,7 +131,7 @@
 </head>
 <body>
     <div class="toolbarcontainer">
-        <a href="../@albumName" class="hoverbutton"><i class="fas fa-play text-green" style="color: green"></i> Songs</a>         
+        <a href="@homeUrl" class="hoverbutton"><i class="fas fa-play text-green" style="color: green"></i> Songs</a>         
         <a href="https://github.com/RickStrahl/anti-trust-guilty-album" class="hoverbutton hidden-sm" 
            title="Download album or songs for free"><i class="fas fa-cloud-download-alt" style="color: lightgray"></i> Download</a> 
         <a href="/stream" class="hoverbutton" title="Listen or buy on Spotify, Amazon, Apple Music or YouTube"><i class="fas fa-cloud-music"  style="color: steelblue"></i> Stream</a> 
