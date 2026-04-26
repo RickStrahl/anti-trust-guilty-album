@@ -5,13 +5,13 @@
     "songBaseUrl": "https://github.com/RickStrahl/anti-trust-guilty-album/raw/main/Albums/Unreleased/mp3/",
     "coverImage": "https://anti-trust.rocks/albums/Unreleased/Unreleased.jpg",
     "albumImage": "https://anti-trust.rocks/albums/Unreleased/Unreleased-Cover.jpg",
-    "releaseYear": "2026",
+    "releaseYear": null,
     "slug": "Unreleased",
     "albumPurchaseLink": "https://elasticstage.com/anti-trust/",    
     "copyright": "Anti-Trust, 2002-2026",
     "notification": null,
     "homeUrl": null,
-    "albumInformation": "A collection of songs that were recorded but not released or not released yet. Some old, some new, and some vintage music from days gone by.",
+    "albumInformation": "A collection of songs that were recorded but have not been released. New music as work in progress, songs that have never been put out, or some really old stuff that's been left in the dust bin of history.",
      "bandMembers":[
         {
             "name":"Rick Strahl",
@@ -37,7 +37,25 @@
             "spotifyUrl": null,
             "lyricNotes": "",
 			"lastUpdated": "2026-04-15T00:00:00Z"
-        }
-        
+        },
+        {
+            "title": "Attitude Left for Dead",
+            "dontShowTitle": false,
+            "playTime": "5:47",
+            "credits": "Music Strahl and Lyrics Andersen",
+            "players": "Attitude (Andersen, Strahl, Scraparro, Brecht, Shipes)",
+            "file": "Attitude - Left For Dead.mp3",
+            "imageUrl": "Attitude-Left-For-Dead.jpg",
+            "coverImageUrl": "Attitude-Left-For-Dead.jpg",
+            "lyrics": "Attitude-Left-for-Dead.txt",
+            "embeddedVideoUrl": null,
+            "googleUrl": null,
+            "amazonUrl": null,
+            "appleUrl": null,
+            "pandoraUrl": null,
+            "spotifyUrl": null,
+            "lyricNotes": "",
+			"lastUpdated": "2026-04-15T00:00:00Z"
+        },
     ]
 }
