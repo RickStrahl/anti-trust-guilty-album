@@ -6,7 +6,7 @@ Want an Anti-Trust T-Shirt? You can purchase a T-Shirt from [our shop](https://a
  #TShirtContainer {
     display: flex;
     flex-direction: row;
-    
+
     flex-wrap: wrap;s
  }
  #TShirtContainer div { text-align: center; margin: 1em; margin-right: .5em; }
@@ -20,16 +20,26 @@ Want an Anti-Trust T-Shirt? You can purchase a T-Shirt from [our shop](https://a
         <img src="TShirt-Demo-Guilty.png" />
         <small>
           <a href="https://amzn.to/4c6yBpG">us</a>  &nbsp;
-          <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">de</a>  
+          <a href="https://anti-trust-merchandise.printify.me/product/5249733/anti-trust-guilty-album-cover-t-shirt">de</a>
         </small>
     </a>
   </div>
   <div>
-      <a href="https://amzn.to/4c6yBpG">
+      <a href="https://anti-trust-merchandise.printify.me/product/26036102">
         <img src="T-Shirt-Guilty-Band.png" />
         <small>
           <a href="https://anti-trust-merchandise.printify.me/product/26036102">us</a>  &nbsp;
-          <a href="https://anti-trust-merchandise.printify.me/product/26036102">de</a>  
+          <a href="https://anti-trust-merchandise.printify.me/product/26036102">de</a>
+        </small>
+    </a>
+  </div>
+
+  <div>
+      <a href="https://anti-trust-merchandise.printify.me/product/29958503">
+        <img src="Hat-Guilty-Guitar.png" />
+        <small>
+          <a href="https://anti-trust-merchandise.printify.me/product/29958503">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/29958503">de</a>
         </small>
     </a>
   </div>
@@ -38,39 +48,31 @@ Want an Anti-Trust T-Shirt? You can purchase a T-Shirt from [our shop](https://a
         <img src="Tshirt-Demo-Masters-of-Disaster.png" />
         <small>
           <a href="https://amzn.to/3UXn2sT">us</a>  &nbsp;
-          <a href="https://www.amazon.de/dp/B0D5BV4P3P">de</a>  
+          <a href="https://www.amazon.de/dp/B0D5BV4P3P">de</a>
           </small>
     </a>
   </div>
  <div>
-    <a href="https://amzn.to/3V1KqGP">
-        <img src="T-Shirt-Demo-Rat-in-a-Cage.png" />              
+    <a href="https://anti-trust-merchandise.printify.me/product/6379263">
+        <img src="T-Shirt-Demo-Rat-in-a-Cage.png" />
         <small>
-          <a href="https://amzn.to/3V1KqGP">us</a>  &nbsp;
-          <a href="https://www.amazon.de/dp/B0D4J8MDGT">de</a>  
-        </small>    
+          <a href="https://anti-trust-merchandise.printify.me/product/6379263">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/6379263">de</a>
+        </small>
     </a>
   </div>
   <div>
-    <a href="https://amzn.to/4ccijtR">
-        <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />         
+    <a href="https://anti-trust-merchandise.printify.me/product/5256771">
+        <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />
         <small>
-          <a href="https://amzn.to/4ccijtR">us</a>  &nbsp;
-          <a href="https://www.amazon.de/dp/B0D5F74CSD">de</a>  
-        </small>        
+          <a href="https://anti-trust-merchandise.printify.me/product/5256771">us</a>  &nbsp;
+          <a href="https://anti-trust-merchandise.printify.me/product/5256771">de</a>
+        </small>
     </a>
   </div>
 
-  <div>
-    <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">
-        <img src="T-Shirt-Demo-Upside-Down-World.png" />         
-        <small>
-          <a href="hhttps://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">us</a>  &nbsp;
-          <a href="https://anti-trust-merchandise.printify.me/product/11822078/anti-trust-upside-down-world-cover-t-shirt-heavy-cotton">de</a>  
-        </small>        
-    </a>
-  </div>
- 
+
+
   <!--<div>-->
   <!--  <a href="https://amzn.to/4dz04ke">-->
   <!--      <img src="T-Shirt-War-is-The-Real-Enemy.png" />-->
