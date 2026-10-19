@@ -62,10 +62,10 @@ Want an Anti-Trust T-Shirt? You can purchase a T-Shirt from [our shop](https://a
     </a>
   </div>
   <div>
-    <a href="https://anti-trust-merchandise.printify.me/product/5256771">
+    <a href="https://amzn.to/4hVzw0T">
         <img src="T-Shirt-Demo-War-is-the-real-Enemy.png" />
         <small>
-          <a href="https://anti-trust-merchandise.printify.me/product/5256771">us</a>  &nbsp;
+          <a href="https://amzn.to/4hVzw0T">us</a>  &nbsp;
           <a href="https://anti-trust-merchandise.printify.me/product/5256771">de</a>
         </small>
     </a>
